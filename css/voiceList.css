@@ -1,0 +1,271 @@
+.voiceListWrap {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.colorSpectrum {
+  padding-top: 80px;
+}
+
+.colorSpectrum > h2 {
+  font-size: 40px;
+  color: #282828;
+}
+
+.colorSpectrum > p {
+  font-size: 20px;
+  color: #282828;
+}
+
+.colorSpectrum .colorSpectrumList {
+  display: inline-block;
+  width: 500px;
+  padding: 30px;
+  vertical-align: middle;
+}
+
+.colorSpectrum .colorSpectrumList > li {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border: solid 5px transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  margin: 15px;
+}
+
+.colorSpectrum .colorSpectrumList > li.red {
+  background: #c70800;
+}
+
+.colorSpectrum .colorSpectrumList > li.orangeRed {
+  background: #ff3100;
+}
+
+.colorSpectrum .colorSpectrumList > li.orange {
+  background: #e8481c;
+}
+
+.colorSpectrum .colorSpectrumList > li.yellow {
+  background: #f8e71c;
+}
+
+.colorSpectrum .colorSpectrumList > li.green {
+  background: #b8d94b;
+}
+
+.colorSpectrum .colorSpectrumList > li.darkGreen {
+  background: #4a5928;
+}
+
+.colorSpectrum .colorSpectrumList > li.navy {
+  background: #045d76;
+}
+
+.colorSpectrum .colorSpectrumList > li.skyblue {
+  background: #067ef2;
+}
+
+.colorSpectrum .colorSpectrumList > li.blue {
+  background: #014d97;
+}
+
+.colorSpectrum .colorSpectrumList > li.darkBlue {
+  background: #0d1a6e;
+}
+
+.colorSpectrum .colorSpectrumList > li.purple {
+  background: #623689;
+}
+
+.colorSpectrum .colorSpectrumList > li.pink {
+  background: #bf3f86;
+}
+
+.colorSpectrum .colorSpectrumList > li:hover {
+  border: solid 5px #4505e0;
+}
+
+.colorSpectrum .voiceColorInfo {
+  display: inline-block;
+  width: 500px;
+  vertical-align: middle;
+  margin-left: 90px;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li {
+  width: 420px;
+  height: 228px;
+  padding: 20px 0 20px 20px;
+  -webkit-box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  border: solid 1px #f8f8f8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.imgBox {
+  width: 125px;
+  height: 125px;
+  border: solid 3px red;
+  border-radius: 50%;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox {
+  width: 245px;
+  margin-left: 15px;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox dl {
+  font-size: 18px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox dl dt {
+  color: #666;
+  display: inline-block;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox dl dd {
+  color: #282828;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox dl dd.colorTYPE {
+  width: 145px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox > ul {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox > ul > li {
+  display: inline-block;
+}
+
+.colorSpectrum .voiceColorInfo > ul > li > div.infoBox > ul > li > a {
+  font-family: NanumGothic;
+  font-size: 12px;
+  color: #4505e0;
+  margin-left: 20px;
+}
+
+.lnb {
+  width: 220px;
+  float: left;
+}
+
+.lnb > h2 {
+  font-size: 32px;
+  color: #282828;
+  letter-spacing: -1.3px;
+  margin-bottom: 15px;
+}
+
+.lnb .lnbList > li {
+  padding: 25px 0;
+  font-size: 14px;
+  border-bottom: solid 1px #afafaf;
+}
+
+.lnb .lnbList > li:first-child {
+  border-top: solid 1px #afafaf;
+}
+
+.lnb .lnbList > li > ul {
+  margin-top: 10px;
+  margin-left: 11px;
+}
+
+.lnb .lnbList > li > ul > li {
+  padding: 7px 0;
+}
+
+.lnb .lnbList > li > ul > li > a {
+  display: block;
+}
+
+.contents {
+  float: right;
+  width: 900px;
+}
+
+.contents > h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #282828;
+}
+
+.contents > h2 > span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffb000;
+}
+
+.contents > p {
+  font-size: 18px;
+  color: #282828;
+}
+
+.contents > ul {
+  margin-top: 20px;
+}
+
+.contents > ul > li {
+  height: 160px;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contents > ul > li > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+
+.contents > ul > li > div.imgBox {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: solid 3px blue;
+  overflow: hidden;
+}
+
+.contents > ul > li > div.infoBox ul li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.contents > ul > li > div.infoBox ul li.vocieName {
+  font-size: 24px;
+  color: #282828;
+}
+
+.contents > ul > li > div.btnBox {
+  width: 100px;
+}
+/*# sourceMappingURL=voiceList.css.map */
