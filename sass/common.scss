@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/** FONT **/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+body { font-family: 'NanumSquare', sans-serif; }
+/* 헤더 */
+header {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    .inner {
+        width:1240px; height:80px;
+        margin:0 auto;
+        .logoBox {
+            width:262px;
+            line-height: 1;
+            float:left;
+            > .logo {
+                display:block;
+                width: 126px;
+                line-height: 1;
+                font-family: 'NanumSquare';
+                font-size: 30px;
+                margin-top:18px;
+                letter-spacing: -0.8px;
+                color: #282828;
+            }
+            > span {
+                width: 262px;
+                height: 16px;
+                font-family: NanumSquare;
+                font-size: 14px;
+                font-weight: normal;
+                letter-spacing: -0.4px;
+            }
+        }
+        nav {
+            float:left;
+            margin:30px 0 0 40px;
+            > ul >  li{
+                float:left;
+                margin-right:20px;
+                font-size:20px; letter-spacing: -0.6px;
+                &:last-child{ margin-right:0;}
+            }
+        }
+        .categoryBox {
+            float:right;
+            margin-top:15px;
+            > ul { 
+                text-align: right;
+                > li {
+                    display:inline-block;
+                    margin-left:20px;
+                    font-size:18px; letter-spacing: -0.8px;
+                }
+            }
+            > div {
+                .serachBox {
+                    position: relative;
+                    display:inline-block;
+                    vertical-align: middle;
+                    input {
+                        width: 270px;
+                        height: 26px;
+                        border-radius: 15px;
+                        border: solid 1px #282828;
+                    }
+                    label {
+                        position: absolute;
+                    }
+                }
+                > .loginBox {
+                    display:inline-block;
+                    vertical-align: middle;
+                    .login{
+                        display:inline-block;
+                        margin-left:10px;
+                        > a { 
+                            display:block;
+                            text-align: center;
+                            border-radius: 17.5px;
+                            border: solid 1px #282828;
+                            width: 85px;
+                            height: 28px;
+                            line-height: 28px;
+                            font-size:18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* 푸터 */
+footer{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    .inner {
+        width:1240px;
+        margin:0 auto;
+        > .siteMap{
+            h1 { 
+                width: 151px;
+                float:left;
+                font-family: NanumSquareOTFB;
+                font-size: 36px;
+                font-weight: normal;
+                letter-spacing: -1px;
+                color: #282828;
+            }
+            > ul {
+                float:right;
+                margin-top:30px;
+                > li {
+                    float:left;
+                    font-size: 16px;
+                    margin-left:20px;
+                    letter-spacing: -0.4px;
+                    color: #282828;
+                }
+            }
+        }
+        > .copy {
+            padding:20px 0;
+            > p {
+                float:left;
+                font-size: 16px;
+                letter-spacing: -0.4px;
+                color: #282828;
+            }
+            > ul {
+                float:right;
+                > li {
+                    float:left; margin-left:25px;
+                    width:27px; height:27px; overflow: hidden;
+                    border-radius: 50%;
+                    img { width:100%;}
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 기본스타일 */
+.displayB { display:block;}
+.displayI { display:inline;}
+.displayIB { display:inline-block;}
+.textCenter { text-align:center;}
+.textLeft { text-align:left;}
+.textRight { text-align:right;}
+
+
+
