@@ -1,6 +1,2 @@
-# voicemall
-# voicemall
-# voicemall
-# voicemall
-# voicemall
-# voicemall
+# 각파일별로 만들기
+## CSS는 큰카테고리별로
