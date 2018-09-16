@@ -1,0 +1,158 @@
+.apiTrackWrap {
+    width:1240px; margin:95px auto 0;
+    position: relative;
+    > h2 { 
+        font-size: 40px;
+        letter-spacing: -0.7px;
+        color: #282828;
+        margin-bottom:20px;
+    }
+
+}
+
+    // 상단버튼
+    .choiceBox {
+        position: absolute;
+        top:20px; right:0;
+        > li {
+            position: relative;
+            display:inline-block;
+            width: 160px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center; 
+            border-radius: 18px;
+            border: solid 1px #282828;
+            font-size: 18px;
+            letter-spacing: -0.4px;
+            color: #282828;
+            cursor: pointer;
+            margin-left:20px;
+            text-indent: 20px;
+            img {
+                width:20px;
+                position: absolute;
+                top: 50%;
+                left: 25px;
+                transform: translate(-50% , -50%);
+            }
+        }
+    }
+
+    // 이지트랙정보
+    .apiTrackInfo{
+        background-color: #ffffff;
+        border: solid 1px #afafaf;
+        border-radius: 8px;
+        box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+        padding:25px;
+        > div {
+            display:inline-block;
+            vertical-align: middle;
+            width:400px;
+            &.imgBox {
+                display:inline-block;
+                width:115px; height: 115px;
+                border-radius: 50%;
+                border:solid 3px blue;
+                position:relative;
+                > img { width: 100%; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+                > span {position:absolute; bottom:-5px; right:-5px; z-index: 10;}
+            }
+            &.infoBox {
+                position: relative;
+                top: 5px; left: 20px; 
+                width: 900px;
+                margin: 0 20px;
+                > div { display:inline-block; vertical-align: top;}
+                .voiceName {
+                    width:36%;
+                    h3 {font-size: 36px;   letter-spacing: -1.5px; color: #282828; line-height: 1;}
+                    p { font-size: 24px;  letter-spacing: -1.2px;color: #282828; margin-top:10px;}
+                }
+                .voiceInfo{
+                    width:60%;
+                    dl { 
+                        float:left; font-size: 24px;   color: #282828; letter-spacing: -0.9px;
+                        margin-right:40px;
+                        &.full {
+                            width:100%; margin-top:10px;
+                            dt {display:block;}
+                        }
+                        dt{display:inline-block; font-weight: bold;}
+                        dd{display:inline-block;}
+                    }
+                }
+                .voicePay{
+                    position: absolute;
+                    left: 0; bottom: 0;
+                    font-size: 18px;
+                    letter-spacing: -0.7px;
+                    color: #282828;
+                }
+            }
+            &.btnBox {
+                width:120px;
+                text-align: center;
+                > a {
+                    display:inline-block;
+                    vertical-align: middle;
+                    font-size: 24px;
+                    margin:0 3px;
+                    letter-spacing: -0.9px;
+                    line-height: 1;
+                    color: #282828;
+                    span {display:block;}
+                }
+            }
+        }
+    }
+
+    .apiBox{
+        .btn_api {
+            display:block;
+            width: 343px;
+            height: 60px;
+            margin:150px auto;
+            font-size: 32px;
+            color:#fff;
+            border:none;
+            border-radius: 30px;
+            background-color: #282828;
+            cursor: pointer;
+        }
+        .keyText {
+            font-size: 40px;
+            letter-spacing: -0.7px;
+            text-align: center;
+            color: #282828;
+            margin:150px 0;
+            span {
+                display:inline-block;
+                font-size:32px;
+                padding:0 20px;
+                background:#fff;
+                border-radius: 30px;
+                border: solid 1px #979797;
+            }
+            img {
+                vertical-align: middle;
+                cursor: pointer;
+            }
+        }
+        > div {
+            text-align: center;
+            margin-bottom:150px;
+            h2 {
+                font-size: 40px;
+                letter-spacing: -0.7px;
+                color: #282828;
+            }
+            p {
+                font-size: 24px;
+                color: #282828;
+                line-height: 1.4;
+                > a {color:#4505e0;}
+            }
+        }
+    }

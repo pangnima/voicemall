@@ -1,0 +1,222 @@
+.easyUseWrap {
+  width: 1240px;
+  margin: 95px auto 0;
+  position: relative;
+}
+
+.easyUseWrap > h2 {
+  font-size: 40px;
+  letter-spacing: -0.7px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+.easyUseWrap .choiceBox {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.easyUseWrap .choiceBox > li {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 18px;
+  border: solid 1px #282828;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #282828;
+  cursor: pointer;
+  margin-left: 20px;
+  text-indent: 20px;
+}
+
+.easyUseWrap .choiceBox > li img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.easyUseWrap .easyTrackInfo {
+  background-color: #ffffff;
+  border: solid 1px #afafaf;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+  padding: 25px;
+}
+
+.easyUseWrap .easyTrackInfo > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+
+.easyUseWrap .easyTrackInfo > div.imgBox {
+  display: inline-block;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: solid 3px blue;
+  position: relative;
+}
+
+.easyUseWrap .easyTrackInfo > div.imgBox > img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.easyUseWrap .easyTrackInfo > div.imgBox > span {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: 10;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  width: 900px;
+  margin: 0 20px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceName {
+  width: 36%;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceName h3 {
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  color: #282828;
+  line-height: 1;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceName p {
+  font-size: 24px;
+  letter-spacing: -1.2px;
+  color: #282828;
+  margin-top: 10px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo {
+  width: 60%;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl {
+  float: left;
+  font-size: 24px;
+  color: #282828;
+  letter-spacing: -0.9px;
+  margin-right: 40px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl.full dt {
+  display: block;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl dt {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl dd {
+  display: inline-block;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox .voicePay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  letter-spacing: -0.7px;
+  color: #282828;
+}
+
+.easyUseWrap .easyTrackInfo > div.btnBox {
+  width: 120px;
+  text-align: center;
+}
+
+.easyUseWrap .easyTrackInfo > div.btnBox > a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  margin: 0 3px;
+  letter-spacing: -0.9px;
+  line-height: 1;
+  color: #282828;
+}
+
+.easyUseWrap .easyTrackInfo > div.btnBox > a span {
+  display: block;
+}
+
+.easyUseWrap .easyTrackText {
+  height: 615px;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+  color: #afafaf;
+  border-radius: 2px;
+  border: solid 2px #979797;
+  margin: 30px 0 50px;
+  padding: 30px 20px;
+}
+
+.easyUseWrap button {
+  display: block;
+  width: 280px;
+  height: 49px;
+  border: none;
+  border-radius: 24.5px;
+  background-color: #282828;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 auto 100px;
+}
+
+.easyUseWrap .purchaseComplit {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.easyUseWrap .purchaseComplit h2 {
+  font-size: 36px;
+  letter-spacing: -0.3px;
+  color: #282828;
+}
+
+.easyUseWrap .purchaseComplit .btn_down {
+  display: block;
+  width: 280px;
+  height: 49px;
+  line-height: 49px;
+  margin: 40px auto 230px;
+  border-radius: 24.5px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #282828;
+}
+/*# sourceMappingURL=easyuse.css.map */

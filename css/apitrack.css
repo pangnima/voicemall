@@ -1,0 +1,230 @@
+.apiTrackWrap {
+  width: 1240px;
+  margin: 95px auto 0;
+  position: relative;
+}
+
+.apiTrackWrap > h2 {
+  font-size: 40px;
+  letter-spacing: -0.7px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+.choiceBox {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.choiceBox > li {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 18px;
+  border: solid 1px #282828;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #282828;
+  cursor: pointer;
+  margin-left: 20px;
+  text-indent: 20px;
+}
+
+.choiceBox > li img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.apiTrackInfo {
+  background-color: #ffffff;
+  border: solid 1px #afafaf;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+  padding: 25px;
+}
+
+.apiTrackInfo > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+
+.apiTrackInfo > div.imgBox {
+  display: inline-block;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: solid 3px blue;
+  position: relative;
+}
+
+.apiTrackInfo > div.imgBox > img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.apiTrackInfo > div.imgBox > span {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: 10;
+}
+
+.apiTrackInfo > div.infoBox {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  width: 900px;
+  margin: 0 20px;
+}
+
+.apiTrackInfo > div.infoBox > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.apiTrackInfo > div.infoBox .voiceName {
+  width: 36%;
+}
+
+.apiTrackInfo > div.infoBox .voiceName h3 {
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  color: #282828;
+  line-height: 1;
+}
+
+.apiTrackInfo > div.infoBox .voiceName p {
+  font-size: 24px;
+  letter-spacing: -1.2px;
+  color: #282828;
+  margin-top: 10px;
+}
+
+.apiTrackInfo > div.infoBox .voiceInfo {
+  width: 60%;
+}
+
+.apiTrackInfo > div.infoBox .voiceInfo dl {
+  float: left;
+  font-size: 24px;
+  color: #282828;
+  letter-spacing: -0.9px;
+  margin-right: 40px;
+}
+
+.apiTrackInfo > div.infoBox .voiceInfo dl.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.apiTrackInfo > div.infoBox .voiceInfo dl.full dt {
+  display: block;
+}
+
+.apiTrackInfo > div.infoBox .voiceInfo dl dt {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.apiTrackInfo > div.infoBox .voiceInfo dl dd {
+  display: inline-block;
+}
+
+.apiTrackInfo > div.infoBox .voicePay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  letter-spacing: -0.7px;
+  color: #282828;
+}
+
+.apiTrackInfo > div.btnBox {
+  width: 120px;
+  text-align: center;
+}
+
+.apiTrackInfo > div.btnBox > a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  margin: 0 3px;
+  letter-spacing: -0.9px;
+  line-height: 1;
+  color: #282828;
+}
+
+.apiTrackInfo > div.btnBox > a span {
+  display: block;
+}
+
+.apiBox .btn_api {
+  display: block;
+  width: 343px;
+  height: 60px;
+  margin: 150px auto;
+  font-size: 32px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  background-color: #282828;
+  cursor: pointer;
+}
+
+.apiBox .keyText {
+  font-size: 40px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #282828;
+  margin: 150px 0;
+}
+
+.apiBox .keyText span {
+  display: inline-block;
+  font-size: 32px;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 30px;
+  border: solid 1px #979797;
+}
+
+.apiBox .keyText img {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.apiBox > div {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.apiBox > div h2 {
+  font-size: 40px;
+  letter-spacing: -0.7px;
+  color: #282828;
+}
+
+.apiBox > div p {
+  font-size: 24px;
+  color: #282828;
+  line-height: 1.4;
+}
+
+.apiBox > div p > a {
+  color: #4505e0;
+}
+/*# sourceMappingURL=apitrack.css.map */

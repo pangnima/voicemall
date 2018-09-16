@@ -1,0 +1,118 @@
+.notFoundWrap {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.notFound {
+  padding-top: 80px;
+}
+
+.notFoundText {
+ margin:0 auto;
+}
+
+.notFoundText > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.notFoundText > p {
+  font-family: NanumSquareOTFEB;
+  font-size: 24px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #282828;
+  line-height: normal;
+}
+
+.notFoundText > p.notFoundTitle  {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  margin:26px auto 24px;
+}
+
+
+.foundExtra {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 100px;
+  padding-bottom: 134px;
+}
+
+.foundExtra > .voiceCard {
+  position: relative;
+  float: left;
+  width: 420px;
+  height: 228px;
+  box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  border: solid 1px #f8f8f8;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 30px 26px; 
+} 
+
+.voiceCard .voiceCardImage {
+  position: relative;
+  float: left;
+  width: 125px;
+  height: 125px; 
+  margin-top: 50px;
+  margin-left: 20px;  
+}
+
+.voiceCard .voiceCardImage img.profile {
+  width: 125px;
+  height: 125px;
+  border: solid 3px #ff1124;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.voiceCard .voiceCardImage img.vv {
+  position: absolute;
+  bottom:0;
+  right:0;
+  width: 26px;
+  height: 26px;
+}
+
+.voiceCard .voiceCardText {
+  float: right;
+  width: 244px;
+  margin-top:22px;
+}
+
+.voiceCard .voiceCardText p {
+  width: 244px;
+  font-family: NanumSquareOTFB;
+  font-size: 18px;
+  letter-spacing: -0.9px;
+  line-height: 20px;
+  color: #282828;
+  margin-bottom: 7px;
+}
+
+.voiceCard .voiceCardText p span {
+  font-weight: bold;
+}
+
+.voiceCard .voiceCardOption {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+.voiceCardOption li {
+  float: left;
+  font-family: NanumGothic;
+  font-size: 12px;
+  text-align: right;
+  color: #4505e0;
+  margin-left: 24px;
+}
+
+/*# sourceMappingURL=apiTrack.css.map */

@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
 body {
-  font-family: 'NanumSquare', sans-serif;
+  font-family: 'NanumSquareOTFR', sans-serif;
 }
 
 /* 헤더 */
@@ -62,11 +62,12 @@ header .inner nav > ul > li:last-child {
 
 header .inner .categoryBox {
   float: right;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 header .inner .categoryBox > ul {
   text-align: right;
+  margin-bottom: 5px;
 }
 
 header .inner .categoryBox > ul > li {
@@ -110,8 +111,23 @@ header .inner .categoryBox > div > .loginBox .login > a {
   border: solid 1px #282828;
   width: 85px;
   height: 28px;
-  line-height: 28px;
+  line-height: 25px;
   font-size: 18px;
+}
+
+header .inner .categoryBox > div > .loginBox .login.after span {
+  font-family: NanumSquareOTFB;
+  font-size: 18px;
+  letter-spacing: -0.9px;
+  color: #282828;
+}
+
+header .inner .categoryBox > div > .loginBox .login.after > a {
+  display: inline-block;
+  border: none;
+  width: auto;
+  margin: 0 5px;
+  vertical-align: middle;
 }
 
 /* 푸터 */
@@ -174,6 +190,361 @@ footer .inner > .copy > ul > li {
 
 footer .inner > .copy > ul > li img {
   width: 100%;
+}
+
+.pagenation {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.pagenation > ul li {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 10px;
+  letter-spacing: -0.5px;
+}
+
+.pagenation > ul li a {
+  color: #afafaf;
+}
+
+.pagenation > ul li:first-child a {
+  color: #282828;
+}
+
+.pagenation > ul li:last-child a {
+  color: #282828;
+}
+
+.pagenation > ul li.active a {
+  color: #ffb000;
+}
+
+.layerPop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.layerPop > .dim {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.layerPop > .dim .easyUse {
+  padding: 20px;
+  background: #fff;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  width: 850px;
+  margin-left: -425px;
+  -webkit-transform: rotate(50%);
+          transform: rotate(50%);
+  border-radius: 5px;
+}
+
+.layerPop > .dim .easyUse > h2 {
+  font-size: 32px;
+  letter-spacing: -1.2px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .selectTab {
+  margin-bottom: 10px;
+}
+
+.layerPop > .dim .easyUse .selectTab li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  margin-right: 25px;
+}
+
+.layerPop > .dim .easyUse .selectTab li.active {
+  color: #ffb000;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox {
+  position: relative;
+  float: left;
+  width: 450px;
+  height: 30px;
+  line-height: 32px;
+  padding-left: 20px;
+  border-radius: 35px;
+  border: solid 1px #282828;
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+  letter-spacing: -0.8px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox:after {
+  content: '∨';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox.active {
+  border-radius: 15px 15px 0 0;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox.active > ul {
+  display: block !important;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.usage {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+  background: #fff;
+  border: solid 1px #282828;
+  padding: 10px 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.usage > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.usage > li > ul {
+  padding-left: 20px;
+  letter-spacing: -0.8px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  background: #fff;
+  border: solid 1px #282828;
+  padding: 10px 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.passion {
+  background: #c70800;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.freedom {
+  background: #ff3100;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.wisdom {
+  background: #e8481c;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.knowledge {
+  background: #f8e71c;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.observation {
+  background: #d8d94b;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.stability {
+  background: #4A5928;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.balance {
+  background: #045D76;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.creation {
+  background: #067ef2;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.communication {
+  background: #014d97;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.plan {
+  background: #0d1a6e;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.trust {
+  background: #623689;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.adoption {
+  background: #BF3F86;
+}
+
+.layerPop > .dim .easyUse .searchform .searchBox {
+  float: right;
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px #282828;
+  overflow: hidden;
+  position: relative;
+}
+
+.layerPop > .dim .easyUse .searchform .searchBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+.layerPop > .dim .easyUse .searchform .searchBox label {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.layerPop > .dim .easyUse .searchform .searchResult {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 22px;
+  margin-top: 10px;
+  letter-spacing: -0.7px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .searchform .searchResult strong {
+  color: #ffb000;
+}
+
+.layerPop > .dim .easyUse .searchform .searchResult > span {
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #282828;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.layerPop > .dim .easyUse .serachList > ul {
+  margin-top: 20px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li {
+  padding: 15px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo {
+  width: 580px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo ul li strong {
+  margin-right: 10px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo ul li.title {
+  font-size: 22px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div .imgBox {
+  position: relative;
+  display: inline-block;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div .imgBox > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: solid 2px red;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div .imgBox span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.layerPop > .dim .easyUse .notfound {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.layerPop > .dim .easyUse .notfound h2 {
+  font-size: 36px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #282828;
+  line-height: 1.2;
+}
+
+.layerPop > .dim .easyUse .btn_list {
+  width: 380px;
+  border-radius: 25px;
+  background-color: #ffb000;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  padding: 5px 20px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
 }
 
 /* 기본스타일 */

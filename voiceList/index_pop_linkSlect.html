@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/pgwslider.min.css">
     <link rel="stylesheet" href="../css/voiceList.css">
-    <link href="../css/dp-slide.css" rel="stylesheet" type="text/css">
 
     
     <!-- js -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="../js/pgwslider.min.js"></script>
-
+    
     <title>VocievoMall</title>
 
     <script>
@@ -24,60 +23,36 @@
             $('.pgwSlider').pgwSlider({
                 maxHeight:380
             });
-            
-            function detect_active(){
-                // get active
-                var get_active = $("#dp-slider .dp_item:first-child").data("class");
-                $("#dp-dots li").removeClass("active");
-                $("#dp-dots li[data-class="+ get_active +"]").addClass("active");
-            }
-            $("#dp-next").click(function(){
-                var total = $(".dp_item").length;
-                $("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
-                $.each($('.dp_item'), function (index, dp_item) {
-                    $(dp_item).attr('data-position', index + 1);
-                });
-                detect_active();
-
-            });
-
-            $("#dp-prev").click(function(){
-                var total = $(".dp_item").length;
-                $("#dp-slider .dp_item:last-child").hide().prependTo("#dp-slider").fadeIn();
-                $.each($('.dp_item'), function (index, dp_item) {
-                    $(dp_item).attr('data-position', index + 1);
-                });
-
-                detect_active();
-            });
-
-            $("#dp-dots li").click(function(){
-                $("#dp-dots li").removeClass("active");
-                $(this).addClass("active");
-                var get_slide = $(this).attr('data-class');
-                console.log(get_slide);
-                $("#dp-slider .dp_item[data-class=" + get_slide + "]").hide().prependTo("#dp-slider").fadeIn();
-                $.each($('.dp_item'), function (index, dp_item) {
-                    $(dp_item).attr('data-position', index + 1);
-                });
-            });
-
-
-            $("body").on("click", "#dp-slider .dp_item:not(:first-child)", function(){
-                var get_slide = $(this).attr('data-class');
-                console.log(get_slide);
-                $("#dp-slider .dp_item[data-class=" + get_slide + "]").hide().prependTo("#dp-slider").fadeIn();
-                $.each($('.dp_item'), function (index, dp_item) {
-                    $(dp_item).attr('data-position', index + 1);
-                });
-
-                detect_active();
-            });
         });
     </script>
-    
 </head>
 <body>
+    <!-- 팝업 -->
+    <div class="layerPop">
+        <div class="dim">
+            <div class="linkSelect">
+                <h2>Please select a method</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../images/easy-icon.png" alt="">
+                            <span>You can easily set up your voice and download it to a file.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/api-link-icon.png" alt="">
+                            <span>You can create an API key to create a voice freely.</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn_list" href="#">I'm not sure yet. I'll check the list</a>
+            </div>
+        </div>
+    </div>
+    <!-- //팝업 -->
+
+    
     <div id="wrap">
         <header>
             <div class="inner">
@@ -110,16 +85,14 @@
                         </div>
                         <div class="loginBox">
                             <!-- 로그인 전 -->
-                            
-                            <!-- <div class="login before">
+                            <div class="login before">
                                 <a href="#">Sign in</a>
-                            </div> -->
-                            <!-- 로그인 후 -->
-                            <div class="login after">
-                                <span>Hello, <strong>Jain Louis</strong></span>
-                                <a href="#"><img src="../images/setting-icon.png" alt=""></a>
-                                <a href="#"><img src="../images/logout.png" alt=""></a>
                             </div>
+                            <!-- 로그인 후 -->
+                            <!-- <div class="login after">
+                                <span>Hello, <strong>Jain Louis</strong></span>
+                                <a href="#"></a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -141,196 +114,57 @@
                 <div>
                     <!-- 컬러리스트 -->
                     <ul class="colorSpectrumList">
-                        <li class="red">
-                            <span>Passion / Vitality / Efforts</span>
-                        </li>
-                        <li class="orangeRed">
-                            <span>Freedom / Change / Challenge</span>
-                        </li>
-                        <li class="orange">
-                            <span>Wisdom / Expression / Achievement</span>
-                        </li>
-                        <li class="yellow">
-                            <span>Knowledge / Advance / Hope</span>
-                        </li>
-                        <li class="green">
-                            <span>Observation / Safety / Consideration</span>
-                        </li>
-                        <li class="darkGreen">
-                            <span>Stability / Rest / Growth</span>
-                        </li>
-                        <li class="navy">
-                            <span>Balance / Cooperation / Invariable</span>
-                        </li>
-                        <li class="skyblue">
-                            <span>Creation / Independence / Cool</span>
-                        </li>
-                        <li class="blue">
-                            <span>Communication / sincerity / self</span>
-                        </li>
-                        <li class="darkBlue">
-                            <span>Plan / Judgment / Cleanup</span>
-                        </li>
-                        <li class="purple">
-                            <span>Trust / Focus / Healing</span>
-                        </li>
-                        <li class="pink">
-                            <span>Adoption / Criminals / Strong</span>
-                        </li>
+                        <li class="red"></li>
+                        <li class="orangeRed"></li>
+                        <li class="orange"></li>
+                        <li class="yellow"></li>
+                        <li class="green"></li>
+                        <li class="darkGreen"></li>
+                        <li class="navy"></li>
+                        <li class="skyblue"></li>
+                        <li class="blue"></li>
+                        <li class="darkBlue"></li>
+                        <li class="purple"></li>
+                        <li class="pink"></li>
                     </ul>
                     <!-- //컬러리스트 -->
 
                     <!-- 컬러리스트 정보텍스트 -->
-                    <div class="voiceColorInfo" >
-                        <div id="slider">
-                            <div class="dp-wrap">
-                                <div id="dp-slider">
-                                    <div class="dp_item" data-calss="1" data-position="1">
-                                        <div class="imgBox">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="infoBox">
-                                            <dl>
-                                                <dt>Voice Color</dt>
-                                                <dd class="colorTYPE">Freedom / Change</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Name |</dt>
-                                                <dd>Amie</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Age</dt>
-                                                <dd>20's</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Gender</dt>
-                                                <dd>Female</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Popular Usage</dt>
-                                                <dd>AI Speaker Audio book</dd>
-                                            </dl>
-                                            <ul>
-                                                <li><a href="#">Demo Play ></a></li>
-                                                <li><a href="#">API Track ></a></li>
-                                                <li><a href="#">Easy Track ></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dp_item" data-calss="2" data-position="2">
-                                        <div class="imgBox">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="infoBox">
-                                            <dl>
-                                                <dt>Voice Color</dt>
-                                                <dd class="colorTYPE">Freedom / Change</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Name |</dt>
-                                                <dd>Amie</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Age</dt>
-                                                <dd>20's</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Gender</dt>
-                                                <dd>Female</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Popular Usage</dt>
-                                                <dd>AI Speaker Audio book</dd>
-                                            </dl>
-                                            <ul>
-                                                <li><a href="#">Demo Play ></a></li>
-                                                <li><a href="#">API Track ></a></li>
-                                                <li><a href="#">Easy Track ></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dp_item" data-calss="3" data-position="3">
-                                        <div class="imgBox">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="infoBox">
-                                            <dl>
-                                                <dt>Voice Color</dt>
-                                                <dd class="colorTYPE">Freedom / Change</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Name |</dt>
-                                                <dd>Amie</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Age</dt>
-                                                <dd>20's</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Gender</dt>
-                                                <dd>Female</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Popular Usage</dt>
-                                                <dd>AI Speaker Audio book</dd>
-                                            </dl>
-                                            <ul>
-                                                <li><a href="#">Demo Play ></a></li>
-                                                <li><a href="#">API Track ></a></li>
-                                                <li><a href="#">Easy Track ></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dp_item" data-calss="4" data-position="4">
-                                        <div class="imgBox">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="infoBox">
-                                            <dl>
-                                                <dt>Voice Color</dt>
-                                                <dd class="colorTYPE">Freedom / Change</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Name |</dt>
-                                                <dd>Amie</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Age</dt>
-                                                <dd>20's</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Gender</dt>
-                                                <dd>Female</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Popular Usage</dt>
-                                                <dd>AI Speaker Audio book</dd>
-                                            </dl>
-                                            <ul>
-                                                <li><a href="#">Demo Play ></a></li>
-                                                <li><a href="#">API Track ></a></li>
-                                                <li><a href="#">Easy Track ></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <div class="voiceColorInfo">
+                        <ul>
+                            <li>
+                                <div class="imgBox">
+                                    <img src="" alt="">
                                 </div>
-                                <span id="dp-next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.401 51.401">
-                                        <defs>
-                                        <style>
-                                            .cls-1 {
-                                            fill: none;
-                                            stroke: #fa8c8c;
-                                            stroke-miterlimit: 10;
-                                            stroke-width: 7px;
-                                            }
-                                        </style>
-                                        </defs>
-                                        <path id="Rectangle_4_Copy" data-name="Rectangle 4 Copy" class="cls-1" d="M32.246,0V33.178L0,31.953" transform="translate(0.094 25.276) rotate(-45)"/>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
+                                <div class="infoBox">
+                                    <dl>
+                                        <dt>Voice Color</dt>
+                                        <dd class="colorTYPE">Freedom / Change</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Name |</dt>
+                                        <dd>Amie</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Age</dt>
+                                        <dd>20's</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Gender</dt>
+                                        <dd>Female</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Popular Usage</dt>
+                                        <dd>AI Speaker Audio book</dd>
+                                    </dl>
+                                    <ul>
+                                        <li><a href="#">Demo Play ></a></li>
+                                        <li><a href="#">API Track ></a></li>
+                                        <li><a href="#">Easy Track ></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <!-- 컬러리스트 정보텍스트 -->
                 </div>
