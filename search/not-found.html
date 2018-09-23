@@ -111,7 +111,15 @@
         <!-- 컨텐츠 -->
         <div id="container">
             <div class="searchResultWrap">
-                <h2>Results <span>(80)</span></h2>
+
+                <!-- 검색결과없음 -->
+                <div class="notFoundText">
+                    <img src="../images/notfound-icon.png"/>
+                    <h2>No matches found.<br>Please try again.</h2>
+                    <p>These popular voice might interest you</p>   
+                </div>
+                <!-- //검색결과없음 -->
+                
                 <!-- more클래스추가 -->
                 <ul class="clearfix searchResultList">
                     <li>
@@ -243,8 +251,6 @@
                         </div>
                     </li>
                 </ul>
-
-                <button class="btn_more">Show more results</button>
             </div>
         </div>
         <!-- //컨텐츠 -->

@@ -1,6 +1,6 @@
 .searchResultWrap {
   width: 1050px;
-  margin: 95px auto 0;
+  margin: 55px auto 0;
   position: relative;
 }
 
@@ -13,7 +13,7 @@
 
 .searchResultWrap > h2 span {
   font-size: 22px;
-  color: #ffb000;
+  color: #4505e0;
 }
 
 .searchResultWrap > p {
@@ -61,12 +61,14 @@
   display: none;
 }
 
-.searchResultWrap > ul {
+.searchResultWrap > ul.searchResultList {
   margin-top: 20px;
 }
 
-.searchResultWrap > ul > li {
-  height: 160px;
+.searchResultWrap > ul.searchResultList > li {
+  width: 49%;
+  float: left;
+  height: 180px;
   border-radius: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -75,25 +77,28 @@
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  padding: 25px 30px;
+  padding: 15px 30px;
 }
 
-.searchResultWrap > ul > li > div {
+.searchResultWrap > ul.searchResultList > li:nth-child(even) {
+  float: right;
+}
+
+.searchResultWrap > ul.searchResultList > li > div {
   display: inline-block;
   vertical-align: middle;
-  width: 400px;
 }
 
-.searchResultWrap > ul > li > div.imgBox {
+.searchResultWrap > ul.searchResultList > li > div.imgBox {
   display: inline-block;
-  width: 99px;
-  height: 99px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   border: solid 3px blue;
   position: relative;
 }
 
-.searchResultWrap > ul > li > div.imgBox > img {
+.searchResultWrap > ul.searchResultList > li > div.imgBox > img {
   width: 100%;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -102,41 +107,89 @@
   -o-border-radius: 50%;
 }
 
-.searchResultWrap > ul > li > div.imgBox > span {
+.searchResultWrap > ul.searchResultList > li > div.imgBox > span {
   position: absolute;
   bottom: -5px;
   right: -5px;
   z-index: 10;
 }
 
-.searchResultWrap > ul > li > div.infoBox {
-  width: 650px;
-  margin: 0 20px 0 50px;
-}
-
-.searchResultWrap > ul > li > div.infoBox ul li {
+.searchResultWrap > ul.searchResultList > li > div.infoBox {
   display: inline-block;
-  margin-right: 10px;
-  font-size: 14px;
+  vertical-align: middle;
+  width: 300px;
+  margin-left: 20px;
 }
 
-.searchResultWrap > ul > li > div.infoBox ul li.vocieName {
+.searchResultWrap > ul.searchResultList > li > div.infoBox h3 {
+  font-family: NanumSquareOTFB;
   font-size: 24px;
+  letter-spacing: -0.9px;
   color: #282828;
 }
 
-.searchResultWrap > ul > li > div.infoBox ul li:last-child {
-  display: block;
+.searchResultWrap > ul.searchResultList > li > div.infoBox h3 span {
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: -0.9px;
+  color: #282828;
 }
 
-.searchResultWrap > ul > li > div.btnBox {
-  width: 120px;
+.searchResultWrap > ul.searchResultList > li > div.infoBox p {
+  font-family: NanumSquareOTFB;
+  line-height: 1.2;
+  color: #282828;
+  font-size: 14px;
 }
 
-.searchResultWrap > ul > li > div.btnBox > a {
+.searchResultWrap > ul.searchResultList > li > div.infoBox p span {
   display: inline-block;
+  width: 70px;
+  letter-spacing: -0.9px;
+  font-size: 18px;
+  font-family: NanumSquareOTFL;
+  color: #282828;
+}
+
+.searchResultWrap > ul.searchResultList > li > div.infoBox p strong {
+  font-family: NanumSquareOTFB;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.searchResultWrap > ul.searchResultList > li > div.infoBox > ul {
+  margin-top: 10px;
+}
+
+.searchResultWrap > ul.searchResultList > li > div.infoBox > ul > li {
+  display: inline-block;
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  margin-right: 15px;
   vertical-align: middle;
-  margin: 0 3px;
+  text-align: center;
+  color: #4505e0;
+}
+
+.searchResultWrap > ul.searchResultList > li > div.infoBox > ul > li img {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.searchResultWrap .btn_more {
+  display: block;
+  width: 230px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #282828;
+  font-family: NanumSquareOTFB;
+  font-size: 22px;
+  letter-spacing: -0.7px;
+  color: #ffffff;
+  border: none;
+  margin: 30px auto;
 }
 
 .notFoundWrap {
@@ -145,7 +198,7 @@
 }
 
 .notFoundText {
-  margin: 0 auto;
+  margin: 0 auto 50px;
   text-align: center;
 }
 

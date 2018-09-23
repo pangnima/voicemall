@@ -56,8 +56,10 @@ body {
 
 /* 헤더 */
 header {
+  background: #282828;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 header .inner {
@@ -69,6 +71,7 @@ header .inner {
 header .inner .logoBox {
   width: 262px;
   line-height: 1;
+  margin-top: 18px;
   float: left;
 }
 
@@ -78,9 +81,8 @@ header .inner .logoBox > .logo {
   line-height: 1;
   font-family: 'NanumSquare';
   font-size: 30px;
-  margin-top: 18px;
   letter-spacing: -0.8px;
-  color: #282828;
+  color: #fff;
 }
 
 header .inner .logoBox > span {
@@ -92,20 +94,123 @@ header .inner .logoBox > span {
   letter-spacing: -0.4px;
 }
 
-header .inner nav {
+header .inner .serachBox {
   float: left;
-  margin: 30px 0 0 40px;
+  margin: 18px 0 0 90px;
+  position: relative;
 }
 
-header .inner nav > ul > li {
-  float: left;
-  margin-right: 20px;
-  font-size: 20px;
+header .inner .serachBox input {
+  width: 560px;
+  height: 48px;
+  margin: 0;
+  border: none;
+  font-family: NanumSquareOTFB;
+  font-size: 24px;
+  color: #9b9b9b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+}
+
+header .inner .serachBox label {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+header .inner .serachBox .quickSearch {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  z-index: 10;
+}
+
+header .inner .serachBox .quickSearch .recommended {
+  padding: 15px 30px 30px;
+  background-color: #f5f5f5;
+  border-bottom: solid 1px #afafaf;
+}
+
+header .inner .serachBox .quickSearch .recommended h2 {
+  font-family: NanumSquareOTFEB;
+  font-size: 18px;
   letter-spacing: -0.6px;
+  color: #282828;
+  margin-bottom: 20px;
 }
 
-header .inner nav > ul > li:last-child {
-  margin-right: 0;
+header .inner .serachBox .quickSearch .recommended ul li {
+  display: inline-block;
+  border-radius: 30px;
+  border: solid 1px #282828;
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  letter-spacing: -0.9px;
+  padding: 10px;
+  color: #282828;
+  line-height: 1;
+  margin: 10px 10px 10px 0;
+  cursor: pointer;
+}
+
+header .inner .serachBox .quickSearch .popular {
+  padding: 15px 30px 30px;
+  overflow: hidden;
+}
+
+header .inner .serachBox .quickSearch .popular h2 {
+  font-family: NanumSquareOTFEB;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+header .inner .serachBox .quickSearch .popular ul {
+  float: left;
+  width: 50%;
+}
+
+header .inner .serachBox .quickSearch .popular ul li {
+  font-family: NanumSquareOTFEB;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  color: #afafaf;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+header .inner .serachBox .quickSearch .popular ul li.on {
+  color: #282828;
+  font-weight: bold;
+}
+
+header .inner .serachBox .autoSearch {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  padding: 10px 0 20px;
+  background: #fff;
+  z-index: 10;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+header .inner .serachBox .autoSearch ul li {
+  font-family: NanumSquareOTFEB;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+header .inner .serachBox .autoSearch ul li.on {
+  color: #282828;
+  font-weight: bold;
 }
 
 header .inner .categoryBox {
@@ -120,39 +225,41 @@ header .inner .categoryBox > ul {
 
 header .inner .categoryBox > ul > li {
   display: inline-block;
-  margin-left: 20px;
-  font-size: 18px;
-  letter-spacing: -0.8px;
+  font-family: NanumSquareOTFR;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  padding: 0 10px;
+  border-right: solid 1px #fff;
+  line-height: 1;
 }
 
-header .inner .categoryBox > div .serachBox {
-  position: relative;
-  display: inline-block;
+header .inner .categoryBox > ul > li > a {
+  display: block;
+  color: #fff;
+}
+
+header .inner .categoryBox > ul > li:last-child {
+  border-right: none;
+  cursor: pointer;
+}
+
+header .inner .categoryBox > ul > li span {
   vertical-align: middle;
 }
 
-header .inner .categoryBox > div .serachBox input {
-  width: 270px;
-  height: 26px;
-  border-radius: 15px;
-  border: solid 1px #282828;
-}
-
-header .inner .categoryBox > div .serachBox label {
-  position: absolute;
-}
-
-header .inner .categoryBox > div > .loginBox {
-  display: inline-block;
+header .inner .categoryBox > .loginBox {
+  display: block;
   vertical-align: middle;
+  text-align: right;
+  margin-top: 10px;
 }
 
-header .inner .categoryBox > div > .loginBox .login {
+header .inner .categoryBox > .loginBox .login {
   display: inline-block;
-  margin-left: 10px;
 }
 
-header .inner .categoryBox > div > .loginBox .login > a {
+header .inner .categoryBox > .loginBox .login > a {
   display: block;
   text-align: center;
   border-radius: 17.5px;
@@ -163,14 +270,12 @@ header .inner .categoryBox > div > .loginBox .login > a {
   font-size: 18px;
 }
 
-header .inner .categoryBox > div > .loginBox .login.after span {
+header .inner .categoryBox > .loginBox .login.after span {
   font-family: NanumSquareOTFB;
-  font-size: 18px;
-  letter-spacing: -0.9px;
-  color: #282828;
+  font-size: 15px;
 }
 
-header .inner .categoryBox > div > .loginBox .login.after > a {
+header .inner .categoryBox > .loginBox .login.after > a {
   display: inline-block;
   border: none;
   width: auto;
@@ -178,15 +283,82 @@ header .inner .categoryBox > div > .loginBox .login.after > a {
   vertical-align: middle;
 }
 
+nav.gnb {
+  background-color: #282828;
+  height: 44px;
+  line-height: 40px;
+}
+
+nav.gnb > ul {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+nav.gnb > ul > li {
+  float: left;
+  margin-right: 52px;
+}
+
+nav.gnb > ul > li > a {
+  width: 70px;
+  height: 20px;
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+nav.gnb > ul > li.active > a {
+  color: #ffb000;
+}
+
+nav.gnb > ul > li:last-child {
+  margin-right: 0;
+}
+
+.mesage {
+  background: #4505e0;
+}
+
+.mesage .wrap {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.mesage .wrap p {
+  position: relative;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.mesage .wrap p > a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.mesage .wrap p > span {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
 /* 푸터 */
 footer {
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background: #282828;
+  color: #fff;
+  margin-top: 100px;
 }
 
 footer .inner {
   width: 1240px;
+  height: 150px;
   margin: 0 auto;
+}
+
+footer .inner > .siteMap {
+  padding-top: 20px;
 }
 
 footer .inner > .siteMap h1 {
@@ -196,7 +368,10 @@ footer .inner > .siteMap h1 {
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -1px;
-  color: #282828;
+}
+
+footer .inner > .siteMap h1 > a {
+  color: #fff;
 }
 
 footer .inner > .siteMap > ul {
@@ -209,7 +384,10 @@ footer .inner > .siteMap > ul > li {
   font-size: 16px;
   margin-left: 20px;
   letter-spacing: -0.4px;
-  color: #282828;
+}
+
+footer .inner > .siteMap > ul > li > a {
+  color: #fff;
 }
 
 footer .inner > .copy {
@@ -220,7 +398,10 @@ footer .inner > .copy > p {
   float: left;
   font-size: 16px;
   letter-spacing: -0.4px;
-  color: #282828;
+}
+
+footer .inner > .copy > p span {
+  color: #ffb000;
 }
 
 footer .inner > .copy > ul {

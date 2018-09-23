@@ -23,12 +23,40 @@
                     <a class="logo" href="/index.html">VoiceMall</a>
                     <span>Pick your Voice Color & Boom your Business</span>
                 </h1>
-                <nav>
-                    <ul class="clearfix">
-                        <li><a href="#">Vocie List</a></li>
-                        <li><a href="#">Easy Use</a></li>
-                    </ul>
-                </nav>
+                <div class="serachBox">
+                    <input type="text" id="serch">
+                    <label for="serch"><img src="../images/search-icon.png" alt=""></label>
+                    <div class="quickSearch" style="display:none;">
+                        <div class="recommended">
+                            <h2>Recommended Keyword</h2>
+                            <ul>
+                                <li># passion</li>
+                                <li># freedom</li>
+                                <li># wisdom</li>
+                                <li># knowledge</li>
+                                <li># observation</li>
+                                <li># communication</li>
+                            </ul>
+                        </div>
+                        <div class="popular">
+                            <h2>Popular Keyword</h2>
+                            <ul>
+                                <li class="on">1. #passion</li>
+                                <li class="on">2. #passion</li>
+                                <li class="on">3. #passion</li>
+                                <li>4. #passion</li>
+                                <li>5. #passion</li>
+                            </ul>
+                            <ul>
+                                <li>6. #passion</li>
+                                <li>7. #passion</li>
+                                <li>8. #passion</li>
+                                <li>9. #passion</li>
+                                <li>10. #passion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="categoryBox">
                     <ul>
                         <li><a href="#">About</a></li>
@@ -38,38 +66,36 @@
                             <span>
                                 <img src="../images/nav-lang-flag-us.png" alt="미국">
                             </span>
-                            EN
+                            ENG ∨
                         </li>
                     </ul>
-                    <div>
-                        <div class="serachBox">
-                            <input type="text" id="serch">
-                            <label for="serch"></label>
-                        </div>
-                        <div class="loginBox">
-                            <!-- 로그인 전 -->
-                            <div class="login before">
-                                <a href="#">Sign in</a>
-                            </div>
-                            <!-- 로그인 후 -->
-                            <!-- <div class="login after">
-                                <span>Hello, <strong>Jain Louis</strong></span>
-                                <a href="#"></a>
-                            </div> -->
+                    <div class="loginBox">
+                        <!-- 로그인 전 -->
+                        <!-- <div class="login before">
+                            <a href="#">Sign in</a>
+                        </div> -->
+                        <!-- 로그인 후 -->
+                        <div class="login after">
+                            <span>Hello, <strong>Jain Louis</strong></span>
+                            <a href="#"><img src="../images/logout-icon.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- // 헤더 -->
+
+        <!-- GNB -->
+        <nav class="gnb">
+            <ul class="clearfix">
+                <li class="active"><a href="#">Vocie List</a></li>
+                <li><a href="#">Easy Use</a></li>
+            </ul>
+        </nav>
 
         <!-- 컨텐츠 -->
         <div id="container">
             <div class="apiTrackWrap">
-                <h2>Easy Track</h2>
-                <ul class="choiceBox">
-                    <li><img src="../images/select-voice-icon.png" alt=""> Select Voice</li>
-                </ul>
+                <h2>API Track</h2>
                 <!-- 이지트랙 정보 -->
                 <div class="apiTrackInfo">
                     <div class="imgBox">
@@ -141,7 +167,7 @@
                     </ul>
                 </div>
                 <div class="copy clearfix">
-                    <p>Copyright ⓒ 2018 SRuniverse - All Right Reserved.</p>
+                    <p>Copyright ⓒ 2018 <span>SRuniverse</span> - All Right Reserved.</p>
                     <ul>
                         <li><a href="#"><img src="../images/github-icon.png" alt=""></a></li>
                         <li><a href="#"><img src="../images/medium-icon.png" alt=""></a></li>

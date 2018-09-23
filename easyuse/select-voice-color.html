@@ -13,8 +13,141 @@
     <!-- js -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <title>VocievoMall</title>
+
+    <script>
+        $(document).ready(function(){
+            $('.selectBox').on('click' , function(){
+                $(this).toggleClass('active');
+            })
+
+            $('.selectTab > li ').on('click' , function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+    </script>
 </head>
 <body>
+    <!-- 팝업 -->
+    <div class="layerPop">
+        <div class="dim">
+            <div class="easyUserPop">
+                <h2>Select Voice</h2>
+                <ul class="selectTab">
+                    <li>Usage</li>
+                    <li class="active">Voice Color</li>
+                </ul>
+
+                <!-- 서치 셀렉트 -->
+                <!-- 서치 셀렉트 active 클래스 추가-->
+                <div class="selectBox active">
+                    ALL
+                    <ul class="vocieColor">
+                        <li>
+                            <span class="passion"></span>
+                            Passion / Vitality / Efforts
+                        </li>
+                        <li>
+                            <span class="freedom"></span>
+                            Freedom / Change / Challenge
+                        </li>
+                        <li>
+                            <span class="wisdom"></span>
+                            Wisdom / Expression / Achievement
+                        </li>
+                        <li>
+                            <span class="knowledge"></span>
+                            Knowledge / Advance / Hope
+                        </li>
+                        <li>
+                            <span class="observation"></span>
+                            Observation / Safety / Consideration
+                        </li>
+                        <li>
+                            <span class="stability"></span>
+                            Stability / Rest / Growth
+                        </li>
+                        <li>
+                            <span class="balance"></span>
+                            Balance / Cooperation / Invariable
+                        </li>
+                        <li>
+                            <span class="creation"></span>
+                            Creation / Independence / Cool
+                        </li>
+                        <li>
+                            <span class="communication"></span>
+                            Communication / sincerity / self
+                        </li>
+                        <li>
+                            <span class="plan"></span>
+                            Plan / Judgment / Cleanup
+                        </li>
+                        <li>
+                            <span class="trust"></span>
+                            Trust / Focus / Healing
+                        </li>
+                        <li>
+                            <span class="adoption"></span>
+                            Adoption / Criminals / Strong
+                        </li>
+                    </ul>
+                </div>
+                <!-- // 서치 셀렉트 -->
+
+                <!-- 서치 텍스트 -->
+                <div class="searchBox">
+                    <input type="text" id="serchVocie">
+                    <label for="serchVocie"><img src="../images/search-icon.png" alt=""></label>
+                </div>
+                <!-- // 서치 텍스트 -->
+
+                <!-- 서치 리스트 -->
+                <!-- 서치 리스트 more 버튼 누르면 클래스 추가-->
+                <ul class="searchList">
+                    <li>
+                        <div class="imgBox">
+                            <img src="../images/voice-profile-img.png" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h2>Amie <span>$4.00/100kb</span></h2>
+                            <p><span>Age</span> <strong>20’s</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/select-voice-icon.png" alt="">Select Voice</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="../images/voice-profile-img.png" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h2>Amie <span>$4.00/100kb</span></h2>
+                            <p><span>Age</span> <strong>20’s</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/select-voice-icon.png" alt="">Select Voice</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn_more">Show more results</button>
+                <!-- //서치 리스트 -->
+            </div>
+        </div>
+    </div>
+    <!-- //팝업 -->
+
+
+
+
     <div id="wrap">
         <!-- 헤더 -->
         <header>

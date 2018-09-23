@@ -9,14 +9,66 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/pgwslider.min.css">
-    <link rel="stylesheet" href="../css/easyuse.css">
+    <link rel="stylesheet" href="../css/voiceList.css">
+
+    <link rel="stylesheet" href="../css/colorpicker.css"> <!-- 컬러 피커-->
+    <link rel="stylesheet" href="../css/swiper.min.css"> <!-- 슬라이드 -->
+
+    
     <!-- js -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="../js/colorpicker.js"></script> <!-- 컬러 피커-->
+    <script src="../js/swiper.min.js"></script> <!-- 슬라이드 -->
+
     <title>VocievoMall</title>
+
+    <script>
+    $(document).ready(function(){
+
+        $('#colorpickerHolder').ColorPicker({flat: true});
+                
+
+        var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        direction: "vertical",
+        mousewheel: {
+            invert: true
+        },
+        initialSlide: 1500,
+        coverflowEffect: {
+            rotate: 10,
+            stretch: 100,
+            depth: 50,
+            modifier: 1,
+            slideShadows: false
+        },
+        pagination: {
+            el: ".swiper-pagination"
+        },
+        on: {
+            init: blurring,
+            slideChange: blurring
+        }
+    });
+
+    function blurring() {
+        $(".swiper-slide").each(function() {
+            var blurriness = Math.abs($(this).css("z-index") - 1);
+            $(this).css({ filter: "blur(" + blurriness / 0.9 * 2 + "px" });
+        });
+    }
+
+    });
+    </script>
+<style>
+
+</style>
 </head>
 <body>
     <div id="wrap">
-        <!-- 헤더 -->
         <header>
             <div class="inner">
                 <h1 class="logoBox">
@@ -83,64 +135,47 @@
                 </div>
             </div>
         </header>
-        <!-- // 헤더 -->
 
         <!-- GNB -->
         <nav class="gnb">
             <ul class="clearfix">
-                <li><a href="#">Vocie List</a></li>
-                <li class="active"><a href="#">Easy Use</a></li>
+                <li class="active"><a href="#">Vocie List</a></li>
+                <li><a href="#">Easy Use</a></li>
             </ul>
         </nav>
 
-        <!-- 컨텐츠 -->
-        <div id="container">
-            <div class="easyUseWrap">
-                <h2>Easy Track</h2>
-                <ul class="choiceBox">
-                    <li><img src="../images/upload-icon.png" alt=""> Upload File</li>
-                    <li><img src="../images/select-voice-icon.png" alt=""> Select Voice</li>
-                </ul>
-                <!-- 이지트랙 정보 -->
-                <div class="easyTrackInfo">
-                    <div class="imgBox">
-                        <img class="photo" src="https://via.placeholder.com/200x200" alt="">
-                        <span><img src="../images/vv-icon.png" alt=""></span>
-                    </div>
-                    <div class="infoBox">
-                        <h2>Voice Name</h2>
-                        <div>
-                            <dl>
-                                <dt>Age</dt>
-                                <dd>40's</dd>
-                            </dl>
-                            <dl>
-                                <dt>Gender</dt>
-                                <dd>Female</dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <span>$1 / 20kb</span>
-                            <span>It's a passionate but rather embarrassing voice.</span>
-                        </div>
-                    </div>
-                    <div class="btnBox">
-                        <a href="#">
-                            <img src="../images/play-btn.png" alt="플레이버튼">
-                            <span>Preview</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- //이지트랙 정보 -->
-                <!-- 이지트랙 텍스트 -->
-                <div class="easyTrackText">
-                    Drag and drop your files, or type, paste, and edit text here.
-                </div>
-                <!-- //이지트랙 텍스트 -->
-                <button>Purchase</button>
+        <!-- 메세지창 -->
+        <div class="mesage">
+            <div class="wrap">
+                <p>Do you want to make a Voice? <a href="#">Click the link</a> <span href="#"><img src="../images/exit-icon-white.png" alt=""></span></p>
             </div>
         </div>
-        <!-- //컨텐츠 -->
+        <!-- //메세지창 -->
+
+        <div id="container" class="voiceListWrap">
+            <div class="voiceType">
+                <h2>Select Voice Type</h2>
+                <p>Select Voice type</p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/easy-icon.png" alt="">
+                                <span>You can easily set up your voice and download it to a file.</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/api-link-icon.png" alt="">
+                                <span>You can create an API key to create a voice freely.</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn_list" href="#">I'm not sure yet. I'll check the list</a>
+                </div>
+            </div>
+        </div>
+
 
         <!-- 푸터 -->
         <footer>
@@ -157,7 +192,7 @@
                     </ul>
                 </div>
                 <div class="copy clearfix">
-                    <p>Copyright ⓒ 2018 SRuniverse - All Right Reserved.</p>
+                    <p>Copyright ⓒ 2018 <span>SRuniverse</span> - All Right Reserved.</p>
                     <ul>
                         <li><a href="#"><img src="../images/github-icon.png" alt=""></a></li>
                         <li><a href="#"><img src="../images/medium-icon.png" alt=""></a></li>
@@ -166,7 +201,6 @@
                 </div>
             </div>
         </footer>
-        <!-- //푸터 -->
     </div>
 </body>
 </html>

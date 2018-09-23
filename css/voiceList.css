@@ -3,34 +3,6 @@
   margin: 0 auto;
 }
 
-.mesage {
-  background: #4505e0;
-}
-
-.mesage .wrap {
-  width: 1240px;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-.mesage .wrap p {
-  position: relative;
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 1;
-}
-
-.mesage .wrap p > a {
-  font-weight: bold;
-  color: #fff;
-}
-
-.mesage .wrap p > span {
-  position: absolute;
-  right: 0;
-  cursor: pointer;
-}
-
 .colorSpectrum {
   padding-top: 30px;
 }
@@ -48,192 +20,320 @@
 .colorSpectrum .colorSpectrumList {
   display: inline-block;
   width: 500px;
-  padding: 30px;
-  vertical-align: middle;
+  height: 500px;
+  position: relative;
+  top: 50px;
 }
 
-.colorSpectrum .colorSpectrumList > li {
-  float: left;
-  width: 80px;
-  height: 80px;
-  border: solid 5px transparent;
+.colorSpectrum .colorSpectrumList > div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  -webkit-box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  margin: 15px;
-  position: relative;
+  -webkit-transform-origin: 250px;
+          transform-origin: 250px;
+  position: absolute;
+  top: 50%;
   cursor: pointer;
 }
 
-.colorSpectrum .colorSpectrumList > li.red {
-  background: #c70800;
+.colorSpectrum .colorSpectrumList > div.passion {
+  background: #c70800 !important;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+          transform: rotate(0deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.orangeRed {
-  background: #ff3100;
+.colorSpectrum .colorSpectrumList > div.freedom {
+  background: #ff3100 !important;
+  -webkit-transform: rotate(30deg) translate(-50%, -50%);
+          transform: rotate(30deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.orange {
-  background: #e8481c;
+.colorSpectrum .colorSpectrumList > div.wisdom {
+  background: #e8481c !important;
+  -webkit-transform: rotate(60deg) translate(-50%, -50%);
+          transform: rotate(60deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.yellow {
-  background: #f8e71c;
+.colorSpectrum .colorSpectrumList > div.knowledge {
+  background: #f8e71c !important;
+  -webkit-transform: rotate(90deg) translate(-50%, -50%);
+          transform: rotate(90deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.green {
-  background: #b8d94b;
+.colorSpectrum .colorSpectrumList > div.observation {
+  background: #d8d94b !important;
+  -webkit-transform: rotate(120deg) translate(-50%, -50%);
+          transform: rotate(120deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.darkGreen {
-  background: #4a5928;
+.colorSpectrum .colorSpectrumList > div.stability {
+  background: #4A5928 !important;
+  -webkit-transform: rotate(150deg) translate(-50%, -50%);
+          transform: rotate(150deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.navy {
-  background: #045d76;
+.colorSpectrum .colorSpectrumList > div.balance {
+  background: #045D76 !important;
+  -webkit-transform: rotate(180deg) translate(-50%, -50%);
+          transform: rotate(180deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.skyblue {
-  background: #067ef2;
+.colorSpectrum .colorSpectrumList > div.creation {
+  background: #067ef2 !important;
+  -webkit-transform: rotate(210deg) translate(-50%, -50%);
+          transform: rotate(210deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.blue {
-  background: #014d97;
+.colorSpectrum .colorSpectrumList > div.communication {
+  background: #014d97 !important;
+  -webkit-transform: rotate(240deg) translate(-50%, -50%);
+          transform: rotate(240deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.darkBlue {
-  background: #0d1a6e;
+.colorSpectrum .colorSpectrumList > div.plan {
+  background: #0d1a6e !important;
+  -webkit-transform: rotate(270deg) translate(-50%, -50%);
+          transform: rotate(270deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.purple {
-  background: #623689;
+.colorSpectrum .colorSpectrumList > div.trust {
+  background: #623689 !important;
+  -webkit-transform: rotate(300deg) translate(-50%, -50%);
+          transform: rotate(300deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li.pink {
-  background: #bf3f86;
+.colorSpectrum .colorSpectrumList > div.adoption {
+  background: #BF3F86 !important;
+  -webkit-transform: rotate(330deg) translate(-50%, -50%);
+          transform: rotate(330deg) translate(-50%, -50%);
 }
 
-.colorSpectrum .colorSpectrumList > li:hover {
-  border: solid 5px #4505e0;
+.colorSpectrum .colorSpectrumList > div.colorPickerBox {
+  background: #ddd;
+  border-radius: inherit;
+  width: 260px;
+  height: 260px;
+  top: 35%;
+  left: 24%;
+  position: relative;
 }
 
-.colorSpectrum .colorSpectrumList > li:hover span {
+.colorSpectrum .colorSpectrumList > div.colorPickerBox span {
+  font-family: NotoSansCJKkr;
+  font-size: 16px;
+  color: #282828;
+  position: absolute;
+}
+
+.colorSpectrum .colorSpectrumList > div.colorPickerBox span.lightness {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  left: -110px;
+  top: 45%;
+}
+
+.colorSpectrum .colorSpectrumList > div.colorPickerBox span.saturation {
+  left: 30px;
+  bottom: -30px;
+}
+
+.colorSpectrum .colorSpectrumList > div.colorPickerBox .colorpicker {
+  width: 100%;
+  height: 100%;
+}
+
+.colorSpectrum .colorSpectrumList > div.colorPickerBox .colorpicker .colorpicker_color {
   display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.colorSpectrum .colorSpectrumList > li span {
+.colorSpectrum .colorSpectrumList > div.colorPickerBox .colorpicker .colorpicker_color > div {
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.colorSpectrum .colorSpectrumList > div.colorPickerBox .colorpicker .colorpicker {
+  width: 100%;
+  height: 100%;
+}
+
+.colorSpectrum .colorSpectrumList > div.colorPickerBox .colorpicker > div {
   display: none;
-  position: absolute;
-  font-size: 12px;
-  letter-spacing: -0.5px;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 2px 5px;
-  width: 200%;
-  left: -50%;
-  text-align: center;
-  z-index: 10;
-}
-
-.colorSpectrum .colorSpectrumList > li span:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px;
-  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .colorSpectrum .voiceColorInfo {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 90px;
+  margin-left: 200px;
 }
 
-.colorSpectrum .voiceColorInfo .imgBox {
+.colorSpectrum .voiceColorInfo .time-machine {
+  position: relative;
+  top: 100px;
+  z-index: 1;
+  height: 550px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 520px;
+}
+
+.colorSpectrum .voiceColorInfo .time-machine:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 500px;
+  height: 90px;
+  z-index: 10;
+  -webkit-transform: translate(-50%, 150px);
+  transform: translate(0, 150px);
+}
+
+.colorSpectrum .voiceColorInfo .swiper-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 385px;
+  height: 158px;
+  -webkit-box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  border: solid 1px #f8f8f8;
+  padding: 20px;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-slide .imgBox {
   display: inline-block;
   vertical-align: middle;
-  width: 125px;
-  height: 125px;
+  width: 130px;
+  height: 130px;
   border: solid 3px red;
   border-radius: 50%;
 }
 
-.colorSpectrum .voiceColorInfo .infoBox {
+.colorSpectrum .voiceColorInfo .swiper-slide .imgBox > img {
+  width: 100%;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-slide .infoBox {
   display: inline-block;
   vertical-align: middle;
-  width: 245px;
+  width: 225px;
   margin-left: 15px;
 }
 
-.colorSpectrum .voiceColorInfo .infoBox dl {
-  font-size: 17px;
-  line-height: 1.2;
-  margin-bottom: 6px;
-}
-
-.colorSpectrum .voiceColorInfo .infoBox dl dt {
-  color: #666;
-  display: inline-block;
-}
-
-.colorSpectrum .voiceColorInfo .infoBox dl dd {
+.colorSpectrum .voiceColorInfo .swiper-slide .infoBox h3 {
+  font-family: NanumSquareOTFB;
+  font-size: 24px;
+  letter-spacing: -0.9px;
   color: #282828;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-slide .infoBox p {
+  font-family: NanumSquareOTFB;
+  font-size: 18px;
+  letter-spacing: -0.9px;
+  color: #282828;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-slide .infoBox p span {
   display: inline-block;
-  font-weight: bold;
+  width: 80%;
+  line-height: 1.2;
+  font-family: NanumSquareOTFL;
+  font-size: 14px;
+  color: #282828;
 }
 
-.colorSpectrum .voiceColorInfo .infoBox dl dd.colorTYPE {
-  width: 145px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  vertical-align: middle;
+.colorSpectrum .voiceColorInfo .swiper-slide .infoBox > ul {
+  margin-top: 10px;
 }
 
-.colorSpectrum .voiceColorInfo .infoBox > ul {
-  position: absolute;
-  right: 45px;
-  bottom: 15px;
-}
-
-.colorSpectrum .voiceColorInfo .infoBox > ul > li {
+.colorSpectrum .voiceColorInfo .swiper-slide .infoBox > ul > li {
   display: inline-block;
-}
-
-.colorSpectrum .voiceColorInfo .infoBox > ul > li > a {
-  font-family: NanumGothic;
+  font-family: NanumSquareOTFR;
   font-size: 12px;
+  margin-right: 15px;
+  vertical-align: middle;
+  text-align: center;
   color: #4505e0;
-  margin-left: 20px;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-slide .infoBox > ul > li img {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-pagination {
+  -webkit-transform: rotate(180deg) translate(50px, 50%) !important;
+          transform: rotate(180deg) translate(50px, 50%) !important;
+}
+
+.colorSpectrum .voiceColorInfo .swiper-pagination-bullet-active {
+  background-color: red;
+}
+
+.scrollDownBox {
+  text-align: center;
+  margin: 200px 0 100px;
+}
+
+.scrollDownBox h2 {
+  font-family: NanumSquareOTFR;
+  font-size: 50px;
+  letter-spacing: -0.7px;
+  color: #282828;
+  margin-bottom: 60px;
 }
 
 .lnb {
-  width: 220px;
+  width: 280px;
   float: left;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 0 0 80px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .lnb > h2 {
-  font-size: 32px;
+  font-family: NanumSquareOTFEB;
+  font-size: 40px;
+  letter-spacing: -1.7px;
+  margin: 20px 0 15px;
   color: #282828;
-  letter-spacing: -1.3px;
-  margin-bottom: 15px;
 }
 
 .lnb .lnbList > li {
-  padding: 25px 0;
+  padding: 5px 0;
   font-size: 14px;
-  border-bottom: solid 1px #afafaf;
+  font-weight: bold;
 }
 
-.lnb .lnbList > li:first-child {
-  border-top: solid 1px #afafaf;
+.lnb .lnbList > li > a {
+  font-family: NanumSquareOTFR;
+  font-size: 14px;
+  letter-spacing: -0.6px;
+  color: #282828;
+  margin-right: 5px;
+}
+
+.lnb .lnbList > li > a.active {
+  color: #4505e0;
 }
 
 .lnb .lnbList > li > ul {
@@ -243,31 +343,20 @@
 
 .lnb .lnbList > li > ul > li {
   padding: 7px 0;
+  font-weight: normal;
+}
+
+.lnb .lnbList > li > ul > li.active > a {
+  color: #4505e0;
 }
 
 .lnb .lnbList > li > ul > li > a {
   display: block;
 }
 
-.slideWrap {
-  margin: 50px auto 85px;
-}
-
-.pgwSlider {
-  overflow: hidden;
-}
-
-.pgwSlider .ps-current {
-  width: 855px;
-}
-
-.ps-list {
-  width: 380px !important;
-}
-
 .contents {
   float: right;
-  width: 900px;
+  width: 940px;
 }
 
 .contents > h2 {
@@ -283,29 +372,41 @@
 }
 
 .contents > p {
-  font-size: 18px;
+  font-size: 17px;
   color: #282828;
 }
 
 .contents > p img {
-  vertical-align: middle;
+  width: 26px;
+  vertical-align: bottom;
 }
 
 .contents > ul {
   margin-top: 20px;
+  height: 800px;
+}
+
+.contents > ul.more {
+  overflow-y: scroll;
+  padding-right: 10px;
 }
 
 .contents > ul > li {
-  height: 160px;
+  float: left;
+  width: 49%;
+  height: 180px;
   border-radius: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
-  margin-bottom: 15px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  padding: 40px 30px;
+}
+
+.contents > ul > li:nth-child(even) {
+  float: right;
 }
 
 .contents > ul > li > div {
@@ -316,8 +417,8 @@
 
 .contents > ul > li > div.imgBox {
   display: inline-block;
-  width: 85px;
-  height: 85px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   border: solid 3px blue;
   position: relative;
@@ -335,13 +436,48 @@
 .contents > ul > li > div.imgBox > span {
   position: absolute;
   bottom: -5px;
-  right: -5px;
+  right: 0px;
   z-index: 10;
+  width: 36px;
+  height: 36px;
+}
+
+.contents > ul > li > div.imgBox > span img {
+  width: 100%;
 }
 
 .contents > ul > li > div.infoBox {
-  width: 580px;
-  margin: 0 20px;
+  width: 250px;
+  margin-left: 20px;
+}
+
+.contents > ul > li > div.infoBox h2 {
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.contents > ul > li > div.infoBox h2 span {
+  font-size: 12px;
+  letter-spacing: -0.9px;
+  color: #282828;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.contents > ul > li > div.infoBox p {
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: #282828;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.contents > ul > li > div.infoBox p span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.1;
 }
 
 .contents > ul > li > div.infoBox ul li {
@@ -350,19 +486,78 @@
   font-size: 14px;
 }
 
-.contents > ul > li > div.infoBox ul li.vocieName {
-  font-size: 24px;
+.contents > ul > li > div.infoBox ul li img {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.contents .btn_more {
+  display: block;
+  width: 210px;
+  height: 50px;
+  margin: 30px auto;
+  border-radius: 25px;
+  background-color: #282828;
+  font-family: NanumSquareOTFR;
+  font-size: 22px;
+  letter-spacing: -0.7px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.voiceType {
+  padding-top: 30px;
+}
+
+.voiceType > h2 {
+  font-size: 40px;
   color: #282828;
 }
 
-.contents > ul > li > div.btnBox {
-  width: 120px;
+.voiceType > p {
+  font-size: 20px;
+  color: #282828;
 }
 
-.contents > ul > li > div.btnBox > a {
+.voiceType ul {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.voiceType ul > li {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 3px;
+  width: 49%;
+  text-align: center;
+}
+
+.voiceType ul > li span {
+  display: block;
+  margin-top: 50px;
+  font-family: NanumSquareOTFB;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #282828;
+}
+
+.voiceType .btn_list {
+  width: 530px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50px;
+  background-color: #ffb000;
+  font-size: 32px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 120px auto 200px;
+  display: block;
+  text-align: center;
 }
 
 .layerPop {
@@ -431,27 +626,32 @@
 }
 
 .layerPop > .dim .sign {
-  padding: 50px 20px;
-  background: #fff;
-  position: absolute;
-  top: 15%;
-  left: 50%;
   width: 850px;
-  margin-left: -425px;
+  padding: 100px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: solid 1px #979797;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   text-align: center;
-  -webkit-transform: rotate(50%);
-          transform: rotate(50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .layerPop > .dim .sign p {
-  font-size: 30px;
+  font-size: 36px;
+  font-weight: bold;
   color: #282828;
+  margin-top: 20px;
 }
 
 .layerPop > .dim .sign p span {
   display: block;
   font-size: 24px;
   color: #d0021b;
+  font-weight: normal;
 }
 
 .layerPop > .dim .sign .btn_signIn {
@@ -464,5 +664,11 @@
   font-size: 24px;
   color: #fff;
   margin-top: 50px;
+}
+
+.layerPop > .dim .sign .btn_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 /*# sourceMappingURL=voiceList.css.map */

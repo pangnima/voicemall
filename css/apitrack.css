@@ -49,7 +49,7 @@
   border-radius: 8px;
   -webkit-box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
-  padding: 25px;
+  padding: 25px 30px;
 }
 
 .apiTrackInfo > div {
@@ -91,70 +91,53 @@
   margin: 0 20px;
 }
 
-.apiTrackInfo > div.infoBox > div {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.apiTrackInfo > div.infoBox .voiceName {
-  width: 36%;
-}
-
-.apiTrackInfo > div.infoBox .voiceName h3 {
+.apiTrackInfo > div.infoBox h2 {
+  font-family: NanumSquareOTFR;
   font-size: 36px;
   letter-spacing: -1.5px;
   color: #282828;
   line-height: 1;
+  margin-bottom: 5px;
 }
 
-.apiTrackInfo > div.infoBox .voiceName p {
+.apiTrackInfo > div.infoBox > div {
+  margin-top: 5px;
+}
+
+.apiTrackInfo > div.infoBox > div dl {
+  display: inline-block;
+  font-family: NanumSquareOTFR;
   font-size: 24px;
-  letter-spacing: -1.2px;
-  color: #282828;
-  margin-top: 10px;
-}
-
-.apiTrackInfo > div.infoBox .voiceInfo {
-  width: 60%;
-}
-
-.apiTrackInfo > div.infoBox .voiceInfo dl {
-  float: left;
-  font-size: 24px;
-  color: #282828;
   letter-spacing: -0.9px;
+  color: #282828;
   margin-right: 40px;
 }
 
-.apiTrackInfo > div.infoBox .voiceInfo dl.full {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.apiTrackInfo > div.infoBox .voiceInfo dl.full dt {
-  display: block;
-}
-
-.apiTrackInfo > div.infoBox .voiceInfo dl dt {
+.apiTrackInfo > div.infoBox > div dl dt {
   display: inline-block;
   font-weight: bold;
 }
 
-.apiTrackInfo > div.infoBox .voiceInfo dl dd {
+.apiTrackInfo > div.infoBox > div dl dd {
   display: inline-block;
+  font-weight: normal;
 }
 
-.apiTrackInfo > div.infoBox .voicePay {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.apiTrackInfo > div.infoBox > div span {
+  display: inline-block;
+  margin-right: 60px;
+  font-family: NanumSquareOTFR;
   font-size: 18px;
   letter-spacing: -0.7px;
   color: #282828;
 }
 
+.apiTrackInfo > div.infoBox > div span:last-child {
+  font-size: 22px;
+}
+
 .apiTrackInfo > div.btnBox {
-  width: 120px;
+  width: 100px;
   text-align: center;
 }
 
@@ -170,6 +153,9 @@
 
 .apiTrackInfo > div.btnBox > a span {
   display: block;
+  margin-top: 10px;
+  letter-spacing: -0.9px;
+  color: #4505e0;
 }
 
 .apiBox .btn_api {
@@ -195,6 +181,7 @@
 
 .apiBox .keyText span {
   display: inline-block;
+  width: 800px;
   font-size: 32px;
   padding: 0 20px;
   background: #fff;

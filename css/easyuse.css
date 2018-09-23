@@ -1,6 +1,7 @@
+@charset "UTF-8";
 .easyUseWrap {
   width: 1240px;
-  margin: 95px auto 0;
+  margin: 55px auto 0;
   position: relative;
 }
 
@@ -49,7 +50,7 @@
   border-radius: 8px;
   -webkit-box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
-  padding: 25px;
+  padding: 25px 30px;
 }
 
 .easyUseWrap .easyTrackInfo > div {
@@ -91,70 +92,53 @@
   margin: 0 20px;
 }
 
-.easyUseWrap .easyTrackInfo > div.infoBox > div {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceName {
-  width: 36%;
-}
-
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceName h3 {
+.easyUseWrap .easyTrackInfo > div.infoBox h2 {
+  font-family: NanumSquareOTFR;
   font-size: 36px;
   letter-spacing: -1.5px;
   color: #282828;
   line-height: 1;
+  margin-bottom: 5px;
 }
 
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceName p {
+.easyUseWrap .easyTrackInfo > div.infoBox > div {
+  margin-top: 5px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div dl {
+  display: inline-block;
+  font-family: NanumSquareOTFR;
   font-size: 24px;
-  letter-spacing: -1.2px;
-  color: #282828;
-  margin-top: 10px;
-}
-
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo {
-  width: 60%;
-}
-
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl {
-  float: left;
-  font-size: 24px;
-  color: #282828;
   letter-spacing: -0.9px;
+  color: #282828;
   margin-right: 40px;
 }
 
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl.full {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl.full dt {
-  display: block;
-}
-
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl dt {
+.easyUseWrap .easyTrackInfo > div.infoBox > div dl dt {
   display: inline-block;
   font-weight: bold;
 }
 
-.easyUseWrap .easyTrackInfo > div.infoBox .voiceInfo dl dd {
+.easyUseWrap .easyTrackInfo > div.infoBox > div dl dd {
   display: inline-block;
+  font-weight: normal;
 }
 
-.easyUseWrap .easyTrackInfo > div.infoBox .voicePay {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.easyUseWrap .easyTrackInfo > div.infoBox > div span {
+  display: inline-block;
+  margin-right: 60px;
+  font-family: NanumSquareOTFR;
   font-size: 18px;
   letter-spacing: -0.7px;
   color: #282828;
 }
 
+.easyUseWrap .easyTrackInfo > div.infoBox > div span:last-child {
+  font-size: 22px;
+}
+
 .easyUseWrap .easyTrackInfo > div.btnBox {
-  width: 120px;
+  width: 100px;
   text-align: center;
 }
 
@@ -170,6 +154,9 @@
 
 .easyUseWrap .easyTrackInfo > div.btnBox > a span {
   display: block;
+  margin-top: 10px;
+  letter-spacing: -0.9px;
+  color: #4505e0;
 }
 
 .easyUseWrap .easyTrackText {
@@ -177,24 +164,26 @@
   font-size: 24px;
   line-height: 1.25;
   letter-spacing: -0.7px;
+  background: #fff;
   color: #afafaf;
   border-radius: 2px;
-  border: solid 2px #979797;
   margin: 30px 0 50px;
-  padding: 30px 20px;
+  padding: 50px 30px;
 }
 
 .easyUseWrap button {
   display: block;
-  width: 280px;
+  font-family: NanumSquareOTFB;
+  font-weight: bold;
+  width: 210px;
   height: 49px;
-  border: none;
   border-radius: 24.5px;
   background-color: #282828;
   color: #fff;
   cursor: pointer;
   font-size: 24px;
   margin: 0 auto 100px;
+  border: none;
 }
 
 .easyUseWrap .purchaseComplit {
@@ -218,5 +207,364 @@
   font-size: 24px;
   color: #fff;
   background-color: #282828;
+}
+
+.easyUserPop {
+  width: 580px;
+  height: 100%;
+  background-color: #f5f5f5;
+  position: fixed;
+  right: 0;
+  padding: 50px 55px 0 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.easyUserPop > h2 {
+  font-family: NanumSquareOTFB;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  color: #282828;
+}
+
+.easyUserPop .selectTab {
+  margin-bottom: 10px;
+}
+
+.easyUserPop .selectTab li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  margin-right: 25px;
+}
+
+.easyUserPop .selectTab li.active {
+  color: #ffb000;
+}
+
+.easyUserPop .selectTab {
+  margin-bottom: 30px;
+}
+
+.easyUserPop .selectTab li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  margin-right: 25px;
+}
+
+.easyUserPop .selectTab li.active {
+  color: #ffb000;
+}
+
+.easyUserPop .selectBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  padding-left: 30px;
+  border: solid 1px #282828;
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+  letter-spacing: -0.8px;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.easyUserPop .selectBox:after {
+  content: '∨';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.easyUserPop .selectBox.active {
+  border-radius: 15px 15px 0 0;
+  background: #fff;
+}
+
+.easyUserPop .selectBox.active > ul {
+  display: block !important;
+}
+
+.easyUserPop .selectBox > ul.usage {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+  background: #fff;
+  border: solid 1px #282828;
+  border-top: none;
+  padding: 10px 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+  border-radius: 0 0 15px 15px;
+}
+
+.easyUserPop .selectBox > ul.usage > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.easyUserPop .selectBox > ul.usage > li > ul {
+  padding-left: 20px;
+  letter-spacing: -0.8px;
+  color: #282828;
+}
+
+.easyUserPop .selectBox > ul.vocieColor {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 620px;
+  background: #fff;
+  border: solid 1px #282828;
+  padding: 10px 0 0 20px;
+  border-radius: 0 0 15px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.passion {
+  background: #c70800;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.freedom {
+  background: #ff3100;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.wisdom {
+  background: #e8481c;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.knowledge {
+  background: #f8e71c;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.observation {
+  background: #d8d94b;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.stability {
+  background: #4A5928;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.balance {
+  background: #045D76;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.creation {
+  background: #067ef2;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.communication {
+  background: #014d97;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.plan {
+  background: #0d1a6e;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.trust {
+  background: #623689;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.adoption {
+  background: #BF3F86;
+}
+
+.easyUserPop .searchBox {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  margin-top: 18px;
+  border: solid 1px #282828;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.easyUserPop .searchBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+.easyUserPop .searchBox label {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.easyUserPop .searchList {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.easyUserPop .searchList.more {
+  height: 500px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 10px;
+  overflow-y: scroll;
+}
+
+.easyUserPop .searchList > li {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.easyUserPop .searchList > li > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.easyUserPop .searchList > li > div.imgBox {
+  position: relative;
+  width: 125px;
+  margin-right: 20px;
+}
+
+.easyUserPop .searchList > li > div.imgBox > img {
+  width: 100%;
+}
+
+.easyUserPop .searchList > li > div.imgBox span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.easyUserPop .searchList > li > div.infoBox {
+  width: 233px;
+}
+
+.easyUserPop .searchList > li > div.infoBox h2 {
+  font-family: NanumSquareOTFB;
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox h2 span {
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: -0.9px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox p {
+  font-family: NanumSquareOTFR;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.easyUserPop .searchList > li > div.infoBox p span {
+  display: inline-block;
+  width: 70px;
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox p strong {
+  font-family: NanumSquareOTFB;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox > ul {
+  margin-top: 10px;
+}
+
+.easyUserPop .searchList > li > div.infoBox > ul > li {
+  display: inline-block;
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  margin-right: 15px;
+  vertical-align: middle;
+  text-align: center;
+  color: #4505e0;
+}
+
+.easyUserPop .searchList > li > div.infoBox > ul > li img {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.easyUserPop .btn_more {
+  display: block;
+  width: 130px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 0 auto;
+  background-color: #282828;
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.easyUserPop .notfound {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.easyUserPop .notfound h2 {
+  font-size: 36px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #282828;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=easyuse.css.map */

@@ -13,8 +13,130 @@
     <!-- js -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <title>VocievoMall</title>
+
+    <script>
+        $(document).ready(function(){
+            $('.selectBox').on('click' , function(){
+                $(this).toggleClass('active');
+            })
+
+            $('.selectTab > li ').on('click' , function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+    </script>
 </head>
 <body>
+    <!-- 팝업 -->
+    <div class="layerPop">
+        <div class="dim">
+            <div class="easyUserPop">
+                <h2>Select Voice</h2>
+                <ul class="selectTab">
+                    <li class="active">Usage</li>
+                    <li>Voice Color</li>
+                </ul>
+
+                <!-- 서치 셀렉트 -->
+                <div class="selectBox">
+                    ALL
+                    <ul class="usage">
+                            <li>
+                                HardWare
+                                <ul>
+                                    <li>AI Speaker</li>
+                                    <li>Kiosk</li>
+                                    <li>Robot</li>
+                                    <li>Smart Car / Navigation</li>
+                                    <li>Smart Home / IoT</li>
+                                    <li>Smart Phone / Computer</li>
+                                    <li>Wearable Device</li>
+                                    <li>etc.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Software
+                                <ul>
+                                    <li>ARS</li>
+                                    <li>Chatbot</li>
+                                    <li>Education /  E-book</li>
+                                    <li>Messenger</li>
+                                    <li>Translation</li>
+                                    <li>etc</li>
+                                    <li>Wearable Device</li>
+                                    <li>etc.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Originality Industry
+                                <ul>
+                                    <li>Broadcast / Concert / Hologram</li>
+                                    <li>Customer Service Voice</li>
+                                    <li>Game / Animation</li>
+                                    <li>Museum Curation</li>
+                                    <li>Transportation</li>
+                                    <li>Travel Guide</li>
+                                    <li>etc.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+                <!-- // 서치 셀렉트 -->
+
+                <!-- 서치 텍스트 -->
+                <div class="searchBox">
+                    <input type="text" id="serchVocie">
+                    <label for="serchVocie"><img src="../images/search-icon.png" alt=""></label>
+                </div>
+                <!-- // 서치 텍스트 -->
+
+                <!-- 서치 리스트 -->
+                <!-- 서치 리스트 more 버튼 누르면 클래스 추가-->
+                <ul class="searchList more">
+                    <li>
+                        <div class="imgBox">
+                            <img src="../images/voice-profile-img.png" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h2>Amie <span>$4.00/100kb</span></h2>
+                            <p><span>Age</span> <strong>20’s</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/select-voice-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="../images/voice-profile-img.png" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h2>Amie <span>$4.00/100kb</span></h2>
+                            <p><span>Age</span> <strong>20’s</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/select-voice-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn_more">Show more results</button>
+                <!-- //서치 리스트 -->
+            </div>
+        </div>
+    </div>
+    <!-- //팝업 -->
+
+
+
+
     <div id="wrap">
         <!-- 헤더 -->
         <header>

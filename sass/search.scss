@@ -1,12 +1,12 @@
 .searchResultWrap{
-    width:1050px; margin:95px auto 0;
+    width:1050px; margin:55px auto 0;
     position: relative;
     > h2 { 
         font-size: 40px;
         letter-spacing: -0.7px;
         color: #282828;
         margin-bottom:20px;
-        span {font-size:22px; color:#ffb000;}
+        span {font-size:22px; color:#4505e0;}
     }
     > p {
         font-size: 18px;
@@ -43,55 +43,100 @@
             }
         }
     }
-    > ul {
+    > ul.searchResultList {
         margin-top:20px;
         > li {
-            height: 160px;
+            width:49%;
+            float:left;
+            height: 180px;
             border-radius: 12px;
             box-sizing: border-box;
             padding:20px;
             margin-bottom:15px;
             background-color: #ffffff;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-            padding:25px 30px;
+            padding:15px 30px;
+            &:nth-child(even) { float:right;}
             > div {
                 display:inline-block;
                 vertical-align: middle;
-                width:400px;
                 &.imgBox {
                     display:inline-block;
-                    width:99px; height: 99px;
+                    width:125px; height: 125px;
                     border-radius: 50%;
                     border:solid 3px blue;
                     position:relative;
                     > img { width: 100%; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
                     > span {position:absolute; bottom:-5px; right:-5px; z-index: 10;}
                 } 
-                &.infoBox {
-                    width: 650px;
-                    margin: 0 20px 0 50px;
-                    ul {
-                        li { 
-                            display:inline-block;
-                            margin-right:10px;
-                            font-size:14px;
-                            &.vocieName { font-size:24px; color:#282828;}   
-                            &:last-child { display:block;}
+                &.infoBox{
+                    display:inline-block;
+                    vertical-align: middle;
+                    width: 300px;
+                    margin-left: 20px;
+                    h3{
+                        font-family: NanumSquareOTFB;
+                        font-size: 24px;
+                        letter-spacing: -0.9px;
+                        color: #282828;
+                        span {
+                            font-family: NanumSquareOTFR;
+                            font-size: 12px;
+                            font-weight: normal;
+                            letter-spacing: -0.9px;
+                            color: #282828;
                         }
                     }
-                }
-                &.btnBox {
-                    width:120px;
-                    > a {
-                        display:inline-block;
-                        vertical-align: middle;
-                        margin:0 3px;
+                    p {
+                        font-family: NanumSquareOTFB;
+                        line-height: 1.2;
+                        color: #282828;
+                        font-size: 14px;
+                        span {
+                            display: inline-block;
+                            width: 70px;
+                            letter-spacing: -0.9px;
+                            font-size: 18px;
+                            font-family: NanumSquareOTFL;
+                            color: #282828;
+                        }
+                        strong{
+                            font-family: NanumSquareOTFB;
+                            font-size: 18px;
+                            letter-spacing: -1px;
+                            color: #282828;
+                        }
+                    }
+                    > ul  {
+                        margin-top:10px;
+                        > li { 
+                            display:inline-block; 
+                            font-family: NanumSquareOTFR;
+                            font-size: 12px;
+                            margin-right:15px;
+                            vertical-align: middle;
+                            text-align: center;
+                            color: #4505e0;
+                            img { vertical-align: sub; margin-right:5px;}
+                        }
                     }
                 }
             }
         }
     }
-
+    .btn_more{
+        display: block;
+        width: 230px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #282828;
+        font-family: NanumSquareOTFB;
+        font-size: 22px;
+        letter-spacing: -0.7px;
+        color: #ffffff;
+        border:none;
+        margin:30px auto;
+    }
 }
 
 // 검색결과없음
@@ -101,7 +146,7 @@
 }
 
 .notFoundText {
-    margin:0 auto;
+    margin:0 auto 50px;
     text-align: center;
     > img {
         display: block;
