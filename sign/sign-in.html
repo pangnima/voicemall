@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sign.css">
     
     <!-- js -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -29,7 +29,7 @@
                 </h1>
                 <div class="serachBox">
                     <input type="text" id="serch">
-                    <label for="serch"><img src="./images/search-icon.png" alt=""></label>
+                    <label for="serch"><img src="../images/search-icon.png" alt=""></label>
                 </div>
                 <div class="categoryBox">
                     <ul>
@@ -38,21 +38,23 @@
                         <li><a href="#">Console</a></li>
                         <li>
                             <span>
-                                <img src="./images/nav-lang-flag-us.png" alt="미국">
+                                <img src="../images/nav-lang-flag-us.png" alt="미국">
                             </span>
                             ENG ∨
                         </li>
                     </ul>
                     <div class="loginBox">
                         <!-- 로그인 전 -->
-                        <!-- <div class="login before">
+                        <div class="login before">
                             <a href="#">Sign in</a>
-                        </div> -->
+                        </div>
                         <!-- 로그인 후 -->
+                        <!--
                         <div class="login after">
                             <span>Hello, <strong>Jain Louis</strong></span>
-                            <a href="#"><img src="./images/logout-icon.png" alt=""></a>
+                            <a href="#"><img src="../images/logout-icon.png" alt=""></a>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -68,40 +70,34 @@
 
 
         <div id="container">
-            <div class="mainWrap">
-                <h2>How to use VoiceMall?</h2>
-                <div>
-                    <div class="textBox">
-                        <h3>VoiceMall 소개</h3>
-                        <p>VoiceMall은 Voice상품 유통 플랫폼입니다.</p>
-                        <p>누구나 소량의 녹음 데이터로 개개인의 음성을 인공지능으로 쉽게 구현하고 특화된 목소리 상품으로 플랫폼에 유통할 수 있습니다.</p>
-                        <p>고객들은 기업의 이미지에 어울리는 Voice 상품을 선택하여 다양한 기업 활동에 활용할 수 있습니다. </p>
-                    </div>
-                    <img class="mainImg01" src="./images/maingImg_01.png" alt="">
+            <div class="signWrap">
+                <h2>VoiceMall <span>Sign In</span></h2>
+                <ul class="loginBox">
+                    <li>
+                        <label for="userEmail">Email</label>
+                        <input type="text" placeholder="aa@bb.com">
+                        <a href="#">Forgot your email?</a>
+                    </li>
+                    <li>
+                        <label for="userEmail">Password</label>
+                        <input type="text">
+                        <a href="#">Forgot your password?</a>
+                    </li>
+                    <li>
+                        <button>Sign in</button>
+                    </li>
+                </ul>
+                <div class="lineBox">
+                    <hr>
+                    <span>or</span>
+                    <hr>
                 </div>
-                <div class="clearfix">
-                    <div class="textBox right">
-                        <h3>Head explain sentence</h3>
-                        <p>왜 VoiceMall를 써야 하는가? VoiceMall를 사용했을때 기업에게 생기는 유익은 무엇인가요?</p>
-                    </div>
-                    <img class="mainImg02" src="./images/maingImg_02.png" alt="">
-                </div>
-                <div>
-                    <div class="textBox">
-                        <h3>VoiceMall 은 </h3>
-                        <p>
-                            VoiceMall를 어떻게 사용할 수 있나요?<br/>
-                            Voice는 생성을 원하는 개인 혹은 기업이 자유롭게 만들 수 있습니다. <br/>
-                            Voice를 만들어보세요
-                        </p>
-                    </div>
-                    <img class="mainImg03" src="./images/maingImg_03.png" alt="">
+                <div class="signBox">
+                    <a href="#"><img src="../images/facebook-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/google-icon.png" alt=""></a>
+                    <p>Not a member? <a href="#">Sign up</a></p>
                 </div>
             </div>
-        </div>
-
-        <div class="sales">
-            <p>현재까지 Voice Mall은 \192.168,798,000 의 매출이 발생하고 있습니다.</p>
         </div>
         <!-- 푸터 -->
         <footer>

@@ -1,0 +1,369 @@
+@charset "UTF-8";
+.signWrap {
+  width: 1240px;
+  margin: 55px auto 0px;
+  position: relative;
+}
+
+.signWrap > h2 {
+  font-family: NanumSquareOTFB;
+  font-size: 60px;
+  letter-spacing: -2.5px;
+  text-align: center;
+  color: #282828;
+}
+
+.signWrap > h2 span {
+  display: block;
+  font-family: NanumSquareOTFB;
+  font-size: 40px;
+  letter-spacing: -1.7px;
+  text-align: center;
+  color: #282828;
+}
+
+.signWrap .loginBox {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.signWrap .loginBox > li {
+  margin-bottom: 25px;
+}
+
+.signWrap .loginBox > li label {
+  display: block;
+  font-family: NanumSquareOTFB;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -2.5px;
+  color: #282828;
+  margin-bottom: 10px;
+}
+
+.signWrap .loginBox > li input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 30px;
+  padding-left: 30px;
+  background-color: #ffffff;
+  border: solid 1px #282828;
+  outline: none;
+  font-family: NanumSquareOTFR;
+  font-size: 30px;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.signWrap .loginBox > li a {
+  font-family: NanumSquareOTFR;
+  font-size: 22px;
+  color: #afafaf;
+}
+
+.signWrap .loginBox > li button {
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #282828;
+  font-family: NanumSquareOTFB;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.signWrap .lineBox {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.signWrap .lineBox hr {
+  display: inline-block;
+  width: 370px;
+  height: 1px;
+  background: #282828;
+  border: none;
+  vertical-align: middle;
+}
+
+.signWrap .lineBox span {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  font-family: NanumSquareOTFB;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -2.5px;
+  line-height: 1;
+  color: #282828;
+  margin: 0 10px;
+}
+
+.signWrap .signBox {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signWrap .signBox.step1 {
+  margin: 50px auto;
+}
+
+.signWrap .signBox.step1 > a {
+  margin: 40px 40px 30px;
+}
+
+.signWrap .signBox > a {
+  display: inline-block;
+  margin: 40px 20px 30px;
+}
+
+.signWrap .signBox p {
+  font-family: NanumSquareOTFR;
+  font-size: 22px;
+  color: #afafaf;
+}
+
+.signWrap .signBox p a {
+  font-family: NanumSquareOTFB;
+  font-weight: bold;
+  color: #4505e0;
+}
+
+.signWrap .stepBox {
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+
+.signWrap .btnBox {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.signWrap .btnBox > button {
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #282828;
+  font-family: NanumSquareOTFB;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 55px 0 25px;
+  cursor: pointer;
+}
+
+.signWrap .btnBox p {
+  font-family: NanumSquareOTFR;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #afafaf;
+}
+
+.signWrap .btnBox p > a {
+  font-family: NanumSquareOTFB;
+  color: #4505e0;
+}
+
+.signWrap .signUpWrap {
+  width: 630px;
+  margin: 0 auto;
+}
+
+.signWrap .signUpWrap > ul > li {
+  margin-bottom: 15px;
+}
+
+.signWrap .signUpWrap > ul > li h3 {
+  margin-bottom: 10px;
+  font-family: NanumSquareOTFB;
+  font-size: 30px;
+  color: #282828;
+}
+
+.signWrap .signUpWrap > ul > li input[type=text] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: solid 1px #282828;
+  font-size: 30px;
+  color: #282828;
+  padding-left: 30px;
+  outline: none;
+}
+
+.signWrap .signUpWrap > ul > li input[type=text].error {
+  border: solid 3px red;
+}
+
+.signWrap .signUpWrap > ul > li button {
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #282828;
+  margin-top: 20px;
+  border: none;
+  font-family: NanumSquareOTFB;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.signWrap .signUpWrap > ul > li.half {
+  float: left;
+  width: 48%;
+}
+
+.signWrap .signUpWrap > ul > li.half.right {
+  float: right;
+}
+
+.signWrap .signUpWrap > ul > li .selectBox {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  line-height: 56px;
+  border-radius: 30px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #282828;
+  font-family: NanumSquareOTFR;
+  font-size: 30px;
+  color: #282828;
+  cursor: pointer;
+}
+
+.signWrap .signUpWrap > ul > li .selectBox::after {
+  content: "∨";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.signWrap .signUpWrap > ul > li .selectBox ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.signWrap .signUpWrap > ul > li .selectBox.country {
+  width: 300px;
+}
+
+.signWrap .signUpWrap > ul > li.phone input {
+  display: inline-block;
+  width: 454px;
+}
+
+.signWrap .signUpWrap .chBox {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.signWrap .signUpWrap .chBox input[type="checkbox"] {
+  display: none;
+}
+
+.signWrap .signUpWrap .chBox label {
+  font-family: NanumSquareOTFR;
+  font-size: 26px;
+  color: #282828;
+}
+
+.signWrap .signUpWrap .chBox input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: url(../images/check-sprite.png) 0 0 no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.signWrap .signUpWrap .chBox input[type="checkbox"]:checked + label span {
+  background: url(../images/check-sprite.png) 0 100% no-repeat;
+  background-size: 100%;
+}
+
+.signWrap .signUpWrap > p {
+  font-family: NanumSquareOTFR;
+  font-size: 22px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #afafaf;
+}
+
+.signWrap .signUpWrap > p > span {
+  font-family: NanumSquareOTFB;
+  color: #4505e0;
+}
+
+.signWrap .signUpEmailWrap {
+  width: 600px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.signWrap .signUpEmailWrap h3 {
+  font-family: NanumSquareOTFB;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin: 30px 0;
+  color: #282828;
+}
+
+.signWrap .signUpEmailWrap > div p {
+  font-family: NanumSquareOTFR;
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: #282828;
+}
+
+.signWrap .signUpEmailWrap button {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  margin: 100px 0;
+  background-color: #282828;
+  font-family: NanumSquareOTFB;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.signWrap .signUpEmailWrap > p {
+  font-family: NanumSquareOTFR;
+  font-size: 22px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #afafaf;
+}
+
+.signWrap .signUpEmailWrap > p > span {
+  font-family: NanumSquareOTFB;
+  color: #4505e0;
+}
+/*# sourceMappingURL=sign.css.map */

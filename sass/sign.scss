@@ -1,0 +1,336 @@
+.signWrap{
+    width: 1240px;
+    margin: 55px auto 0px;
+    position: relative;
+    > h2 {
+        font-family: NanumSquareOTFB;
+        font-size: 60px;
+        letter-spacing: -2.5px;
+        text-align: center;
+        color: #282828;
+        span {
+            display:block;
+            font-family: NanumSquareOTFB;
+            font-size: 40px;
+            letter-spacing: -1.7px;
+            text-align: center;
+            color: #282828;
+        }
+    }
+
+    // 로그인 박스
+    .loginBox {
+        width:600px;
+        margin:0 auto;
+        > li {
+            margin-bottom:25px;
+            label{
+                display:block;
+                font-family: NanumSquareOTFB;
+                font-size: 30px;
+                font-weight: bold;
+                letter-spacing: -2.5px;
+                color: #282828;
+                margin-bottom:10px;
+            }
+            input {
+                display:block;
+                width:100%;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 30px;
+                padding-left:30px;
+                background-color: #ffffff;
+                border: solid 1px #282828;
+                outline: none;
+                font-family: NanumSquareOTFR;
+                font-size: 30px;
+                color: #282828;
+                box-sizing: border-box;
+            }
+            a {
+                font-family: NanumSquareOTFR;
+                font-size: 22px;
+                color: #afafaf;
+            }
+            button{
+                width:100%;
+                height: 60px;
+                border-radius: 30px;
+                background-color: #282828;
+                font-family: NanumSquareOTFB;
+                font-size: 30px;
+                font-weight: bold;
+                color: #ffffff;
+                border:none;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+
+    // 라인박스
+    .lineBox {
+        width:800px;
+        text-align: center;
+        margin:0 auto;
+        hr {
+            display:inline-block;
+            width:370px; height:1px;
+            background:#282828;
+            border:none;
+            vertical-align: middle;
+        }
+        span { 
+            display:inline-block;
+            position: relative;
+            top: 5px;
+            font-family: NanumSquareOTFB;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: -2.5px;
+            line-height: 1;
+            color: #282828;
+            margin:0 10px;
+        }
+    }
+
+    // 가입박스
+    .signBox {
+        width:600px; margin:0 auto;
+        text-align: center;
+        &.step1{
+            margin:50px auto;
+            > a{ margin:40px 40px 30px;}
+        }
+        > a {
+            display:inline-block;
+            margin:40px 20px 30px;
+        }
+        p {
+            font-family: NanumSquareOTFR;
+            font-size: 22px;
+            color: #afafaf;
+            a {
+                font-family: NanumSquareOTFB;
+                font-weight: bold;
+                color: #4505e0;
+            }
+        }
+    }
+
+    // 스텝박스
+    .stepBox{
+        position: absolute;
+        top:120px; right:0;
+    }
+
+    // btnBox
+    .btnBox {
+        width:600px;
+        margin:0 auto;
+        > button {
+            width:100%;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #282828;
+            font-family: NanumSquareOTFB;
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffffff;
+            margin:55px 0 25px;
+            cursor: pointer;
+        }
+        p {
+            font-family: NanumSquareOTFR;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            color: #afafaf;
+            > a {
+                font-family: NanumSquareOTFB;
+                color: #4505e0;
+            }
+        }
+    }
+
+    // signUP
+    .signUpWrap{
+        width:630px; margin:0 auto;
+        > ul{
+            > li {
+                margin-bottom:15px;
+                h3 {
+                    margin-bottom:10px;
+                    font-family: NanumSquareOTFB;
+                    font-size: 30px;
+                    color: #282828;
+                }
+                input[type=text] {
+                    box-sizing:border-box;
+                    width:100%;
+                    height: 60px;
+                    border-radius: 30px;
+                    background-color: #ffffff;
+                    border: solid 1px #282828;
+                    font-size: 30px;
+                    color: #282828;
+                    padding-left:30px;
+                    outline: none;
+                    &.error {
+                        border:solid 3px red;
+                    }
+                }
+                // singupbutton
+                button{
+                    width:100%;
+                    height: 60px;
+                    border-radius: 30px;
+                    background-color: #282828;
+                    margin-top:20px;
+                    border:none;
+                    font-family: NanumSquareOTFB;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+    
+                // half
+                &.half {
+                    float:left;
+                    width:48%;
+                    &.right {
+                        float:right;
+                    }
+                }
+                
+                // selectBox
+                .selectBox {
+                    position:relative;
+                    display:inline-block;
+                    width: 150px;
+                    height: 60px;
+                    line-height: 56px;
+                    border-radius: 30px;
+                    margin-right:20px;
+                    text-align: center;
+                    background-color: #ffffff;
+                    border: solid 1px #282828;
+                    font-family: NanumSquareOTFR;
+                    font-size: 30px;
+                    color: #282828;
+                    cursor: pointer;
+                    &::after {
+                        content:"∨";
+                        display:block;
+                        position: absolute;
+                        top:50%; right:10px;
+                        transform: translateY(-50%);
+                    }
+                    ul {
+                        display:none;
+                        position:absolute;
+                        top:100%;
+                        width:100%;
+                    }
+    
+                    &.country {
+                        width:300px;
+                    }
+                }
+    
+                &.phone{
+                    input {
+                        display:inline-block;
+                        width:454px;
+                    }
+                }
+            }
+        }
+        // 체크박스튜닝
+        .chBox{
+            display:inline-block;
+            margin-right:10px;
+            input[type="checkbox"] {
+                display:none;
+            }
+            label {
+                font-family: NanumSquareOTFR;
+                font-size: 26px;
+                color: #282828;
+            }
+            input[type="checkbox"] + label span {
+                display:inline-block;
+                width:60px;
+                height:60px;
+                margin:-2px 10px 0 0;
+                vertical-align:middle;
+                background:url(../images/check-sprite.png) 0 0 no-repeat;
+                background-size: 100%;
+                cursor:pointer;
+            }
+            input[type="checkbox"]:checked + label span {
+                background:url(../images/check-sprite.png) 0 100%  no-repeat;
+                background-size: 100%;
+            }
+        }
+        > p {
+            font-family: NanumSquareOTFR;
+            font-size: 22px;
+            letter-spacing: -0.4px;
+            text-align: center;
+            color: #afafaf;
+            > span {
+                font-family: NanumSquareOTFB;
+                color: #4505e0;
+            }
+        }
+    }
+
+    //  signUpEmailWrap
+    .signUpEmailWrap {
+        width:600px; margin:150px auto;
+        text-align: center;
+        h3 {
+            font-family: NanumSquareOTFB;
+            font-size: 40px;
+            letter-spacing: -1px;
+            margin:30px 0;
+            color: #282828;
+        }
+        > div {
+            p {
+                font-family: NanumSquareOTFR;
+                font-size: 22px;
+                margin-bottom:20px;
+                letter-spacing: -0.6px;
+                text-align: center;
+                color: #282828;
+            }
+        }
+        button {
+            width:100%;
+            height: 60px;
+            border:none;
+            border-radius: 30px;
+            margin:100px 0;
+            background-color: #282828;
+            font-family: NanumSquareOTFB;
+            font-size: 30px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        > p {
+            font-family: NanumSquareOTFR;
+            font-size: 22px;
+            letter-spacing: -0.4px;
+            text-align: center;
+            color: #afafaf;
+            > span {
+                font-family: NanumSquareOTFB;
+                color: #4505e0;
+            }
+        }
+    }
+}
