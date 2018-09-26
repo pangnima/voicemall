@@ -224,7 +224,6 @@ header {
                     }
                 }
             }
-           
         }
     }
 }
@@ -581,6 +580,58 @@ footer{
             }
         }
 
+        // notsignin
+        .singAlert{
+            width: 849px;
+            padding:80px 0;
+            border-radius: 8px;
+            background-color: #ffffff;
+            border: solid 1px #979797;
+            position: absolute;
+            top:50%; left:50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            > h2 {
+                font-family: NanumSquareOTFB;
+                font-size: 36px;
+                text-align: center;
+                color: #282828;
+                line-height: 1.4;
+            }
+            > p {
+                font-family: NanumSquareOTFR;
+                font-size: 24px;
+                line-height: 1.4;
+                font-weight: normal;
+                text-align: center;
+                color: #d0021b;
+            }
+            .btn_close{
+                position: absolute;
+                top:15px; right:15px;
+
+            }
+            .btn_signIN {
+                display:inline-block;
+                width: 280px;
+                height: 49px; line-height: 49px;
+                border-radius: 24.5px;
+                background-color: #282828;
+                margin-top:60px;
+                font-family: NanumSquareOTFB;
+                font-size: 24px;
+                font-weight: bold;
+                letter-spacing: -0.4px;
+                color: #ffffff;
+            }
+
+            &.save {
+                padding:50px 0;
+                > h2 { font-size:30px; margin-top:30px;}
+                > p { font-size:22px; margin-top:30px;}
+                .btn_signIN{ margin-top:30px;}
+            }
+        }
     }
 }   
 
