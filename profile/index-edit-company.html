@@ -150,22 +150,30 @@
                         <div class="profileImg">
                             <div class="imgBox">
                                 <img src="../images/company-icon.png" alt="">
+                                <a href="#" class="btnChange">+ Business License</a>
                             </div>
                         </div>
                         <div class="profileTxt">
                             <dl>
                                 <dt>Company Name</dt>
-                                <dd>AAA</dd>
+                                <dd><input type="text" placeholder="AAA"></dd>
                             </dl>
                             <dl>
                                 <dt>Business License Number</dt>
-                                <dd>123-456-789</dd>
+                                <dd><input type="text" placeholder="123-456-789"></dd>
                             </dl>
                             <dl>
                                 <dt>Location</dt>
-                                <dd>United State</dd>
+                                <dd>
+                                    <div class="selectBox">United State
+                                        <ul class="usage">
+                                            <li>United State</li>
+                                            <li>Korea</li>
+                                        </ul>
+                                    </div>
+                                </dd>
                             </dl>
-                            <a href="#" class="btnEdit">Edit</a>
+                            <a href="#" class="btnEdit">Save</a>
                         </div>
                     </div>
 
@@ -173,91 +181,68 @@
                 <div class="profileList">
                     <span>Payment Method</span>
                     <table class="paymentList">
-                            <colgroup>
-                                <col width="26%">
-                                <col width="24%">
-                                <col width="14%">
-                                <col width="8%">
-                                <col width="12%">
-                                <col width="16%">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>Credit Card</th>
-                                    <th>Name on card</th>
-                                    <th colspan="4" class="left">Expires on</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Visa ending in 2508</td>
-                                    <td>Jain Luis</td>
-                                    <td>03 / 2020</td>
-                                    <td><a href="#">Edit</a></td>
-                                    <td><a href="#">Remove</a></td>
-                                    <td>Default</td>
-                                </tr>
-                                <tr>
-                                    <td>JCB ending in 3360</td>
-                                    <td>SR universe lnc.</td>
-                                    <td>08 / 2019</td>
-                                    <td><a href="#">Edit</a></td>
-                                    <td><a href="#">Remove</a></td>
-                                    <td>Default</td>
-                                </tr>
-                                <tr>
-                                    <td>Master ending in 2504</td>
-                                    <td>Jain Luis</td>
-                                    <td>11/2023</td>
-                                    <td><a href="#">Edit</a></td>
-                                    <td><a href="#">Remove</a></td>
-                                    <td>Current Default</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <colgroup>
+                            <col width="26%">
+                            <col width="24%">
+                            <col width="14%">
+                            <col width="8%">
+                            <col width="12%">
+                            <col width="16%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>Credit Card</th>
+                            <th>Name on card</th>
+                            <th colspan="4" class="left">Expires on</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="6">
+                                <div class="notYet">
+                                    <p>There is no credit card registered yet.<br>
+                                        Please register your credit card for purchase.
+                                    </p> <br>
+                                    <a href="#" class="btnCard">+ Add a card</a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="profileList">
                     <span>Bank Accounts</span>
                     <table class="paymentList">
-                            <colgroup>
-                                <col width="26%">
-                                <col width="38%">
-                                <col width="8%">
-                                <col width="12%">
-                                <col width="16%">
-                            </colgroup>
-                            <thead>
-                            <tr>
-                                <th>Bank Name</th>
-                                <th colspan="4">Account Number</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Bank of America</td>
-                                <td>14681021545815478</td>
-                                <td><a href="#">Edit</a></td>
-                                <td><a href="#">Remove</a></td>
-                                <td>Default</td>
-                            </tr>
-                            <tr>
-                                <td>JCB ending in 3360</td>
-                                <td>SR universe lnc.</td>
-                                <td><a href="#">Edit</a></td>
-                                <td><a href="#">Remove</a></td>
-                                <td>Default</td>
-                            </tr>
-                            <tr>
-                                <td>Master ending in 2504</td>
-                                <td>Jain Luis</td>
-                                <td><a href="#">Edit</a></td>
-                                <td><a href="#">Remove</a></td>
-                                <td>Current Default</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        <colgroup>
+                            <col width="26%">
+                            <col width="38%">
+                            <col width="8%">
+                            <col width="12%">
+                            <col width="16%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>Bank Name</th>
+                            <th colspan="4">Account Number</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="5">
+                                <div class="notYet">
+                                    <p>
+                                        There is no Bank Account registered yet. <br>
+                                        Please register your Back Account
+                                    </p>
+                                    <br>
+                                    <a href="#" class="btnCard">+ Add Bank Account</a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <a href="#" class="btnDelete">Delete Account</a>
+                <a href="#" class="btnDelete active">Delete Account</a>
             </div>
         </div>
         <!--//content-->

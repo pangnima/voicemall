@@ -1,5 +1,13 @@
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder {color:#282828;}
+/* Firefox 19+ */
+::-moz-placeholder {color:#282828;}
+/* IE 10+ */
+:-ms-input-placeholder {color:#282828;}
+
+
 .profileWrap{
-    width:1090px;
+    width:1240px;
     min-height: 1000px;
     margin:0 auto;
     position: relative;
@@ -43,9 +51,9 @@
 
 //오른쪽 콘텐츠
 .profileContent{
-    padding-left: 230px;
+    padding-left: 250px;
+    padding-right: 100px;
 }
-
 .profileCard{
     background: #fff;
     padding: 20px 25px;
@@ -64,7 +72,26 @@
             float: left;
             margin-right: 20px;
             text-align: center;
-            img{  }
+            position: relative;
+            .imgBox{
+                width: 100%;
+                display: table;
+                > img{  }
+                .btnChange{
+                    display:inline-block;
+                    width: 100px;
+                    line-height: 20px;
+                    border-radius: 9999px;
+                    color:#282828;
+                    border:1px solid #282828;
+                    font-size: 11px;
+                    margin-top: 16px;
+                    >img{
+                        vertical-align: middle;
+                    }
+                }
+            }
+
         }
         .profileTxt{
             width: calc(100% - 220px);
@@ -80,15 +107,56 @@
                     font-size: 18px;
                     letter-spacing: -0.9px;
                     color: #282828;
-                    position: relative;
-                    top: -5px;
+                    .name{
+                        width: 150px;
+                    }
+                    input[type="text"] {
+                        border: 1px solid #282828;
+                        height: 25px;
+                        border-radius: 9999px;
+                        padding: 0 5px;
+                        font-size: 18px;
+                    }
                 }
                 &.half{
                     display: inline-block;
                     width: 240px;
                 }
+                &.wideHalf{
+                    display: inline-block;
+                    width: 320px;
+                }
+                &.shortHalf{
+                    display: inline-block;
+                }
+                // 체크박스튜닝
+                .chBox{
+                    display:inline-block;
+                    margin-right:10px;
+                    input[type="checkbox"] {
+                        display:none;
+                    }
+                    label {
+                        font-weight: normal;
+                        color: #282828;
+                    }
+                    input[type="checkbox"] + label span {
+                        display:inline-block;
+                        width:22px;
+                        height:22px;
+                        margin:-2px 10px 0 0;
+                        vertical-align:middle;
+                        background:url(../images/check-sprite.png) 0 0 no-repeat;
+                        background-size: 100%;
+                        cursor:pointer;
+                    }
+                    input[type="checkbox"]:checked + label span {
+                        background:url(../images/check-sprite.png) 0 100%  no-repeat;
+                        background-size: 100%;
+                    }
+                }
             }
-            .btn-edit{
+            .btnEdit{
                 position: absolute;
                 right:0;
                 bottom:0;
@@ -101,6 +169,61 @@
                 font-size:16px;
                 border-radius: 17px;
             }
+            .selectBox{
+                position: relative;
+                top: 3px;
+                width: 130px;
+                height: 27px;
+                line-height: 27px;
+                border-radius: 25px;
+                display: inline-block;
+                border: solid 1px #282828;
+                cursor: pointer;
+                letter-spacing: -0.8px;
+                color: #282828;
+                box-sizing: border-box;
+                font-size: 18px;
+                padding: 0 5px;
+                &:after {
+                    content:'∨';
+                    display:inline-block;
+                    position:absolute;
+                    top:50%; right:5px;
+                    transform: translate(-50%,-50%);
+                }
+                &.active {
+                    border-radius: 15px 15px 0 0;
+                    background: #fff;
+                    > ul { display:block !important; }
+                }
+                > ul {
+                    &.usage{
+                        display:none;
+                        position: absolute;
+                        left:0; top:100%;
+                        width:100%;
+                        height: 450px;
+                        overflow-y: scroll;
+                        background:#fff;
+                        border: solid 1px #282828;
+                        border-top:none;
+                        padding: 10px 0 0 20px;
+                        box-sizing:border-box;
+                        z-index: 10;
+                        border-radius:0 0 15px 15px;
+                        > li {
+                            font-size: 22px;
+                            letter-spacing: -0.8px;
+                            color: #afafaf;
+                            > ul {
+                                padding-left:20px;
+                                letter-spacing: -0.8px;
+                                color: #282828;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -109,6 +232,7 @@
     padding: 20px 25px;
     border-radius: 10px;
     margin-bottom: 20px;
+    height: 280px;
     span{
         font-weight: bold;
         font-size:20px;
@@ -132,7 +256,41 @@
         tbody > tr td {
             padding: 4px 0;
             letter-spacing: -0.9px;
+            .notYet{
+                color:#282828;
+                text-align: center;
+                padding: 20px 0;
+                p{
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+                .btnCard{
+                    display: inline-block;
+                    padding: 0 10px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: -0.4px;
+                    color: #fff;
+                    background: #282828;
+                    text-align: center;
+                    border-radius: 999px;
+                    margin: 10px auto;
+
+                }
+            }
+
         }
+    }
+}
+.btnDelete{
+    display: block;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: -0.4px;
+    color: #282828;
+    &.active{
+        color: #ffb000;
     }
 }
 
