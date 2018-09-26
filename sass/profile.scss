@@ -2,7 +2,6 @@
     width:1090px;
     min-height: 1000px;
     margin:0 auto;
-    border:1px solid red;
     position: relative;
     padding-top: 40px;
 }
@@ -24,7 +23,7 @@
 }
 .profileList1{
     li{
-        padding: 14px 0;
+        padding: 24px 0;
         border-bottom:2px solid #afafaf;
         font-size:14px;
         a{color: #282828;}
@@ -34,7 +33,7 @@
     }
 }
 .profileList2{
-    padding: 14px 0;
+    padding: 24px 0;
     border-bottom:2px solid #afafaf;
     font-size:14px;
     li{
@@ -45,32 +44,34 @@
 //오른쪽 콘텐츠
 .profileContent{
     padding-left: 230px;
-    border:1px solid blue;
 }
 
 .profileCard{
     background: #fff;
     padding: 20px 25px;
     border-radius: 10px;
-    strong{
+    margin-bottom: 20px;
+    span{
+        font-weight: bold;
         font-size:20px;
         display: block;
         margin-bottom: 10px;
     }
     .profileCardInner{
         overflow: hidden;
-        margin-bottom: 20px;
         .profileImg{
             width: 140px;
             float: left;
+            margin-right: 20px;
             text-align: center;
-            img{ padding: 70px 0;}
+            img{  }
         }
         .profileTxt{
-            width: calc(100% - 250px);
+            width: calc(100% - 220px);
             float: left;
             padding-left: 50px;
             border-left:2px solid #afafaf;
+            position: relative;
             dl{
                 display: block;
                 margin-bottom: 5px;
@@ -89,14 +90,49 @@
             }
             .btn-edit{
                 position: absolute;
-                right:25px;
-                bottom:20px;
+                right:0;
+                bottom:0;
                 display: block;
-                background: #000;
+                width: 100px;
+                background: #282828;
                 line-height: 30px;
                 text-align: center;
                 color:#fff;
+                font-size:16px;
+                border-radius: 17px;
             }
         }
     }
 }
+.profileList{
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    span{
+        font-weight: bold;
+        font-size:20px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .paymentList{
+        width: 100%;
+        table-layout: fixed;
+        font-size:18px;
+        thead > tr th {
+            padding: 4px 0;
+            border-bottom:1px solid #979797;
+            text-align:left;
+            font-weight: bold;
+        }
+        tbody > tr:first-child td {
+            color: #4505e0;
+            > a {color: #4505e0;}
+        }
+        tbody > tr td {
+            padding: 4px 0;
+            letter-spacing: -0.9px;
+        }
+    }
+}
+
