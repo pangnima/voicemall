@@ -49,7 +49,7 @@
     }
 }
 
-//오른쪽 콘텐츠
+//index 오른쪽 콘텐츠
 .profileContent{
     padding-left: 250px;
     padding-right: 100px;
@@ -293,4 +293,16 @@
         color: #ffb000;
     }
 }
+
+// 카드 오른쪽 컨텐츠
+.profileBody{
+    padding: 30px 60px;
+    background: #fff;
+    h3{
+      font-size:40px;
+    }
+  }
+
+
+
 
