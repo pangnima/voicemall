@@ -7,426 +7,663 @@
 
 /*common*/
 input[type="text"] {
-    border: 1px solid #282828;
-    height: 25px;
-    border-radius: 9999px;
-    padding: 0 5px;
-    font-size: 18px;
+  border: 1px solid #282828;
+  height: 25px;
+  border-radius: 9999px;
+  padding: 0 5px;
+  font-size: 18px;
 }
 
 .selectBox{
-    position: relative;
-    top: 3px;
-    width: 130px;
-    height: 27px;
-    line-height: 27px;
-    border-radius: 25px;
-    display: inline-block;
-    border: solid 1px #282828;
-    cursor: pointer;
-    letter-spacing: -0.8px;
-    color: #282828;
-    box-sizing: border-box;
-    font-size: 18px;
-    padding: 0 5px;
-    &:after {
-        content:'∨';
-        display:inline-block;
-        position:absolute;
-        top:50%; right:5px;
-        transform: translate(-50%,-50%);
-    }
-    &.active {
-        border-radius: 15px 15px 0 0;
-        background: #fff;
-        > ul { display:block !important; }
-    }
-    > ul {
-        &.usage{
-            display:none;
-            position: absolute;
-            left:0; top:100%;
-            width:100%;
-            height: 450px;
-            overflow-y: scroll;
-            background:#fff;
-            border: solid 1px #282828;
-            border-top:none;
-            padding: 10px 0 0 20px;
-            box-sizing:border-box;
-            z-index: 10;
-            border-radius:0 0 15px 15px;
-            > li {
-                font-size: 22px;
-                letter-spacing: -0.8px;
-                color: #afafaf;
-                > ul {
-                    padding-left:20px;
-                    letter-spacing: -0.8px;
-                    color: #282828;
-                }
-            }
+  position: relative;
+  top: 3px;
+  width: 130px;
+  height: 27px;
+  line-height: 27px;
+  border-radius: 25px;
+  display: inline-block;
+  border: solid 1px #282828;
+  cursor: pointer;
+  letter-spacing: -0.8px;
+  color: #282828;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 0 5px;
+  &:after {
+    content:'∨';
+    display:inline-block;
+    position:absolute;
+    top:50%; right:5px;
+    transform: translate(-50%,-50%);
+  }
+  &.active {
+    border-radius: 15px 15px 0 0;
+    background: #fff;
+    > ul { display:block !important; }
+  }
+  > ul {
+    &.usage{
+      display:none;
+      position: absolute;
+      left:0; top:100%;
+      width:100%;
+      height: 450px;
+      overflow-y: scroll;
+      background:#fff;
+      border: solid 1px #282828;
+      border-top:none;
+      padding: 10px 0 0 20px;
+      box-sizing:border-box;
+      z-index: 10;
+      border-radius:0 0 15px 15px;
+      > li {
+        font-size: 22px;
+        letter-spacing: -0.8px;
+        color: #afafaf;
+        > ul {
+          padding-left:20px;
+          letter-spacing: -0.8px;
+          color: #282828;
         }
+      }
     }
+  }
 }
 
 .profileWrap{
-    width:1240px;
-    margin:0 auto;
-    position: relative;
-    padding-top: 40px;
+  width:1240px;
+  margin:0 auto;
+  position: relative;
+  padding-top: 40px;
 }
 
 // 왼쪽 메뉴
 .profileLnb {
-    position: absolute;
-    left:0; top:0;
-    width: 215px;
-    padding-top: 40px;
+  position: absolute;
+  left:0; top:0;
+  width: 215px;
+  padding-top: 40px;
 }
 .userName{
-    font-size:32px;
-    letter-spacing: -1.3px;
-    color: #282828;
-    line-height: 1;
-    h2{
-        letter-spacing: -1.6px;
-    }
+  font-size:32px;
+  letter-spacing: -1.3px;
+  color: #282828;
+  line-height: 1;
+  h2{
+    letter-spacing: -1.6px;
+  }
 }
 .profileList1{
-    li{
-        padding: 24px 0;
-        border-bottom:2px solid #afafaf;
-        font-size:14px;
-        a{color: #282828;}
-        &.active{
-            a{color: #ffb000;}
-        }
-    }
-}
-.profileList2{
+  li{
     padding: 24px 0;
     border-bottom:2px solid #afafaf;
     font-size:14px;
-    li{
-        padding: 5px 0;
+    a{color: #282828;}
+    &.active{
+      a{color: #ffb000;}
     }
+  }
+}
+.profileList2{
+  padding: 24px 0;
+  border-bottom:2px solid #afafaf;
+  font-size:14px;
+  li{
+    padding: 5px 0;
+  }
 }
 
 //index 오른쪽 콘텐츠
 .profileContent{
-    padding-left: 250px;
-    padding-right: 100px;
+  padding-left: 250px;
+  padding-right: 100px;
 }
 .profileCard{
-    background: #fff;
-    padding: 20px 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    span{
-        font-weight: bold;
-        font-size:20px;
-        display: block;
-        margin-bottom: 10px;
-    }
-    .profileCardInner{
-        overflow: hidden;
-        .profileImg{
-            width: 140px;
-            float: left;
-            margin-right: 20px;
-            text-align: center;
-            position: relative;
-            .imgBox{
-                width: 100%;
-                display: table;
-                > img{  }
-                .btnChange{
-                    display:inline-block;
-                    width: 100px;
-                    line-height: 20px;
-                    border-radius: 9999px;
-                    color:#282828;
-                    border:1px solid #282828;
-                    font-size: 11px;
-                    margin-top: 16px;
-                    >img{
-                        vertical-align: middle;
-                    }
-                }
-            }
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  span{
+    font-weight: bold;
+    font-size:20px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .profileCardInner{
+    overflow: hidden;
+    .profileImg{
+      width: 140px;
+      float: left;
+      margin-right: 20px;
+      text-align: center;
+      position: relative;
+      .imgBox{
+        width: 100%;
+        display: table;
+        > img{  }
+        .btnChange{
+          display:inline-block;
+          width: 100px;
+          line-height: 20px;
+          border-radius: 9999px;
+          color:#282828;
+          border:1px solid #282828;
+          font-size: 11px;
+          margin-top: 16px;
+          >img{
+            vertical-align: middle;
+          }
+        }
+      }
 
-        }
-        .profileTxt{
-            width: calc(100% - 220px);
-            float: left;
-            padding-left: 50px;
-            border-left:2px solid #afafaf;
-            position: relative;
-            dl{
-                display: block;
-                margin-bottom: 5px;
-                dt{font-size:14px;color: #afafaf;}
-                dd{
-                    font-size: 18px;
-                    letter-spacing: -0.9px;
-                    color: #282828;
-                    .name{
-                        width: 150px;
-                    }
-                    input[type="text"] {
-                        border: 1px solid #282828;
-                        height: 25px;
-                        border-radius: 9999px;
-                        padding: 0 5px;
-                        font-size: 18px;
-                    }
-                }
-                &.half{
-                    display: inline-block;
-                    width: 240px;
-                }
-                &.wideHalf{
-                    display: inline-block;
-                    width: 320px;
-                }
-                &.shortHalf{
-                    display: inline-block;
-                }
-                // 체크박스튜닝
-                .chBox{
-                    display:inline-block;
-                    margin-right:10px;
-                    input[type="checkbox"] {
-                        display:none;
-                    }
-                    label {
-                        font-weight: normal;
-                        color: #282828;
-                    }
-                    input[type="checkbox"] + label span {
-                        display:inline-block;
-                        width:22px;
-                        height:22px;
-                        margin:-2px 10px 0 0;
-                        vertical-align:middle;
-                        background:url(../images/check-sprite.png) 0 0 no-repeat;
-                        background-size: 100%;
-                        cursor:pointer;
-                    }
-                    input[type="checkbox"]:checked + label span {
-                        background:url(../images/check-sprite.png) 0 100%  no-repeat;
-                        background-size: 100%;
-                    }
-                }
-            }
-            .btnEdit{
-                position: absolute;
-                right:0;
-                bottom:0;
-                display: block;
-                width: 100px;
-                background: #282828;
-                line-height: 30px;
-                text-align: center;
-                color:#fff;
-                font-size:16px;
-                border-radius: 17px;
-            }
-        }
     }
+    .profileTxt{
+      width: calc(100% - 220px);
+      float: left;
+      padding-left: 50px;
+      border-left:2px solid #afafaf;
+      position: relative;
+      dl{
+        display: block;
+        margin-bottom: 5px;
+        dt{font-size:14px;color: #afafaf;}
+        dd{
+          font-size: 18px;
+          letter-spacing: -0.9px;
+          color: #282828;
+          .name{
+            width: 150px;
+          }
+          input[type="text"] {
+            border: 1px solid #282828;
+            height: 25px;
+            border-radius: 9999px;
+            padding: 0 5px;
+            font-size: 18px;
+          }
+        }
+        &.half{
+          display: inline-block;
+          width: 240px;
+        }
+        &.wideHalf{
+          display: inline-block;
+          width: 320px;
+        }
+        &.shortHalf{
+          display: inline-block;
+        }
+        // 체크박스튜닝
+        .chBox{
+          display:inline-block;
+          margin-right:10px;
+          input[type="checkbox"] {
+            display:none;
+          }
+          label {
+            font-weight: normal;
+            color: #282828;
+          }
+          input[type="checkbox"] + label span {
+            display:inline-block;
+            width:22px;
+            height:22px;
+            margin:-2px 10px 0 0;
+            vertical-align:middle;
+            background:url(../images/check-sprite.png) 0 0 no-repeat;
+            background-size: 100%;
+            cursor:pointer;
+          }
+          input[type="checkbox"]:checked + label span {
+            background:url(../images/check-sprite.png) 0 100%  no-repeat;
+            background-size: 100%;
+          }
+        }
+      }
+      .btnEdit{
+        position: absolute;
+        right:0;
+        bottom:0;
+        display: block;
+        width: 100px;
+        background: #282828;
+        line-height: 30px;
+        text-align: center;
+        color:#fff;
+        font-size:16px;
+        border-radius: 17px;
+      }
+    }
+  }
 }
 .profileList{
-    background: #fff;
-    padding: 20px 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    height: 280px;
-    span{
-        font-weight: bold;
-        font-size:20px;
-        display: block;
-        margin-bottom: 10px;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 280px;
+  span{
+    font-weight: bold;
+    font-size:20px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .paymentList{
+    width: 100%;
+    table-layout: fixed;
+    font-size:18px;
+    thead > tr th {
+      padding: 4px 0;
+      border-bottom:1px solid #979797;
+      text-align:left;
+      font-weight: bold;
     }
-    .paymentList{
-        width: 100%;
-        table-layout: fixed;
-        font-size:18px;
-        thead > tr th {
-            padding: 4px 0;
-            border-bottom:1px solid #979797;
-            text-align:left;
-            font-weight: bold;
+    tbody > tr:first-child td {
+      color: #4505e0;
+      > a {color: #4505e0;}
+    }
+    tbody > tr td {
+      padding: 4px 0;
+      letter-spacing: -0.9px;
+      .notYet{
+        color:#282828;
+        text-align: center;
+        padding: 20px 0;
+        p{
+          display: inline-block;
+          font-weight: bold;
+          font-size: 22px;
         }
-        tbody > tr:first-child td {
-            color: #4505e0;
-            > a {color: #4505e0;}
-        }
-        tbody > tr td {
-            padding: 4px 0;
-            letter-spacing: -0.9px;
-            .notYet{
-                color:#282828;
-                text-align: center;
-                padding: 20px 0;
-                p{
-                    display: inline-block;
-                    font-weight: bold;
-                    font-size: 22px;
-                }
-                .btnCard{
-                    display: inline-block;
-                    padding: 0 10px;
-                    font-size: 12px;
-                    line-height: 20px;
-                    letter-spacing: -0.4px;
-                    color: #fff;
-                    background: #282828;
-                    text-align: center;
-                    border-radius: 999px;
-                    margin: 10px auto;
-
-                }
-            }
+        .btnCard{
+          display: inline-block;
+          padding: 0 10px;
+          font-size: 12px;
+          line-height: 20px;
+          letter-spacing: -0.4px;
+          color: #fff;
+          background: #282828;
+          text-align: center;
+          border-radius: 999px;
+          margin: 10px auto;
 
         }
+      }
+
     }
+  }
 }
 .btnDelete{
-    display: block;
-    line-height: 20px;
-    font-size: 16px;
-    letter-spacing: -0.4px;
-    color: #282828;
-    &.active{
-        color: #ffb000;
-    }
+  display: block;
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  color: #282828;
+  &.active{
+    color: #ffb000;
+  }
 }
 
 // add card 오른쪽 컨텐츠
 .profileBody{
-    padding: 30px 60px;
-    background: #fff;
-    h3{
-        font-size:40px;
-        letter-spacing: -2px;
-        color: #282828;
-        font-weight: normal;
+  padding: 30px 60px;
+  background: #fff;
+  h3{
+    font-size:40px;
+    letter-spacing: -2px;
+    color: #282828;
+    font-weight: normal;
+  }
+  .cardFormWrap{
+    padding: 30px 0;
+    .cardFormRow{
+      margin-bottom: 30px;
+      .inputGroup{
+        display: inline-block;
+        margin-right: 50px;
+        > label{
+          font-size:18px;
+          color:#282828;
+          display: block;
+        }
+        >span {
+          font-size:18px;
+          color:#282828;
+          display: block;
+        }
+        > input{
+          &.dateMonth{
+            width: 70px;
+            margin-right: 30px;
+          }
+          &.postal{
+            width: 150px;
+          }
+        }
+        .selectBox{
+          &.full{
+            width: 231px;
+          }
+        }
+        //라디오스타일
+        .checkBoxStyle{
+          padding-left: 7px;
+          input[type="radio"]{
+            opacity: 0;
+            height: 1px;
+            width: 1px;
+            & + label{
+              font-size:18px;
+              display: inline-block;
+              position: relative;
+              margin-right: 20px;
+              &:before{
+                content:url('../images/radioNormal.png');
+                position: absolute; left:-20px; top:2px;
+              }
+            }
+            &:checked + label{
+              position: relative;
+              &:before{
+                content:url('../images/radioNormalChecked.png');
+                position: absolute; left:-20px; top:2px;
+              }
+            }
+          }
+        }
+
+
+
+      }
     }
-    .cardFormWrap{
-        padding: 30px 0;
-        .cardFormRow{
-            margin-bottom: 30px;
-            .inputGroup{
-                display: inline-block;
-                margin-right: 50px;
-                > label{
-                    font-size:18px;
-                    color:#282828;
-                    display: block;
-                }
-                >span {
-                    font-size:18px;
-                    color:#282828;
-                    display: block;
-                }
-                > input{
-                    &.dateMonth{
-                        width: 70px;
-                        margin-right: 30px;
-                    }
-                    &.postal{
-                        width: 150px;
-                    }
-                }
-                .selectBox{
-                    &.full{
-                        width: 231px;
-                    }
-                }
-                //라디오스타일
-                .checkBoxStyle{
-                    padding-left: 7px;
-                    input[type="radio"]{
-                        opacity: 0;
-                        height: 1px;
-                        width: 1px;
-                        & + label{
-                            font-size:18px;
-                            display: inline-block;
-                            position: relative;
-                            margin-right: 20px;
-                            &:before{
-                                content:url('../images/radioNormal.png');
-                                position: absolute; left:-20px; top:2px;
-                            }
-                        }
-                        &:checked + label{
-                            position: relative;
-                            &:before{
-                                content:url('../images/radioNormalChecked.png');
-                                position: absolute; left:-20px; top:2px;
-                            }
-                        }
-                    }
-                }
-
-
-
-            }
-        }
-        .btnWrap{
-            .btnSave{
-                display: inline-block;
-                width: 100px;
-                line-height: 30px;
-                color:#fff;
-                text-align: center;
-                border-radius: 999px;
-                font-size:16px;
-                background: #282828;
-            }
-            .btnCancle{
-                display: inline-block;
-                width: 100px;
-                line-height: 30px;
-                color:#282828;
-                font-size: 16px;
-                margin-left: 20px;
-            }
-        }
+    .btnWrap{
+      .btnSave{
+        display: inline-block;
+        width: 100px;
+        line-height: 30px;
+        color:#fff;
+        text-align: center;
+        border-radius: 999px;
+        font-size:16px;
+        background: #282828;
+      }
+      .btnCancle{
+        display: inline-block;
+        width: 100px;
+        line-height: 30px;
+        color:#282828;
+        font-size: 16px;
+        margin-left: 20px;
+      }
     }
   }
-
-.profileVoiceCreate{
-    padding-top: 150px;
-    width: 1200px;
+  .dateSearchWrap{
+    margin-top: 20px;
+    position: relative;
+    .dateBox{
+      .dateItem{
+        display: inline-block;
+        width: 205px;
+        &.voice{
+          width: 190px;
+          .selectBox{
+            text-align: center;
+            &:after {
+              content:'∨';
+              display:inline-block;
+              position:absolute;
+              top:50%; right:5px;
+              transform: translate(-50%,-50%);
+            }
+            &.active {
+              border-radius: 15px 15px 0 0;
+              background: #fff;
+              > ul { display:block !important; }
+            }
+            > ul {
+              &.usage{
+                display:none;
+                position: absolute;
+                left:0; top:100%;
+                width:100%;
+                height: 450px;
+                overflow-y: scroll;
+                background:#fff;
+                border: solid 1px #282828;
+                border-top:none;
+                padding: 10px 0 0 20px;
+                box-sizing:border-box;
+                z-index: 10;
+                border-radius:0 0 15px 15px;
+                > li {
+                  font-size: 22px;
+                  letter-spacing: -0.8px;
+                  color: #afafaf;
+                  > ul {
+                    padding-left:20px;
+                    letter-spacing: -0.8px;
+                    color: #282828;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > label{
+          display: inline-block;
+          font-size:18px;
+        }
+        > input{
+          display: inline-block;
+          width: 140px;
+          text-align: center;
+        }
+      }
+      .btnSearch{
+        display: inline-block;
+        width: 100px;
+        line-height: 30px;
+        color:#fff;
+        text-align: center;
+        border-radius: 999px;
+        font-size:16px;
+        background: #282828;
+      }
+    }
+    .btnPrint{
+      display: block;
+      width: 50px;
+      position: absolute;
+      top:10px;
+      right:0;
+      font-size:18px;
+      &.purchase {
+        top: -50px;
+      }
+    }
+  }
+  .salesDetailTable{
+    width: 100%;
+    margin-top: 30px;
+    thead > tr th {
+      font-size: 18px;
+      color: #282828;
+      padding: 12px 10px;
+      border-bottom:solid 1px #979797;
+      font-weight: normal;
+      text-align:left;
+    }
+    tbody > tr td{
+      font-size: 18px;
+      color: #282828;
+      padding: 5px 10px;
+      &:nth-child(2) {color:#4505e0;}
+      &:last-child{
+        padding: 5px 20px;
+        text-align: right;
+      }
+    }
+  }
+  .tableResult{
+    overflow: hidden;
+    margin-top: 10px;
+    > div {
+      float: right;
+      text-align: right;
+      span{
+        color:#4505e0;
+        font-size:18px;
+        display: inline-block;
+        letter-spacing: -0.8px;
+      }
+    }
+  }
+  .paging{
+    width: 435px;
     margin: 0 auto;
-    .profileTit{
-        h3{font-size:40px;}
-        p{
-            margin: 10px 0;
-            color:#ffb000;
-            font-size:20px;
+    overflow: hidden;
+    li{
+      float: left;
+      a{
+        padding: 5px 8px;
+        font-size: 18px;
+        color: #afafaf;
+      }
+      &.active{
+        a{
+          color: #ffb000;
         }
-    }
-    .profileBody{
-        .profileInfoCard{
-            overflow: hidden;
-            .profileImgWrap{
-                width: 310px;
-                background-color: #e8e8e8;
-                float: left;
-            }
-            .profileFillForm{
-                width:calc(100% - 310px);
-                float: left;
-                background-color: #fff;
-            }
+      }
+      &.pagingMove{
+        width: 75px;
+        font-size: 18px;
+        a{
+          color:#282828;
         }
+      }
     }
+  }
 }
 
+.myVoiceBody{
+  h3{
+    font-size:40px;
+    letter-spacing: -2px;
+    color: #282828;
+    font-weight: normal;
+  }
+  .myVoiceWrap{
+    // 이지트랙정보
+    .easyTrackInfo{
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 25px 30px;
+      margin-bottom: 15px;
+      > div {
+        display:inline-block;
+        vertical-align: middle;
+        width:400px;
+        &.imgBox {
+          display:inline-block;
+          width:85px; height: 85px;
+          border-radius: 50%;
+          border:solid 3px red;
+          position:relative;
+          > img { width: 100%; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+          > span {position:absolute; bottom:-5px; right:-5px; z-index: 10;}
+        }
+        &.infoBox {
+          position: relative;
+          top: 5px; left: 20px;
+          width: 420px;
+          margin: 0 10px;
+          h2 {
+            font-family: NanumSquareOTFR;
+            font-size: 24px;
+            letter-spacing: -1.5px;
+            color: #282828;
+            line-height: 1;
+            margin-bottom: 5px;
+            margin-right: 15px;
+            display: inline-block;
+          }
+          > div {
+            margin-top:5px;
+            display: inline-block;
+            dl {
+              display:inline-block;
+              font-family: NanumSquareOTFR;
+              font-size: 14px;
+              letter-spacing: -0.9px;
+              color: #282828;
+              margin-right:40px;
+              &:last-child{
+                margin-right: 0;
+              }
+              dt { display:inline-block; font-weight: bold;}
+              dd { display:inline-block; font-weight: normal}
+            }
+            span {
+              display:inline-block;
+              margin-right:60px;
+              font-family: NanumSquareOTFR;
+              font-size: 18px;
+              letter-spacing: -0.7px;
+              color: #282828;
+              &:last-child{font-size:22px;}
+            }
+          }
+        }
+        &.btnBox {
+          width: 260px;
+          overflow: hidden;
+          padding: 0 10px;
+          .txt{
+            font-family: NanumSquareOTFR;
+            letter-spacing: -0.5px;
+            text-align: right;
+            color: #282828;
+            font-size:13px;
+            margin-bottom: 5px;
+            span{
+              img{
+                vertical-align: middle;
+              }
+              color:#f5a623;
+            }
+          }
+          ul {
+            display: table;
+            float: right;
+            li{
+              display: table-cell;
+              > a {
+                display:inline-block;
+                vertical-align: middle;
+                font-size: 24px;
+                margin:0 3px;
+                letter-spacing: -0.9px;
+                line-height: 1;
+                color: #282828;
+                padding:0 12px;
+                img{
+                  width: 40px;
+                }
+                span {
+                  display:block;
+                  margin-top:10px;
+                  letter-spacing: -0.9px;
+                  font-size:12px;
+                  text-align: center;
+                }
+              }
+            }
+          }
 
+        }
+      }
+    }
+
+  }
+}
 
 
