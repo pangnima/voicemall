@@ -66,12 +66,13 @@ header .inner {
   width: 1240px;
   height: 80px;
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 header .inner .logoBox {
   width: 262px;
   line-height: 1;
-  margin-top: 18px;
+  margin-top: 25px;
   float: left;
 }
 
@@ -96,7 +97,7 @@ header .inner .logoBox > span {
 
 header .inner .serachBox {
   float: left;
-  margin: 18px 0 0 90px;
+  margin: 25px 0 0 90px;
   position: relative;
 }
 
@@ -215,12 +216,12 @@ header .inner .serachBox .autoSearch ul li.on {
 
 header .inner .categoryBox {
   float: right;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 header .inner .categoryBox > ul {
   text-align: right;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 header .inner .categoryBox > ul > li {
@@ -252,22 +253,40 @@ header .inner .categoryBox > .loginBox {
   display: block;
   vertical-align: middle;
   text-align: right;
-  margin-top: 10px;
 }
 
 header .inner .categoryBox > .loginBox .login {
   display: inline-block;
 }
 
+header .inner .categoryBox > .loginBox .login span {
+  font-family: NanumSquareOTFL;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  text-align: right;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+header .inner .categoryBox > .loginBox .login span strong {
+  vertical-align: bottom;
+}
+
 header .inner .categoryBox > .loginBox .login > a {
-  display: block;
+  display: inline-block;
   text-align: center;
   border-radius: 17.5px;
-  border: solid 1px #282828;
+  border: solid 1px #fff;
+  color: #fff;
   width: 85px;
   height: 28px;
   line-height: 25px;
   font-size: 18px;
+  -webkit-border-radius: 17.5px;
+  -moz-border-radius: 17.5px;
+  -ms-border-radius: 17.5px;
+  -o-border-radius: 17.5px;
 }
 
 header .inner .categoryBox > .loginBox .login.after span {

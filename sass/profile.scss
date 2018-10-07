@@ -6,13 +6,16 @@
 :-ms-input-placeholder {color:#282828;}
 
 /*common*/
+/*
 input[type="text"] {
   border: 1px solid #282828;
   height: 25px;
   border-radius: 9999px;
   padding: 0 5px;
   font-size: 18px;
+  outline:none;
 }
+*/
 
 .selectBox{
   position: relative;
@@ -30,11 +33,12 @@ input[type="text"] {
   font-size: 18px;
   padding: 0 5px;
   &:after {
-    content:'∨';
-    display:inline-block;
-    position:absolute;
-    top:50%; right:5px;
-    transform: translate(-50%,-50%);
+    content: '∨';
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
   }
   &.active {
     border-radius: 15px 15px 0 0;
@@ -321,6 +325,7 @@ input[type="text"] {
         display: inline-block;
         margin-right: 50px;
         > label{
+          margin-bottom:5px;
           font-size:18px;
           color:#282828;
           display: block;
@@ -342,10 +347,12 @@ input[type="text"] {
         .selectBox{
           &.full{
             width: 231px;
+            padding-left:15px;
           }
         }
         //라디오스타일
         .checkBoxStyle{
+          margin-top:10px;
           padding-left: 7px;
           input[type="radio"]{
             opacity: 0;
@@ -370,8 +377,6 @@ input[type="text"] {
             }
           }
         }
-
-
 
       }
     }
@@ -411,7 +416,7 @@ input[type="text"] {
               content:'∨';
               display:inline-block;
               position:absolute;
-              top:50%; right:5px;
+              top:40%; right:5px;
               transform: translate(-50%,-50%);
             }
             &.active {
@@ -569,12 +574,13 @@ input[type="text"] {
           border:solid 3px red;
           position:relative;
           > img { width: 100%; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
-          > span {position:absolute; bottom:-5px; right:-5px; z-index: 10;}
+          > span {position:absolute; bottom:-5px; right:5px; z-index: 10;}
         }
         &.infoBox {
           position: relative;
-          top: 5px; left: 20px;
-          width: 420px;
+          top: 5px;
+          left: 20px;
+          width: 460px;
           margin: 0 10px;
           h2 {
             font-family: NanumSquareOTFR;
@@ -599,7 +605,10 @@ input[type="text"] {
               &:last-child{
                 margin-right: 0;
               }
-              dt { display:inline-block; font-weight: bold;}
+              dt { 
+                display:inline-block; font-weight: bold;
+                &.price {margin-right:32px;}
+              }
               dd { display:inline-block; font-weight: normal}
             }
             span {
@@ -614,9 +623,9 @@ input[type="text"] {
           }
         }
         &.btnBox {
-          width: 260px;
+          width: 250px;
           overflow: hidden;
-          padding: 0 10px;
+          text-align: right;
           .txt{
             font-family: NanumSquareOTFR;
             letter-spacing: -0.5px;
@@ -632,10 +641,9 @@ input[type="text"] {
             }
           }
           ul {
-            display: table;
-            float: right;
+            text-align: right;
             li{
-              display: table-cell;
+              display:inline-block;
               > a {
                 display:inline-block;
                 vertical-align: middle;
@@ -644,7 +652,7 @@ input[type="text"] {
                 letter-spacing: -0.9px;
                 line-height: 1;
                 color: #282828;
-                padding:0 12px;
+                margin-left:20px;
                 img{
                   width: 40px;
                 }
