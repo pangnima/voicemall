@@ -126,7 +126,7 @@ header .inner .serachBox .quickSearch {
   position: absolute;
   top: 100%;
   background: #fff;
-  z-index: 10;
+  z-index: 20;
 }
 
 header .inner .serachBox .quickSearch .recommended {
@@ -337,6 +337,21 @@ nav.gnb > ul > li:last-child {
 
 .mesage {
   background: #4505e0;
+}
+
+.mesage.no {
+  height: 80px;
+  background-color: #ffb000;
+}
+
+.mesage.no .wrap {
+  padding: 29px 0;
+}
+
+.mesage.no .wrap p > a {
+  color: #4505e0;
+  position: absolute;
+  right: 45px;
 }
 
 .mesage .wrap {

@@ -1,13 +1,31 @@
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
 .voiceListWrap{
     width:1240px;
     margin:0 auto;
 }
 
 .colorSpectrum {
+    position: relative;
     padding-top:30px;
     > h2 { font-size:40px; color:#282828;}
     > p {font-size:20px; color:#282828;}
-    
+    > .language{
+        position: absolute;
+        right:70px;
+        > li {
+            display:inline-block;
+            font-family: NanumSquare;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            margin-left:22px;
+            > a { color:#afafaf;}
+            &.active {
+                > a { color: #4505e0; }
+            }
+        }
+    }
     .colorSpectrumList {
         display:inline-block;
         width:500px; height:500px;
