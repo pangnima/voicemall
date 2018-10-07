@@ -22,7 +22,7 @@
   width: 500px;
   height: 500px;
   position: relative;
-  top: 50px;
+  top: 30px;
 }
 
 .colorSpectrum .colorSpectrumList > div {
@@ -30,83 +30,206 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  -webkit-transform-origin: 250px;
-          transform-origin: 250px;
+  -webkit-transform-origin: 320px;
+          transform-origin: 320px;
   position: absolute;
-  top: 50%;
+  top: 53%;
+  left: -70px;
   cursor: pointer;
+}
+
+.colorSpectrum .colorSpectrumList > div > span {
+  display: none;
+  position: absolute;
+  background: rgba(40, 40, 40, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.colorSpectrum .colorSpectrumList > div > span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid rgba(40, 40, 40, 0.6);
+  border-bottom: 5px solid none;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  top: 98%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.colorSpectrum .colorSpectrumList > div:hover > span {
+  display: inline-block;
 }
 
 .colorSpectrum .colorSpectrumList > div.passion {
   background: #c70800 !important;
-  -webkit-transform: rotate(0deg) translate(-50%, -50%);
-          transform: rotate(0deg) translate(-50%, -50%);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.passion span {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: -20px;
+  right: -15px;
+  width: 116px;
 }
 
 .colorSpectrum .colorSpectrumList > div.freedom {
   background: #ff3100 !important;
-  -webkit-transform: rotate(30deg) translate(-50%, -50%);
-          transform: rotate(30deg) translate(-50%, -50%);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  z-index: 20;
+}
+
+.colorSpectrum .colorSpectrumList > div.freedom span {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  top: -15px;
+  left: -58px;
+  width: 142px;
 }
 
 .colorSpectrum .colorSpectrumList > div.wisdom {
   background: #e8481c !important;
-  -webkit-transform: rotate(60deg) translate(-50%, -50%);
-          transform: rotate(60deg) translate(-50%, -50%);
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  z-index: 10;
+}
+
+.colorSpectrum .colorSpectrumList > div.wisdom span {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  top: 5px;
+  left: -95px;
+  width: 166px;
 }
 
 .colorSpectrum .colorSpectrumList > div.knowledge {
   background: #f8e71c !important;
-  -webkit-transform: rotate(90deg) translate(-50%, -50%);
-          transform: rotate(90deg) translate(-50%, -50%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.knowledge span {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 30px;
+  left: -80px;
 }
 
 .colorSpectrum .colorSpectrumList > div.observation {
   background: #d8d94b !important;
-  -webkit-transform: rotate(120deg) translate(-50%, -50%);
-          transform: rotate(120deg) translate(-50%, -50%);
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.observation span {
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+  top: 55px;
+  left: -90px;
 }
 
 .colorSpectrum .colorSpectrumList > div.stability {
   background: #4A5928 !important;
-  -webkit-transform: rotate(150deg) translate(-50%, -50%);
-          transform: rotate(150deg) translate(-50%, -50%);
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  z-index: 10;
+}
+
+.colorSpectrum .colorSpectrumList > div.stability span {
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+  top: 75px;
+  left: -40px;
 }
 
 .colorSpectrum .colorSpectrumList > div.balance {
   background: #045D76 !important;
-  -webkit-transform: rotate(180deg) translate(-50%, -50%);
-          transform: rotate(180deg) translate(-50%, -50%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.balance span {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  width: 160px;
+  top: 80px;
+  left: -40px;
 }
 
 .colorSpectrum .colorSpectrumList > div.creation {
   background: #067ef2 !important;
-  -webkit-transform: rotate(210deg) translate(-50%, -50%);
-          transform: rotate(210deg) translate(-50%, -50%);
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.creation span {
+  -webkit-transform: rotate(-210deg);
+          transform: rotate(-210deg);
+  top: 80px;
+  right: -60px;
+  width: 146px;
 }
 
 .colorSpectrum .colorSpectrumList > div.communication {
   background: #014d97 !important;
-  -webkit-transform: rotate(240deg) translate(-50%, -50%);
-          transform: rotate(240deg) translate(-50%, -50%);
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.communication span {
+  -webkit-transform: rotate(-240deg);
+          transform: rotate(-240deg);
+  top: 60px;
+  right: -80px;
 }
 
 .colorSpectrum .colorSpectrumList > div.plan {
   background: #0d1a6e !important;
-  -webkit-transform: rotate(270deg) translate(-50%, -50%);
-          transform: rotate(270deg) translate(-50%, -50%);
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.plan span {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+  top: 30px;
+  right: -75px;
 }
 
 .colorSpectrum .colorSpectrumList > div.trust {
   background: #623689 !important;
-  -webkit-transform: rotate(300deg) translate(-50%, -50%);
-          transform: rotate(300deg) translate(-50%, -50%);
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+  z-index: 10;
+}
+
+.colorSpectrum .colorSpectrumList > div.trust span {
+  -webkit-transform: rotate(-300deg);
+          transform: rotate(-300deg);
+  top: 5px;
+  right: -60px;
 }
 
 .colorSpectrum .colorSpectrumList > div.adoption {
   background: #BF3F86 !important;
-  -webkit-transform: rotate(330deg) translate(-50%, -50%);
-          transform: rotate(330deg) translate(-50%, -50%);
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.colorSpectrum .colorSpectrumList > div.adoption span {
+  -webkit-transform: rotate(-330deg);
+          transform: rotate(-330deg);
+  top: -15px;
+  right: -56px;
 }
 
 .colorSpectrum .colorSpectrumList > div.colorPickerBox {
@@ -120,10 +243,17 @@
 }
 
 .colorSpectrum .colorSpectrumList > div.colorPickerBox span {
+  display: block;
+  background: none;
+  padding: 0;
   font-family: NotoSansCJKkr;
   font-size: 16px;
   color: #282828;
   position: absolute;
+}
+
+.colorSpectrum .colorSpectrumList > div.colorPickerBox span:after {
+  display: none;
 }
 
 .colorSpectrum .colorSpectrumList > div.colorPickerBox span.lightness {
@@ -278,13 +408,12 @@
   margin-right: 5px;
 }
 
-.colorSpectrum .voiceColorInfo .swiper-pagination {
-  -webkit-transform: rotate(180deg) translate(50px, 50%) !important;
-          transform: rotate(180deg) translate(50px, 50%) !important;
-}
-
-.colorSpectrum .voiceColorInfo .swiper-pagination-bullet-active {
-  background-color: red;
+.colorSpectrum .voiceColorInfo .arrow-btn {
+  background: url(../images/arrow-down.png);
+  width: 21px;
+  height: 88px;
+  opacity: 1;
+  left: 450px;
 }
 
 .scrollDownBox {

@@ -12,27 +12,145 @@
         display:inline-block;
         width:500px; height:500px;
         position: relative;
-        top:50px;
+        top:30px;
         > div {
             display:inline-block;
             width:100px; height:100px;
             border-radius: 50%;
-            transform-origin:250px;
+            transform-origin:320px;
             position: absolute;
-            top:50%;
+            top:53%; left:-70px;
             cursor: pointer;
-            &.passion{background:#c70800 !important; transform: rotate(0deg) translate(-50%,-50%)}
-            &.freedom{background:#ff3100 !important; transform: rotate(30deg) translate(-50%,-50%)}
-            &.wisdom{background:#e8481c !important; transform: rotate(60deg) translate(-50%,-50%) }
-            &.knowledge{background:#f8e71c !important; transform: rotate(90deg) translate(-50%,-50%)}
-            &.observation{background:#d8d94b !important; transform: rotate(120deg) translate(-50%,-50%)}
-            &.stability{background:#4A5928 !important; transform: rotate(150deg) translate(-50%,-50%)}
-            &.balance{background:#045D76 !important; transform: rotate(180deg) translate(-50%,-50%)}
-            &.creation{background:#067ef2 !important; transform: rotate(210deg) translate(-50%,-50%)}
-            &.communication{background:#014d97 !important; transform: rotate(240deg) translate(-50%,-50%)}
-            &.plan{background:#0d1a6e !important; transform: rotate(270deg) translate(-50%,-50%)}
-            &.trust{background:#623689 !important; transform: rotate(300deg) translate(-50%,-50%)}
-            &.adoption{background:#BF3F86 !important; transform: rotate(330deg) translate(-50%,-50%)}
+            > span {
+                display: none;
+                position:absolute;
+                background:rgba(40, 40, 40, 0.8);
+                color:#fff;
+                padding: 10px;
+                border-radius: 5px;
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border-top: 5px solid rgba(40, 40, 40, 0.6);
+                    border-bottom: 5px solid none;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    top: 98%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            &:hover {
+                > span { display:inline-block;}
+            }
+            &.passion{
+                background:#c70800 !important; transform: rotate(0deg);
+                span {
+                    transform: rotate(0deg);
+                    top: -20px;
+                    right: -15px;
+                    width: 116px;
+                }
+            }
+            &.freedom{
+                background:#ff3100 !important; transform: rotate(30deg);
+                z-index: 20;
+                span {
+                    transform: rotate(-30deg);
+                    top: -15px;
+                    left: -58px;
+                    width: 142px;
+                }
+            }
+            &.wisdom{
+                background:#e8481c !important; transform: rotate(60deg);
+                z-index: 10;
+                span {
+                    transform: rotate(-60deg);
+                    top: 5px;
+                    left: -95px;
+                    width: 166px;
+                }
+            }
+            &.knowledge{
+                background:#f8e71c !important; transform: rotate(90deg);
+                span {
+                    transform: rotate(-90deg);
+                    top: 30px;
+                    left: -80px;
+                }
+            }
+            &.observation{
+                background:#d8d94b !important; transform: rotate(120deg);
+                span {
+                    transform: rotate(-120deg);
+                    top: 55px;
+                    left: -90px;
+                }
+            }
+            &.stability{
+                background:#4A5928 !important; transform: rotate(150deg);
+                z-index: 10;
+                span {
+                    transform: rotate(-150deg);
+                    top: 75px;
+                    left: -40px;
+                }
+            }
+            &.balance{
+                background:#045D76 !important; transform: rotate(180deg);
+                span {
+                    transform: rotate(-180deg);
+                    width: 160px;
+                    top: 80px;
+                    left: -40px;
+                }
+            }
+            &.creation{
+                background:#067ef2 !important; transform: rotate(210deg);
+                span {
+                    transform: rotate(-210deg);
+                    top: 80px;
+                    right: -60px;
+                    width: 146px;
+                }
+            }
+            &.communication{
+                background:#014d97 !important; transform: rotate(240deg);
+                span {
+                    transform: rotate(-240deg);
+                    top: 60px;
+                    right: -80px;
+                }
+            }
+            &.plan{
+                background:#0d1a6e !important; transform: rotate(270deg);
+                span {
+                    transform: rotate(-270deg);
+                    top: 30px;
+                    right: -75px;
+                }
+            }
+            &.trust{
+                background:#623689 !important; transform: rotate(300deg);
+                z-index: 10;
+                span {
+                    transform: rotate(-300deg);
+                    top: 5px;
+                    right: -60px;
+                }
+            }
+            &.adoption{
+                background:#BF3F86 !important; transform: rotate(330deg);
+                span {
+                    transform: rotate(-330deg);
+                    top: -15px;
+                    right: -56px;
+                }
+            }
             &.colorPickerBox {
                 background: #ddd;
                 border-radius: inherit;
@@ -42,10 +160,14 @@
                 left: 24%;
                 position:relative;
                 span {
+                    display:block;
+                    background:none;
+                    padding:0;
                     font-family: NotoSansCJKkr;
                     font-size: 16px;
                     color: #282828;
                     position: absolute;
+                    &:after{ display:none;}
                     &.lightness{
                         transform: rotate(-90deg);
                         left: -110px;
@@ -162,12 +284,14 @@
                 }
             }
         }
-        .swiper-pagination {
-            transform:rotate(180deg) translate(50px, 50%) !important;
+        .arrow-btn {
+            background: url(../images/arrow-down.png);
+            width: 21px;
+            height: 88px;
+            opacity: 1;
+            left:450px
         }
-        .swiper-pagination-bullet-active {
-            background-color: red;
-        }
+
 
     }
 }
