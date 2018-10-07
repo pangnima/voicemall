@@ -812,4 +812,279 @@ input[type="text"] {
   font-size: 12px;
   text-align: center;
 }
+
+.profileBox h2 {
+  font-family: NanumSquareOTFB;
+  font-size: 40px;
+  letter-spacing: -1.1px;
+  color: #282828;
+}
+
+.profileBox h2 span {
+  display: block;
+  font-family: NanumSquareOTFB;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -0.6px;
+  color: #ffb000;
+}
+
+.profileBox > div {
+  margin-top: 30px;
+}
+
+.profileBox > div > div {
+  float: left;
+  width: 925px;
+  height: 450px;
+  background: #fff;
+}
+
+.profileBox > div > div.imgBox {
+  position: relative;
+  width: 315px;
+  background-color: #e8e8e8;
+}
+
+.profileBox > div > div.imgBox > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profileBox > div > div.imgBox > div .voiceImg {
+  margin-bottom: 30px;
+}
+
+.profileBox > div > div.imgBox > div > a span {
+  display: block;
+  font-family: NanumSquareOTFB;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.8px;
+  color: #282828;
+}
+
+.profileBox > div > div > ul {
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.profileBox > div > div > ul > li {
+  margin-bottom: 20px;
+}
+
+.profileBox > div > div > ul > li.half {
+  float: left;
+  width: 50%;
+}
+
+.profileBox > div > div > ul > li h3 {
+  display: inline-block;
+  width: 180px;
+  font-family: NanumSquareOTFB;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #282828;
+}
+
+.profileBox > div > div > ul > li input {
+  width: 180px;
+  height: 29px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: solid 1px #282828;
+  outline: none;
+  font-family: NanumSquareOTFL;
+  font-size: 16px;
+  line-height: 1.69;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.profileBox > div > div > ul > li input.long {
+  width: 400px;
+}
+
+.profileBox > div > div > ul > li > span {
+  font-family: NanumSquareOTFL;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #282828;
+}
+
+.profileBox > div > div > ul > li .selectBox {
+  display: inline-block;
+  width: 161.6px;
+  height: 29px;
+  border-radius: 14.5px;
+  background-color: #ffffff;
+  border: solid 1px #282828;
+  font-family: NanumSquareOTFL;
+  font-size: 16px;
+  line-height: 1.69;
+  text-align: center;
+  color: #282828;
+  position: relative;
+  cursor: pointer;
+}
+
+.profileBox > div > div > ul > li .selectBox > span > em {
+  display: inline-block;
+  background: #c70800;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+.profileBox > div > div > ul > li .selectBox:after {
+  content: "∨";
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.profileBox > div > div > ul > li .selectBox.long {
+  width: 400px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.profileBox > div > div > ul > li .selectBox.active {
+  border-radius: 14.5px 14.5px 0 0;
+}
+
+.profileBox > div > div > ul > li .selectBox.active > ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 100%;
+  text-align: center;
+  border: solid 1px #000;
+  background: #fff;
+  z-index: 10;
+  border-top: none;
+  border-radius: 0 0 14.5px 14.5px;
+  padding-bottom: 10px;
+}
+
+.profileBox > div > div > ul > li .selectBox.active > ul > li {
+  cursor: pointer;
+}
+
+.profileBox > div > div > ul > li .selectBox > ul {
+  display: none;
+}
+
+.profileBox > div > div > ul > li .tagBox {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border: solid 1px #282828;
+  border-radius: 15px 15px 0 0;
+}
+
+.profileBox > div > div > ul > li .tagBox.on {
+  border-bottom: none;
+}
+
+.profileBox > div > div > ul > li .tagBox.on input {
+  border: none;
+}
+
+.profileBox > div > div > ul > li .tagBox > .tagList {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  padding: 5px 0;
+  border: solid 1px #282828;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+}
+
+.profileBox > div > div > ul > li .tagBox > .tagList > span {
+  margin: 5px;
+  padding: 5px 25px 5px 15px;
+  border-radius: 15px;
+  background-color: #282828;
+  display: inline-block;
+  font-family: NanumSquareOTFL;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.profileBox > div > div > ul > li .tagBox > .tagList > span:after {
+  content: "X";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 13px;
+}
+
+.profileBox > div > div > ul > li .tagBox > .keywordList {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 100%;
+  border: solid 1px #000;
+  background: #fff;
+  z-index: 10;
+  border-top: none;
+  border-radius: 0 0 14.5px 14.5px;
+  padding-bottom: 10px;
+  font-family: NanumSquareOTFL;
+  font-size: 16px;
+  color: #282828;
+}
+
+.profileBox > div > div > ul > li .tagBox > .keywordList > li {
+  cursor: pointer;
+  padding: 3px 0;
+  padding-left: 16px;
+}
+
+.profileBox > div > div > ul > li .tagBox > .keywordList > li.bold {
+  font-weight: bold;
+}
+
+.profileBox .btn_next {
+  display: block;
+  width: 200px;
+  height: 49px;
+  line-height: 49px;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 24.5px;
+  background-color: #282828;
+  font-family: NanumSquareOTFB;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
 /*# sourceMappingURL=profile.css.map */

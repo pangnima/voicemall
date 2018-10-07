@@ -88,8 +88,32 @@
 }
 
 .generateWrap .profileBox > div > div.imgBox {
+  position: relative;
   width: 315px;
   background-color: #e8e8e8;
+}
+
+.generateWrap .profileBox > div > div.imgBox > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.generateWrap .profileBox > div > div.imgBox > div .voiceImg {
+  margin-bottom: 30px;
+}
+
+.generateWrap .profileBox > div > div.imgBox > div > a span {
+  display: block;
+  font-family: NanumSquareOTFB;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.8px;
+  color: #282828;
 }
 
 .generateWrap .profileBox > div > div > ul {
@@ -159,6 +183,16 @@
   cursor: pointer;
 }
 
+.generateWrap .profileBox > div > div > ul > li .selectBox > span > em {
+  display: inline-block;
+  background: #c70800;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
 .generateWrap .profileBox > div > div > ul > li .selectBox:after {
   content: "∨";
   display: block;
@@ -173,16 +207,31 @@
   width: 400px;
 }
 
-.generateWrap .profileBox > div > div > ul > li .selectBox > ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  text-align: center;
+.generateWrap .profileBox > div > div > ul > li .selectBox.active {
+  border-radius: 14.5px 14.5px 0 0;
 }
 
-.generateWrap .profileBox > div > div > ul > li .selectBox > ul > li {
+.generateWrap .profileBox > div > div > ul > li .selectBox.active > ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 100%;
+  text-align: center;
+  border: solid 1px #000;
+  background: #fff;
+  z-index: 10;
+  border-top: none;
+  border-radius: 0 0 14.5px 14.5px;
+  padding-bottom: 10px;
+}
+
+.generateWrap .profileBox > div > div > ul > li .selectBox.active > ul > li {
   cursor: pointer;
+}
+
+.generateWrap .profileBox > div > div > ul > li .selectBox > ul {
+  display: none;
 }
 
 .generateWrap .profileBox > div > div > ul > li .tagBox {
