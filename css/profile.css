@@ -1,18 +1,15 @@
 @charset "UTF-8";
 /* Chrome/Opera/Safari */
 ::-webkit-input-placeholder {
-  color: #282828;
-}
+  color: #282828; }
 
 /* Firefox 19+ */
 ::-moz-placeholder {
-  color: #282828;
-}
+  color: #282828; }
 
 /* IE 10+ */
 :-ms-input-placeholder {
-  color: #282828;
-}
+  color: #282828; }
 
 /*common*/
 /*
@@ -37,1040 +34,743 @@ input[type="text"] {
   cursor: pointer;
   letter-spacing: -0.8px;
   color: #282828;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 18px;
-  padding: 0 5px;
-}
-
-.selectBox:after {
-  content: '∨';
-  display: inline-block;
-  position: absolute;
-  top: 40%;
-  right: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.selectBox.active {
-  border-radius: 15px 15px 0 0;
-  background: #fff;
-}
-
-.selectBox.active > ul {
-  display: block !important;
-}
-
-.selectBox > ul.usage {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  height: 450px;
-  overflow-y: scroll;
-  background: #fff;
-  border: solid 1px #282828;
-  border-top: none;
-  padding: 10px 0 0 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 10;
-  border-radius: 0 0 15px 15px;
-}
-
-.selectBox > ul.usage > li {
-  font-size: 22px;
-  letter-spacing: -0.8px;
-  color: #afafaf;
-}
-
-.selectBox > ul.usage > li > ul {
-  padding-left: 20px;
-  letter-spacing: -0.8px;
-  color: #282828;
-}
+  padding: 0 5px; }
+  .selectBox:after {
+    content: '∨';
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%); }
+  .selectBox.active {
+    border-radius: 15px 15px 0 0;
+    background: #fff; }
+    .selectBox.active > ul {
+      display: block !important; }
+  .selectBox > ul.usage {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+    background: #fff;
+    border: solid 1px #282828;
+    border-top: none;
+    padding: 10px 0 0 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    border-radius: 0 0 15px 15px; }
+    .selectBox > ul.usage > li {
+      font-size: 22px;
+      letter-spacing: -0.8px;
+      color: #afafaf; }
+      .selectBox > ul.usage > li > ul {
+        padding-left: 20px;
+        letter-spacing: -0.8px;
+        color: #282828; }
 
 .profileWrap {
   width: 1240px;
   margin: 0 auto;
   position: relative;
-  padding-top: 40px;
-}
+  padding-top: 40px; }
 
 .profileLnb {
   position: absolute;
   left: 0;
   top: 0;
   width: 215px;
-  padding-top: 40px;
-}
+  padding-top: 40px; }
 
 .userName {
   font-size: 32px;
   letter-spacing: -1.3px;
   color: #282828;
-  line-height: 1;
-}
-
-.userName h2 {
-  letter-spacing: -1.6px;
-}
+  line-height: 1; }
+  .userName h2 {
+    letter-spacing: -1.6px; }
 
 .profileList1 li {
   padding: 24px 0;
   border-bottom: 2px solid #afafaf;
-  font-size: 14px;
-}
-
-.profileList1 li a {
-  color: #282828;
-}
-
-.profileList1 li.active a {
-  color: #ffb000;
-}
+  font-size: 14px; }
+  .profileList1 li a {
+    color: #282828; }
+  .profileList1 li.active a {
+    color: #ffb000; }
 
 .profileList2 {
   padding: 24px 0;
   border-bottom: 2px solid #afafaf;
-  font-size: 14px;
-}
-
-.profileList2 li {
-  padding: 5px 0;
-}
+  font-size: 14px; }
+  .profileList2 li {
+    padding: 5px 0; }
+    .profileList2 li.active a {
+      color: #ffb000; }
 
 .profileContent {
   padding-left: 250px;
-  padding-right: 100px;
-}
+  padding-right: 100px; }
 
 .profileCard {
   background: #fff;
   padding: 20px 25px;
   border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.profileCard span {
-  font-weight: bold;
-  font-size: 20px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.profileCard .profileCardInner {
-  overflow: hidden;
-}
-
-.profileCard .profileCardInner .profileImg {
-  width: 140px;
-  float: left;
-  margin-right: 20px;
-  text-align: center;
-  position: relative;
-}
-
-.profileCard .profileCardInner .profileImg .imgBox {
-  width: 100%;
-  display: table;
-}
-
-.profileCard .profileCardInner .profileImg .imgBox .btnChange {
-  display: inline-block;
-  width: 100px;
-  line-height: 20px;
-  border-radius: 9999px;
-  color: #282828;
-  border: 1px solid #282828;
-  font-size: 11px;
-  margin-top: 16px;
-}
-
-.profileCard .profileCardInner .profileImg .imgBox .btnChange > img {
-  vertical-align: middle;
-}
-
-.profileCard .profileCardInner .profileTxt {
-  width: calc(100% - 220px);
-  float: left;
-  padding-left: 50px;
-  border-left: 2px solid #afafaf;
-  position: relative;
-}
-
-.profileCard .profileCardInner .profileTxt dl {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.profileCard .profileCardInner .profileTxt dl dt {
-  font-size: 14px;
-  color: #afafaf;
-}
-
-.profileCard .profileCardInner .profileTxt dl dd {
-  font-size: 18px;
-  letter-spacing: -0.9px;
-  color: #282828;
-}
-
-.profileCard .profileCardInner .profileTxt dl dd .name {
-  width: 150px;
-}
-
-.profileCard .profileCardInner .profileTxt dl dd input[type="text"] {
-  border: 1px solid #282828;
-  height: 25px;
-  border-radius: 9999px;
-  padding: 0 5px;
-  font-size: 18px;
-}
-
-.profileCard .profileCardInner .profileTxt dl.half {
-  display: inline-block;
-  width: 240px;
-}
-
-.profileCard .profileCardInner .profileTxt dl.wideHalf {
-  display: inline-block;
-  width: 320px;
-}
-
-.profileCard .profileCardInner .profileTxt dl.shortHalf {
-  display: inline-block;
-}
-
-.profileCard .profileCardInner .profileTxt dl .chBox {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.profileCard .profileCardInner .profileTxt dl .chBox input[type="checkbox"] {
-  display: none;
-}
-
-.profileCard .profileCardInner .profileTxt dl .chBox label {
-  font-weight: normal;
-  color: #282828;
-}
-
-.profileCard .profileCardInner .profileTxt dl .chBox input[type="checkbox"] + label span {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  margin: -2px 10px 0 0;
-  vertical-align: middle;
-  background: url(../images/check-sprite.png) 0 0 no-repeat;
-  background-size: 100%;
-  cursor: pointer;
-}
-
-.profileCard .profileCardInner .profileTxt dl .chBox input[type="checkbox"]:checked + label span {
-  background: url(../images/check-sprite.png) 0 100% no-repeat;
-  background-size: 100%;
-}
-
-.profileCard .profileCardInner .profileTxt .btnEdit {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: block;
-  width: 100px;
-  background: #282828;
-  line-height: 30px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 17px;
-}
+  margin-bottom: 20px; }
+  .profileCard span {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px; }
+  .profileCard .profileCardInner {
+    overflow: hidden; }
+    .profileCard .profileCardInner .profileImg {
+      width: 140px;
+      float: left;
+      margin-right: 20px;
+      text-align: center;
+      position: relative; }
+      .profileCard .profileCardInner .profileImg .imgBox {
+        width: 100%;
+        display: table; }
+        .profileCard .profileCardInner .profileImg .imgBox .btnChange {
+          display: inline-block;
+          width: 100px;
+          line-height: 20px;
+          border-radius: 9999px;
+          color: #282828;
+          border: 1px solid #282828;
+          font-size: 11px;
+          margin-top: 16px; }
+          .profileCard .profileCardInner .profileImg .imgBox .btnChange > img {
+            vertical-align: middle; }
+    .profileCard .profileCardInner .profileTxt {
+      width: calc(100% - 220px);
+      float: left;
+      padding-left: 50px;
+      border-left: 2px solid #afafaf;
+      position: relative; }
+      .profileCard .profileCardInner .profileTxt dl {
+        display: block;
+        margin-bottom: 5px; }
+        .profileCard .profileCardInner .profileTxt dl dt {
+          font-size: 14px;
+          color: #afafaf; }
+        .profileCard .profileCardInner .profileTxt dl dd {
+          font-size: 18px;
+          letter-spacing: -0.9px;
+          color: #282828;
+          position: relative; }
+          .profileCard .profileCardInner .profileTxt dl dd .name {
+            width: 150px; }
+          .profileCard .profileCardInner .profileTxt dl dd > img {
+            position: absolute;
+            top: -8px;
+            left: 130px; }
+          .profileCard .profileCardInner .profileTxt dl dd input[type="text"] {
+            border: 1px solid #282828;
+            height: 25px;
+            border-radius: 9999px;
+            padding: 0 5px;
+            font-size: 18px; }
+        .profileCard .profileCardInner .profileTxt dl.half {
+          display: inline-block;
+          width: 240px; }
+        .profileCard .profileCardInner .profileTxt dl.wideHalf {
+          display: inline-block;
+          width: 320px; }
+        .profileCard .profileCardInner .profileTxt dl.shortHalf {
+          display: inline-block; }
+        .profileCard .profileCardInner .profileTxt dl .chBox {
+          display: inline-block;
+          margin-right: 10px; }
+          .profileCard .profileCardInner .profileTxt dl .chBox input[type="checkbox"] {
+            display: none; }
+          .profileCard .profileCardInner .profileTxt dl .chBox label {
+            font-weight: normal;
+            color: #282828; }
+          .profileCard .profileCardInner .profileTxt dl .chBox input[type="checkbox"] + label span {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            margin: -2px 10px 0 0;
+            vertical-align: middle;
+            background: url(../images/check-sprite.png) 0 0 no-repeat;
+            background-size: 100%;
+            cursor: pointer; }
+          .profileCard .profileCardInner .profileTxt dl .chBox input[type="checkbox"]:checked + label span {
+            background: url(../images/check-sprite.png) 0 100% no-repeat;
+            background-size: 100%; }
+      .profileCard .profileCardInner .profileTxt .btnEdit {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 100px;
+        background: #282828;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 17px; }
 
 .profileList {
   background: #fff;
   padding: 20px 25px;
   border-radius: 10px;
   margin-bottom: 20px;
-  height: 280px;
-}
-
-.profileList span {
-  font-weight: bold;
-  font-size: 20px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.profileList .paymentList {
-  width: 100%;
-  table-layout: fixed;
-  font-size: 18px;
-}
-
-.profileList .paymentList thead > tr th {
-  padding: 4px 0;
-  border-bottom: 1px solid #979797;
-  text-align: left;
-  font-weight: bold;
-}
-
-.profileList .paymentList tbody > tr:first-child td {
-  color: #4505e0;
-}
-
-.profileList .paymentList tbody > tr:first-child td > a {
-  color: #4505e0;
-}
-
-.profileList .paymentList tbody > tr td {
-  padding: 4px 0;
-  letter-spacing: -0.9px;
-}
-
-.profileList .paymentList tbody > tr td .notYet {
-  color: #282828;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.profileList .paymentList tbody > tr td .notYet p {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.profileList .paymentList tbody > tr td .notYet .btnCard {
-  display: inline-block;
-  padding: 0 10px;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: -0.4px;
-  color: #fff;
-  background: #282828;
-  text-align: center;
-  border-radius: 999px;
-  margin: 10px auto;
-}
+  height: 280px; }
+  .profileList span {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px; }
+  .profileList .paymentList {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 18px; }
+    .profileList .paymentList thead > tr th {
+      padding: 4px 0;
+      border-bottom: 1px solid #979797;
+      text-align: left;
+      font-weight: bold; }
+    .profileList .paymentList tbody > tr:first-child td {
+      color: #4505e0; }
+      .profileList .paymentList tbody > tr:first-child td > a {
+        color: #4505e0; }
+    .profileList .paymentList tbody > tr td {
+      padding: 4px 0;
+      letter-spacing: -0.9px; }
+      .profileList .paymentList tbody > tr td .notYet {
+        color: #282828;
+        text-align: center;
+        padding: 20px 0;
+        line-height: 1.4; }
+        .profileList .paymentList tbody > tr td .notYet p {
+          display: inline-block;
+          font-weight: bold;
+          font-size: 22px; }
+        .profileList .paymentList tbody > tr td .notYet .btnCard {
+          display: inline-block;
+          padding: 0 10px;
+          font-size: 12px;
+          line-height: 20px;
+          letter-spacing: -0.4px;
+          color: #fff;
+          background: #282828;
+          text-align: center;
+          border-radius: 999px;
+          margin: 10px auto; }
 
 .btnDelete {
   display: block;
   line-height: 20px;
   font-size: 16px;
   letter-spacing: -0.4px;
-  color: #282828;
-}
-
-.btnDelete.active {
-  color: #ffb000;
-}
+  color: #282828; }
+  .btnDelete.active {
+    color: #ffb000; }
 
 .profileBody {
   padding: 30px 60px;
-  background: #fff;
-}
-
-.profileBody h3 {
-  font-size: 40px;
-  letter-spacing: -2px;
-  color: #282828;
-  font-weight: normal;
-}
-
-.profileBody .cardFormWrap {
-  padding: 30px 0;
-}
-
-.profileBody .cardFormWrap .cardFormRow {
-  margin-bottom: 30px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup {
-  display: inline-block;
-  margin-right: 50px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup > label {
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #282828;
-  display: block;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup > span {
-  font-size: 18px;
-  color: #282828;
-  display: block;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup > input.dateMonth {
-  width: 70px;
-  margin-right: 30px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup > input.postal {
-  width: 150px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup .selectBox.full {
-  width: 231px;
-  padding-left: 15px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle {
-  margin-top: 10px;
-  padding-left: 7px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"] {
-  opacity: 0;
-  height: 1px;
-  width: 1px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"] + label {
-  font-size: 18px;
-  display: inline-block;
-  position: relative;
-  margin-right: 20px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"] + label:before {
-  content: url("../images/radioNormal.png");
-  position: absolute;
-  left: -20px;
-  top: 2px;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"]:checked + label {
-  position: relative;
-}
-
-.profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"]:checked + label:before {
-  content: url("../images/radioNormalChecked.png");
-  position: absolute;
-  left: -20px;
-  top: 2px;
-}
-
-.profileBody .cardFormWrap .btnWrap .btnSave {
-  display: inline-block;
-  width: 100px;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  border-radius: 999px;
-  font-size: 16px;
-  background: #282828;
-}
-
-.profileBody .cardFormWrap .btnWrap .btnCancle {
-  display: inline-block;
-  width: 100px;
-  line-height: 30px;
-  color: #282828;
-  font-size: 16px;
-  margin-left: 20px;
-}
-
-.profileBody .dateSearchWrap {
-  margin-top: 20px;
-  position: relative;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem {
-  display: inline-block;
-  width: 205px;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice {
-  width: 190px;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox {
-  text-align: center;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox:after {
-  content: '∨';
-  display: inline-block;
-  position: absolute;
-  top: 40%;
-  right: 5px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox.active {
-  border-radius: 15px 15px 0 0;
-  background: #fff;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox.active > ul {
-  display: block !important;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox > ul.usage {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  height: 450px;
-  overflow-y: scroll;
-  background: #fff;
-  border: solid 1px #282828;
-  border-top: none;
-  padding: 10px 0 0 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 10;
-  border-radius: 0 0 15px 15px;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox > ul.usage > li {
-  font-size: 22px;
-  letter-spacing: -0.8px;
-  color: #afafaf;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox > ul.usage > li > ul {
-  padding-left: 20px;
-  letter-spacing: -0.8px;
-  color: #282828;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem > label {
-  display: inline-block;
-  font-size: 18px;
-}
-
-.profileBody .dateSearchWrap .dateBox .dateItem > input {
-  display: inline-block;
-  width: 140px;
-  text-align: center;
-}
-
-.profileBody .dateSearchWrap .dateBox .btnSearch {
-  display: inline-block;
-  width: 100px;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  border-radius: 999px;
-  font-size: 16px;
-  background: #282828;
-}
-
-.profileBody .dateSearchWrap .btnPrint {
-  display: block;
-  width: 50px;
-  position: absolute;
-  top: 10px;
-  right: 0;
-  font-size: 18px;
-}
-
-.profileBody .dateSearchWrap .btnPrint.purchase {
-  top: -50px;
-}
-
-.profileBody .salesDetailTable {
-  width: 100%;
-  margin-top: 30px;
-}
-
-.profileBody .salesDetailTable thead > tr th {
-  font-size: 18px;
-  color: #282828;
-  padding: 12px 10px;
-  border-bottom: solid 1px #979797;
-  font-weight: normal;
-  text-align: left;
-}
-
-.profileBody .salesDetailTable tbody > tr td {
-  font-size: 18px;
-  color: #282828;
-  padding: 5px 10px;
-}
-
-.profileBody .salesDetailTable tbody > tr td:nth-child(2) {
-  color: #4505e0;
-}
-
-.profileBody .salesDetailTable tbody > tr td:last-child {
-  padding: 5px 20px;
-  text-align: right;
-}
-
-.profileBody .tableResult {
-  overflow: hidden;
-  margin-top: 10px;
-}
-
-.profileBody .tableResult > div {
-  float: right;
-  text-align: right;
-}
-
-.profileBody .tableResult > div span {
-  color: #4505e0;
-  font-size: 18px;
-  display: inline-block;
-  letter-spacing: -0.8px;
-}
-
-.profileBody .paging {
-  width: 435px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.profileBody .paging li {
-  float: left;
-}
-
-.profileBody .paging li a {
-  padding: 5px 8px;
-  font-size: 18px;
-  color: #afafaf;
-}
-
-.profileBody .paging li.active a {
-  color: #ffb000;
-}
-
-.profileBody .paging li.pagingMove {
-  width: 75px;
-  font-size: 18px;
-}
-
-.profileBody .paging li.pagingMove a {
-  color: #282828;
-}
+  background: #fff; }
+  .profileBody h3 {
+    font-size: 40px;
+    letter-spacing: -2px;
+    color: #282828;
+    font-weight: normal; }
+  .profileBody .cardFormWrap {
+    padding: 30px 0; }
+    .profileBody .cardFormWrap .cardFormRow {
+      margin-bottom: 30px; }
+      .profileBody .cardFormWrap .cardFormRow .inputGroup {
+        display: inline-block;
+        margin-right: 50px; }
+        .profileBody .cardFormWrap .cardFormRow .inputGroup > label {
+          margin-bottom: 5px;
+          font-size: 18px;
+          color: #282828;
+          display: block; }
+        .profileBody .cardFormWrap .cardFormRow .inputGroup > span {
+          font-size: 18px;
+          color: #282828;
+          display: block; }
+        .profileBody .cardFormWrap .cardFormRow .inputGroup > input.dateMonth {
+          width: 70px;
+          margin-right: 30px; }
+        .profileBody .cardFormWrap .cardFormRow .inputGroup > input.postal {
+          width: 150px; }
+        .profileBody .cardFormWrap .cardFormRow .inputGroup .selectBox.full {
+          width: 231px;
+          padding-left: 15px; }
+        .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle {
+          margin-top: 10px;
+          padding-left: 7px; }
+          .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"] {
+            opacity: 0;
+            height: 1px;
+            width: 1px; }
+            .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"] + label {
+              font-size: 18px;
+              display: inline-block;
+              position: relative;
+              margin-right: 20px; }
+              .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"] + label:before {
+                content: url("../images/radioNormal.png");
+                position: absolute;
+                left: -20px;
+                top: 2px; }
+            .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"]:checked + label {
+              position: relative; }
+              .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"]:checked + label:before {
+                content: url("../images/radioNormalChecked.png");
+                position: absolute;
+                left: -20px;
+                top: 2px; }
+    .profileBody .cardFormWrap .btnWrap .btnSave {
+      display: inline-block;
+      width: 100px;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      border-radius: 999px;
+      font-size: 16px;
+      background: #282828; }
+    .profileBody .cardFormWrap .btnWrap .btnCancle {
+      display: inline-block;
+      width: 100px;
+      line-height: 30px;
+      color: #282828;
+      font-size: 16px;
+      margin-left: 20px; }
+  .profileBody .dateSearchWrap {
+    margin-top: 20px;
+    position: relative; }
+    .profileBody .dateSearchWrap .dateBox .dateItem {
+      display: inline-block;
+      width: 205px; }
+      .profileBody .dateSearchWrap .dateBox .dateItem.voice {
+        width: 190px; }
+        .profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox {
+          text-align: center; }
+          .profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox:after {
+            content: '∨';
+            display: inline-block;
+            position: absolute;
+            top: 40%;
+            right: 5px;
+            transform: translate(-50%, -50%); }
+          .profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox.active {
+            border-radius: 15px 15px 0 0;
+            background: #fff; }
+            .profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox.active > ul {
+              display: block !important; }
+          .profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox > ul.usage {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 450px;
+            overflow-y: scroll;
+            background: #fff;
+            border: solid 1px #282828;
+            border-top: none;
+            padding: 10px 0 0 20px;
+            box-sizing: border-box;
+            z-index: 10;
+            border-radius: 0 0 15px 15px; }
+            .profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox > ul.usage > li {
+              font-size: 22px;
+              letter-spacing: -0.8px;
+              color: #afafaf; }
+              .profileBody .dateSearchWrap .dateBox .dateItem.voice .selectBox > ul.usage > li > ul {
+                padding-left: 20px;
+                letter-spacing: -0.8px;
+                color: #282828; }
+      .profileBody .dateSearchWrap .dateBox .dateItem > label {
+        display: inline-block;
+        font-size: 18px; }
+      .profileBody .dateSearchWrap .dateBox .dateItem > input {
+        display: inline-block;
+        width: 140px;
+        text-align: center; }
+    .profileBody .dateSearchWrap .dateBox .btnSearch {
+      display: inline-block;
+      width: 100px;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      border-radius: 999px;
+      font-size: 16px;
+      background: #282828; }
+    .profileBody .dateSearchWrap .btnPrint {
+      display: block;
+      width: 50px;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      font-size: 18px; }
+      .profileBody .dateSearchWrap .btnPrint.purchase {
+        top: -50px; }
+  .profileBody .salesDetailTable {
+    width: 100%;
+    margin-top: 30px; }
+    .profileBody .salesDetailTable thead > tr th {
+      font-size: 18px;
+      color: #282828;
+      padding: 12px 10px;
+      border-bottom: solid 1px #979797;
+      font-weight: normal;
+      text-align: left; }
+    .profileBody .salesDetailTable tbody > tr td {
+      font-size: 18px;
+      color: #282828;
+      padding: 5px 10px; }
+      .profileBody .salesDetailTable tbody > tr td:nth-child(2) {
+        color: #4505e0; }
+      .profileBody .salesDetailTable tbody > tr td:last-child {
+        padding: 5px 20px;
+        text-align: right; }
+  .profileBody .tableResult {
+    overflow: hidden;
+    margin-top: 10px; }
+    .profileBody .tableResult > div {
+      float: right;
+      text-align: right; }
+      .profileBody .tableResult > div span {
+        color: #4505e0;
+        font-size: 18px;
+        display: inline-block;
+        letter-spacing: -0.8px; }
+  .profileBody .paging {
+    width: 435px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .profileBody .paging li {
+      float: left; }
+      .profileBody .paging li a {
+        padding: 5px 8px;
+        font-size: 18px;
+        color: #afafaf; }
+      .profileBody .paging li.active a {
+        color: #ffb000; }
+      .profileBody .paging li.pagingMove {
+        width: 75px;
+        font-size: 18px; }
+        .profileBody .paging li.pagingMove a {
+          color: #282828; }
 
 .myVoiceBody h3 {
   font-size: 40px;
   letter-spacing: -2px;
   color: #282828;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .myVoiceBody .myVoiceWrap .easyTrackInfo {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 25px 30px;
-  margin-bottom: 15px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div {
-  display: inline-block;
-  vertical-align: middle;
-  width: 400px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.imgBox {
-  display: inline-block;
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
-  border: solid 3px red;
-  position: relative;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.imgBox > img {
-  width: 100%;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.imgBox > span {
-  position: absolute;
-  bottom: -5px;
-  right: 5px;
-  z-index: 10;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox {
-  position: relative;
-  top: 5px;
-  left: 20px;
-  width: 460px;
-  margin: 0 10px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox h2 {
-  font-family: NanumSquareOTFR;
-  font-size: 24px;
-  letter-spacing: -1.5px;
-  color: #282828;
-  line-height: 1;
-  margin-bottom: 5px;
-  margin-right: 15px;
-  display: inline-block;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div {
-  margin-top: 5px;
-  display: inline-block;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl {
-  display: inline-block;
-  font-family: NanumSquareOTFR;
-  font-size: 14px;
-  letter-spacing: -0.9px;
-  color: #282828;
-  margin-right: 40px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl:last-child {
-  margin-right: 0;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl dt {
-  display: inline-block;
-  font-weight: bold;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl dt.price {
-  margin-right: 32px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl dd {
-  display: inline-block;
-  font-weight: normal;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div span {
-  display: inline-block;
-  margin-right: 60px;
-  font-family: NanumSquareOTFR;
-  font-size: 18px;
-  letter-spacing: -0.7px;
-  color: #282828;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div span:last-child {
-  font-size: 22px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox {
-  width: 250px;
-  overflow: hidden;
-  text-align: right;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox .txt {
-  font-family: NanumSquareOTFR;
-  letter-spacing: -0.5px;
-  text-align: right;
-  color: #282828;
-  font-size: 13px;
-  margin-bottom: 5px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox .txt span {
-  color: #f5a623;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox .txt span img {
-  vertical-align: middle;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul {
-  text-align: right;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li {
-  display: inline-block;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li > a {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 24px;
-  margin: 0 3px;
-  letter-spacing: -0.9px;
-  line-height: 1;
-  color: #282828;
-  margin-left: 20px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li > a img {
-  width: 40px;
-}
-
-.myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li > a span {
-  display: block;
-  margin-top: 10px;
-  letter-spacing: -0.9px;
-  font-size: 12px;
-  text-align: center;
-}
+  margin-bottom: 15px; }
+  .myVoiceBody .myVoiceWrap .easyTrackInfo > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px; }
+    .myVoiceBody .myVoiceWrap .easyTrackInfo > div.imgBox {
+      display: inline-block;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      border: solid 3px red;
+      position: relative; }
+      .myVoiceBody .myVoiceWrap .easyTrackInfo > div.imgBox > img {
+        width: 100%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%; }
+      .myVoiceBody .myVoiceWrap .easyTrackInfo > div.imgBox > span {
+        position: absolute;
+        bottom: -5px;
+        right: 5px;
+        z-index: 10; }
+    .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox {
+      position: relative;
+      top: 5px;
+      left: 20px;
+      width: 460px;
+      margin: 0 10px; }
+      .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox h2 {
+        font-family: NanumSquareOTFR;
+        font-size: 24px;
+        letter-spacing: -1.5px;
+        color: #282828;
+        line-height: 1;
+        margin-bottom: 5px;
+        margin-right: 15px;
+        display: inline-block; }
+      .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div {
+        margin-top: 5px;
+        display: inline-block; }
+        .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl {
+          display: inline-block;
+          font-family: NanumSquareOTFR;
+          font-size: 14px;
+          letter-spacing: -0.9px;
+          color: #282828;
+          margin-right: 40px; }
+          .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl:last-child {
+            margin-right: 0; }
+          .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl dt {
+            display: inline-block;
+            font-weight: bold; }
+            .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl dt.price {
+              margin-right: 32px; }
+          .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div dl dd {
+            display: inline-block;
+            font-weight: normal; }
+        .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div span {
+          display: inline-block;
+          margin-right: 60px;
+          font-family: NanumSquareOTFR;
+          font-size: 18px;
+          letter-spacing: -0.7px;
+          color: #282828; }
+          .myVoiceBody .myVoiceWrap .easyTrackInfo > div.infoBox > div span:last-child {
+            font-size: 22px; }
+    .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox {
+      width: 250px;
+      overflow: hidden;
+      text-align: right; }
+      .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox .txt {
+        font-family: NanumSquareOTFR;
+        letter-spacing: -0.5px;
+        text-align: right;
+        color: #282828;
+        font-size: 13px;
+        margin-bottom: 5px; }
+        .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox .txt span {
+          color: #f5a623; }
+          .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox .txt span img {
+            vertical-align: middle; }
+      .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul {
+        text-align: right; }
+        .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li {
+          display: inline-block; }
+          .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li > a {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 24px;
+            margin: 0 3px;
+            letter-spacing: -0.9px;
+            line-height: 1;
+            color: #282828;
+            margin-left: 20px; }
+            .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li > a img {
+              width: 40px; }
+            .myVoiceBody .myVoiceWrap .easyTrackInfo > div.btnBox ul li > a span {
+              display: block;
+              margin-top: 10px;
+              letter-spacing: -0.9px;
+              font-size: 12px;
+              text-align: center; }
 
 .profileBox h2 {
   font-family: NanumSquareOTFB;
   font-size: 40px;
   letter-spacing: -1.1px;
-  color: #282828;
-}
-
-.profileBox h2 span {
-  display: block;
-  font-family: NanumSquareOTFB;
-  font-size: 20px;
-  font-weight: normal;
-  letter-spacing: -0.6px;
-  color: #ffb000;
-}
+  color: #282828; }
+  .profileBox h2 span {
+    display: block;
+    font-family: NanumSquareOTFB;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: -0.6px;
+    color: #ffb000; }
 
 .profileBox > div {
-  margin-top: 30px;
-}
-
-.profileBox > div > div {
-  float: left;
-  width: 925px;
-  height: 450px;
-  background: #fff;
-}
-
-.profileBox > div > div.imgBox {
-  position: relative;
-  width: 315px;
-  background-color: #e8e8e8;
-}
-
-.profileBox > div > div.imgBox > div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.profileBox > div > div.imgBox > div .voiceImg {
-  margin-bottom: 30px;
-}
-
-.profileBox > div > div.imgBox > div > a span {
-  display: block;
-  font-family: NanumSquareOTFB;
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: -0.8px;
-  color: #282828;
-}
-
-.profileBox > div > div > ul {
-  padding: 20px 30px;
-  -webkit-box-sizing: border-box;
+  margin-top: 30px; }
+  .profileBox > div > div {
+    float: left;
+    width: 925px;
+    height: 450px;
+    background: #fff; }
+    .profileBox > div > div.imgBox {
+      position: relative;
+      width: 315px;
+      background-color: #e8e8e8; }
+      .profileBox > div > div.imgBox > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; }
+        .profileBox > div > div.imgBox > div .voiceImg {
+          margin-bottom: 30px; }
+        .profileBox > div > div.imgBox > div > a span {
+          display: block;
+          font-family: NanumSquareOTFB;
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: -0.8px;
+          color: #282828; }
+    .profileBox > div > div > ul {
+      padding: 20px 30px;
+      box-sizing: border-box; }
+      .profileBox > div > div > ul > li {
+        margin-bottom: 20px; }
+        .profileBox > div > div > ul > li.half {
+          float: left;
+          width: 50%; }
+        .profileBox > div > div > ul > li h3 {
+          display: inline-block;
+          width: 180px;
+          font-family: NanumSquareOTFB;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 1.5;
+          color: #282828; }
+        .profileBox > div > div > ul > li input {
+          width: 180px;
+          height: 29px;
+          border-radius: 15px;
+          background-color: #ffffff;
+          border: solid 1px #282828;
+          outline: none;
+          font-family: NanumSquareOTFL;
+          font-size: 16px;
+          line-height: 1.69;
           box-sizing: border-box;
-}
-
-.profileBox > div > div > ul > li {
-  margin-bottom: 20px;
-}
-
-.profileBox > div > div > ul > li.half {
-  float: left;
-  width: 50%;
-}
-
-.profileBox > div > div > ul > li h3 {
-  display: inline-block;
-  width: 180px;
-  font-family: NanumSquareOTFB;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #282828;
-}
-
-.profileBox > div > div > ul > li input {
-  width: 180px;
-  height: 29px;
-  border-radius: 15px;
-  background-color: #ffffff;
-  border: solid 1px #282828;
-  outline: none;
-  font-family: NanumSquareOTFL;
-  font-size: 16px;
-  line-height: 1.69;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 15px;
-}
-
-.profileBox > div > div > ul > li input.long {
-  width: 400px;
-}
-
-.profileBox > div > div > ul > li > span {
-  font-family: NanumSquareOTFL;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #282828;
-}
-
-.profileBox > div > div > ul > li .selectBox {
-  display: inline-block;
-  width: 161.6px;
-  height: 29px;
-  border-radius: 14.5px;
-  background-color: #ffffff;
-  border: solid 1px #282828;
-  font-family: NanumSquareOTFL;
-  font-size: 16px;
-  line-height: 1.69;
-  text-align: center;
-  color: #282828;
-  position: relative;
-  cursor: pointer;
-}
-
-.profileBox > div > div > ul > li .selectBox > span > em {
-  display: inline-block;
-  background: #c70800;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  vertical-align: text-bottom;
-  margin-right: 5px;
-}
-
-.profileBox > div > div > ul > li .selectBox:after {
-  content: "∨";
-  display: block;
-  position: absolute;
-  top: 40%;
-  right: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.profileBox > div > div > ul > li .selectBox.long {
-  width: 400px;
-  text-align: left;
-  padding-left: 20px;
-}
-
-.profileBox > div > div > ul > li .selectBox.active {
-  border-radius: 14.5px 14.5px 0 0;
-}
-
-.profileBox > div > div > ul > li .selectBox.active > ul {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: -1px;
-  width: 100%;
-  text-align: center;
-  border: solid 1px #000;
-  background: #fff;
-  z-index: 10;
-  border-top: none;
-  border-radius: 0 0 14.5px 14.5px;
-  padding-bottom: 10px;
-}
-
-.profileBox > div > div > ul > li .selectBox.active > ul > li {
-  cursor: pointer;
-}
-
-.profileBox > div > div > ul > li .selectBox > ul {
-  display: none;
-}
-
-.profileBox > div > div > ul > li .tagBox {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  border: solid 1px #282828;
-  border-radius: 15px 15px 0 0;
-}
-
-.profileBox > div > div > ul > li .tagBox.on {
-  border-bottom: none;
-}
-
-.profileBox > div > div > ul > li .tagBox.on input {
-  border: none;
-}
-
-.profileBox > div > div > ul > li .tagBox > .tagList {
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  left: -1px;
-  padding: 5px 0;
-  border: solid 1px #282828;
-  border-top: none;
-  border-radius: 0 0 15px 15px;
-}
-
-.profileBox > div > div > ul > li .tagBox > .tagList > span {
-  margin: 5px;
-  padding: 5px 25px 5px 15px;
-  border-radius: 15px;
-  background-color: #282828;
-  display: inline-block;
-  font-family: NanumSquareOTFL;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-  position: relative;
-  cursor: pointer;
-}
-
-.profileBox > div > div > ul > li .tagBox > .tagList > span:after {
-  content: "X";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 13px;
-}
-
-.profileBox > div > div > ul > li .tagBox > .keywordList {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: -1px;
-  width: 100%;
-  border: solid 1px #000;
-  background: #fff;
-  z-index: 10;
-  border-top: none;
-  border-radius: 0 0 14.5px 14.5px;
-  padding-bottom: 10px;
-  font-family: NanumSquareOTFL;
-  font-size: 16px;
-  color: #282828;
-}
-
-.profileBox > div > div > ul > li .tagBox > .keywordList > li {
-  cursor: pointer;
-  padding: 3px 0;
-  padding-left: 16px;
-}
-
-.profileBox > div > div > ul > li .tagBox > .keywordList > li.bold {
-  font-weight: bold;
-}
+          padding-left: 15px; }
+          .profileBox > div > div > ul > li input.long {
+            width: 400px; }
+        .profileBox > div > div > ul > li > span {
+          font-family: NanumSquareOTFL;
+          font-size: 18px;
+          line-height: 1.5;
+          color: #282828; }
+        .profileBox > div > div > ul > li .selectBox {
+          display: inline-block;
+          width: 161.6px;
+          height: 29px;
+          border-radius: 14.5px;
+          background-color: #ffffff;
+          border: solid 1px #282828;
+          font-family: NanumSquareOTFL;
+          font-size: 16px;
+          line-height: 1.69;
+          text-align: center;
+          color: #282828;
+          position: relative;
+          cursor: pointer; }
+          .profileBox > div > div > ul > li .selectBox > span > em {
+            display: inline-block;
+            background: #c70800;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            vertical-align: text-bottom;
+            margin-right: 5px; }
+          .profileBox > div > div > ul > li .selectBox:after {
+            content: "∨";
+            display: block;
+            position: absolute;
+            top: 40%;
+            right: 10px;
+            transform: translateY(-50%); }
+          .profileBox > div > div > ul > li .selectBox.long {
+            width: 400px;
+            text-align: left;
+            padding-left: 20px; }
+          .profileBox > div > div > ul > li .selectBox.active {
+            border-radius: 14.5px 14.5px 0 0; }
+            .profileBox > div > div > ul > li .selectBox.active > ul {
+              display: block;
+              position: absolute;
+              top: 100%;
+              left: -1px;
+              width: 100%;
+              text-align: center;
+              border: solid 1px #000;
+              background: #fff;
+              z-index: 10;
+              border-top: none;
+              border-radius: 0 0 14.5px 14.5px;
+              padding-bottom: 10px; }
+              .profileBox > div > div > ul > li .selectBox.active > ul > li {
+                cursor: pointer; }
+          .profileBox > div > div > ul > li .selectBox > ul {
+            display: none; }
+        .profileBox > div > div > ul > li .tagBox {
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          border: solid 1px #282828;
+          border-radius: 15px 15px 0 0; }
+          .profileBox > div > div > ul > li .tagBox.on {
+            border-bottom: none; }
+            .profileBox > div > div > ul > li .tagBox.on input {
+              border: none; }
+          .profileBox > div > div > ul > li .tagBox > .tagList {
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+            padding: 5px 0;
+            border: solid 1px #282828;
+            border-top: none;
+            border-radius: 0 0 15px 15px; }
+            .profileBox > div > div > ul > li .tagBox > .tagList > span {
+              margin: 5px;
+              padding: 5px 25px 5px 15px;
+              border-radius: 15px;
+              background-color: #282828;
+              display: inline-block;
+              font-family: NanumSquareOTFL;
+              font-size: 16px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #ffffff;
+              position: relative;
+              cursor: pointer; }
+              .profileBox > div > div > ul > li .tagBox > .tagList > span:after {
+                content: "X";
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                font-size: 13px; }
+          .profileBox > div > div > ul > li .tagBox > .keywordList {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+            width: 100%;
+            border: solid 1px #000;
+            background: #fff;
+            z-index: 10;
+            border-top: none;
+            border-radius: 0 0 14.5px 14.5px;
+            padding-bottom: 10px;
+            font-family: NanumSquareOTFL;
+            font-size: 16px;
+            color: #282828; }
+            .profileBox > div > div > ul > li .tagBox > .keywordList > li {
+              cursor: pointer;
+              padding: 3px 0;
+              padding-left: 16px; }
+              .profileBox > div > div > ul > li .tagBox > .keywordList > li.bold {
+                font-weight: bold; }
 
 .profileBox .btn_next {
   display: block;
@@ -1085,6 +785,4 @@ input[type="text"] {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: -0.4px;
-  color: #ffffff;
-}
-/*# sourceMappingURL=profile.css.map */
+  color: #ffffff; }

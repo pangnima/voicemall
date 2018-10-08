@@ -114,6 +114,9 @@ input[type="text"] {
   font-size:14px;
   li{
     padding: 5px 0;
+    &.active{
+      a{color: #ffb000;}
+    }
   }
 }
 
@@ -175,8 +178,14 @@ input[type="text"] {
           font-size: 18px;
           letter-spacing: -0.9px;
           color: #282828;
+          position: relative;
           .name{
             width: 150px;
+          }
+          > img{
+            position: absolute;
+            top: -8px;
+            left: 130px;
           }
           input[type="text"] {
             border: 1px solid #282828;
@@ -273,6 +282,7 @@ input[type="text"] {
         color:#282828;
         text-align: center;
         padding: 20px 0;
+        line-height: 1.4;
         p{
           display: inline-block;
           font-weight: bold;
