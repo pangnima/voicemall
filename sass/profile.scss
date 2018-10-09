@@ -30,6 +30,7 @@
     width: 100%;
     margin-bottom: 0;
     padding-left: 5px;
+    letter-spacing: -0.7px;
   }
   &:after {
     content: '∨';
@@ -59,7 +60,7 @@
       z-index: 10;
       border-radius: 0 0 15px 15px;
       > li {
-        letter-spacing: -0.8px;
+        letter-spacing: -0.7px;
       }
     }
   }
@@ -165,6 +166,7 @@
     font-size:20px;
     display: block;
     margin-bottom: 10px;
+    letter-spacing: -1px;
   }
   .profileCardInner{
     .profileImg{
@@ -192,6 +194,7 @@
           border:1px solid #282828;
           font-size: 11px;
           margin-top: 16px;
+          letter-spacing: -0.7px;
           >img{
             vertical-align: middle;
           }
@@ -208,13 +211,13 @@
       dl{
         display: block;
         margin-bottom: 10px;
-        dt{font-size:14px;color: #afafaf;}
+        dt{font-size:14px;color: #afafaf; letter-spacing: -0.7px;}
         dd{
           font-size: 18px;
-          letter-spacing: -0.9px;
           color: #282828;
           line-height: 0.8;
           position: relative;
+          letter-spacing: -0.8px;
           .name{
             width: 150px;
           }
@@ -230,6 +233,7 @@
             padding: 0 5px;
             font-size: 18px;
             text-indent:10px;
+            letter-spacing: -0.8px;
           }
         }
         &.half{
@@ -283,6 +287,7 @@
         color:#fff;
         font-size:16px;
         border-radius: 17px;
+        letter-spacing: -0.4px;
       }
     }
   }
@@ -298,6 +303,7 @@
     font-size:20px;
     display: block;
     margin-bottom: 10px;
+    letter-spacing: -1px;
   }
   .paymentList{
     width: 100%;
@@ -308,6 +314,7 @@
       border-bottom:1px solid #979797;
       text-align:left;
       font-weight: bold;
+      letter-spacing: -0.9px;
     }
     tbody > tr:first-child td {
       color: #4505e0;
@@ -318,12 +325,15 @@
       .notYet{
         color:#282828;
         text-align: center;
-        padding: 20px 0;
+        margin-top: 48.5px;
         p{
-          display: inline-block;
+          min-width:100px;
+          display: block;
           font-weight: bold;
           font-size: 22px;
           line-height: 1.2;
+          letter-spacing: -0.9px;
+          margin-bottom: 5px;
         }
         .btnCard{
           display: inline-block;
@@ -336,7 +346,6 @@
           text-align: center;
           border-radius: 999px;
           margin: 10px auto;
-
         }
       }
 
@@ -349,8 +358,10 @@
   font-size: 16px;
   letter-spacing: -0.4px;
   color: #282828;
+  padding:0 25px;
   &.active{
     color: #ffb000;
+    padding: 0;
   }
 }
 
@@ -374,12 +385,12 @@
       .inputGroup{
         display: inline-block;
         margin-right: 50px;
-
         > label{
           margin-bottom:5px;
           font-size:18px;
           color:#282828;
           display: block;
+          letter-spacing: -0.5px;
         }
         >span {
           font-size:18px;
@@ -388,11 +399,11 @@
         }
         > input{
           &.dateMonth{
-            width: 70px;
+            width: 70px !important;
             margin-right: 20px;
           }
           &.postal{
-            width: 150px;
+            width: 150px !important;
           }
         }
         > input[type="text"]{
@@ -402,6 +413,7 @@
           text-indent: 10px;
           font-size: 18px;
           width: 300px;
+          letter-spacing: -0.5px;
       }
 
         //라디오스타일
@@ -417,6 +429,7 @@
               display: inline-block;
               position: relative;
               margin-right: 20px;
+              letter-spacing: -0.5px;
               &:before{
                 content:url('../images/radioNormal.png');
                 position: absolute; left:-20px; top:2px;
@@ -435,6 +448,7 @@
       }
     }
     .btnWrap{
+      padding-top: 15px;
       .btnSave{
         display: inline-block;
         width: 100px;
@@ -444,6 +458,7 @@
         border-radius: 999px;
         font-size:16px;
         background: #282828;
+        letter-spacing: -0.4px;
       }
       .btnCancle{
         display: inline-block;
@@ -452,6 +467,7 @@
         color:#282828;
         font-size: 16px;
         margin-left: 20px;
+        letter-spacing: -0.4px;
       }
     }
   }
@@ -514,6 +530,7 @@
         > label{
           display: inline-block;
           font-size:18px;
+          letter-spacing: -0.8px;
         }
         > input{
           display: inline-block;
@@ -524,6 +541,7 @@
           border-radius: 15px;
           border: solid 1px #282828;
           cursor: pointer;
+          letter-spacing: -0.8px;
         }
       }
       .btnSearch{
@@ -537,6 +555,7 @@
         background: #282828;
         position: relative;
         top:-2px;
+        letter-spacing: -0.8px;
         &.top0{
           top: 0;
         }
@@ -549,6 +568,7 @@
       top:10px;
       right:0;
       font-size:18px;
+      letter-spacing: -0.8px;
       &.purchase {
         top: -50px;
       }
@@ -564,11 +584,13 @@
       border-bottom:solid 1px #979797;
       font-weight: normal;
       text-align:left;
+      letter-spacing: -0.8px;
     }
     tbody > tr td{
       font-size: 18px;
       color: #282828;
       padding: 5px 10px;
+      letter-spacing: -0.8px;
       &:nth-child(2) {color:#4505e0; font-weight: bold;}
       &:last-child{
         padding: 5px 20px;
@@ -601,6 +623,7 @@
         padding: 5px 8px;
         font-size: 18px;
         color: #afafaf;
+        letter-spacing: -0.5px;
       }
       &.active{
         a{

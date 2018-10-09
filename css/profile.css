@@ -34,7 +34,8 @@
     font-weight: normal;
     width: 100%;
     margin-bottom: 0;
-    padding-left: 5px; }
+    padding-left: 5px;
+    letter-spacing: -0.7px; }
   .selectBox:after {
     content: '∨';
     display: inline-block;
@@ -61,7 +62,7 @@
     z-index: 10;
     border-radius: 0 0 15px 15px; }
     .selectBox > ul.united > li {
-      letter-spacing: -0.8px; }
+      letter-spacing: -0.7px; }
   .selectBox.size1 {
     width: 120px; }
     .selectBox.size1 > ul.united {
@@ -136,7 +137,8 @@
     font-weight: bold;
     font-size: 20px;
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: -1px; }
   .profileCard .profileCardInner .profileImg {
     width: 140px;
     height: 180px;
@@ -159,7 +161,8 @@
         color: #282828;
         border: 1px solid #282828;
         font-size: 11px;
-        margin-top: 16px; }
+        margin-top: 16px;
+        letter-spacing: -0.7px; }
         .profileCard .profileCardInner .profileImg .imgBox .btnChange > img {
           vertical-align: middle; }
   .profileCard .profileCardInner .profileTxt {
@@ -173,13 +176,14 @@
       margin-bottom: 10px; }
       .profileCard .profileCardInner .profileTxt dl dt {
         font-size: 14px;
-        color: #afafaf; }
+        color: #afafaf;
+        letter-spacing: -0.7px; }
       .profileCard .profileCardInner .profileTxt dl dd {
         font-size: 18px;
-        letter-spacing: -0.9px;
         color: #282828;
         line-height: 0.8;
-        position: relative; }
+        position: relative;
+        letter-spacing: -0.8px; }
         .profileCard .profileCardInner .profileTxt dl dd .name {
           width: 150px; }
         .profileCard .profileCardInner .profileTxt dl dd > img {
@@ -192,7 +196,8 @@
           border-radius: 9999px;
           padding: 0 5px;
           font-size: 18px;
-          text-indent: 10px; }
+          text-indent: 10px;
+          letter-spacing: -0.8px; }
       .profileCard .profileCardInner .profileTxt dl.half {
         display: inline-block;
         width: 240px; }
@@ -233,7 +238,8 @@
       text-align: center;
       color: #fff;
       font-size: 16px;
-      border-radius: 17px; }
+      border-radius: 17px;
+      letter-spacing: -0.4px; }
 
 .profileList {
   background: #fff;
@@ -245,7 +251,8 @@
     font-weight: bold;
     font-size: 20px;
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: -1px; }
   .profileList .paymentList {
     width: 100%;
     table-layout: fixed;
@@ -254,7 +261,8 @@
       padding: 4px 0;
       border-bottom: 1px solid #979797;
       text-align: left;
-      font-weight: bold; }
+      font-weight: bold;
+      letter-spacing: -0.9px; }
     .profileList .paymentList tbody > tr:first-child td {
       color: #4505e0; }
       .profileList .paymentList tbody > tr:first-child td > a {
@@ -264,12 +272,15 @@
       .profileList .paymentList tbody > tr td .notYet {
         color: #282828;
         text-align: center;
-        padding: 20px 0; }
+        margin-top: 48.5px; }
         .profileList .paymentList tbody > tr td .notYet p {
-          display: inline-block;
+          min-width: 100px;
+          display: block;
           font-weight: bold;
           font-size: 22px;
-          line-height: 1.2; }
+          line-height: 1.2;
+          letter-spacing: -0.9px;
+          margin-bottom: 5px; }
         .profileList .paymentList tbody > tr td .notYet .btnCard {
           display: inline-block;
           padding: 0 10px;
@@ -287,9 +298,11 @@
   line-height: 20px;
   font-size: 16px;
   letter-spacing: -0.4px;
-  color: #282828; }
+  color: #282828;
+  padding: 0 25px; }
   .btnDelete.active {
-    color: #ffb000; }
+    color: #ffb000;
+    padding: 0; }
 
 .profileBody {
   padding: 30px 60px;
@@ -312,23 +325,25 @@
           margin-bottom: 5px;
           font-size: 18px;
           color: #282828;
-          display: block; }
+          display: block;
+          letter-spacing: -0.5px; }
         .profileBody .cardFormWrap .cardFormRow .inputGroup > span {
           font-size: 18px;
           color: #282828;
           display: block; }
         .profileBody .cardFormWrap .cardFormRow .inputGroup > input.dateMonth {
-          width: 70px;
+          width: 70px !important;
           margin-right: 20px; }
         .profileBody .cardFormWrap .cardFormRow .inputGroup > input.postal {
-          width: 150px; }
+          width: 150px !important; }
         .profileBody .cardFormWrap .cardFormRow .inputGroup > input[type="text"] {
           border: 1px solid #282828;
           height: 25px;
           border-radius: 9999px;
           text-indent: 10px;
           font-size: 18px;
-          width: 300px; }
+          width: 300px;
+          letter-spacing: -0.5px; }
         .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle {
           margin-top: 10px;
           padding-left: 7px; }
@@ -340,7 +355,8 @@
               font-size: 18px;
               display: inline-block;
               position: relative;
-              margin-right: 20px; }
+              margin-right: 20px;
+              letter-spacing: -0.5px; }
               .profileBody .cardFormWrap .cardFormRow .inputGroup .checkBoxStyle input[type="radio"] + label:before {
                 content: url("../images/radioNormal.png");
                 position: absolute;
@@ -353,22 +369,26 @@
                 position: absolute;
                 left: -20px;
                 top: 2px; }
-    .profileBody .cardFormWrap .btnWrap .btnSave {
-      display: inline-block;
-      width: 100px;
-      line-height: 30px;
-      color: #fff;
-      text-align: center;
-      border-radius: 999px;
-      font-size: 16px;
-      background: #282828; }
-    .profileBody .cardFormWrap .btnWrap .btnCancle {
-      display: inline-block;
-      width: 100px;
-      line-height: 30px;
-      color: #282828;
-      font-size: 16px;
-      margin-left: 20px; }
+    .profileBody .cardFormWrap .btnWrap {
+      padding-top: 15px; }
+      .profileBody .cardFormWrap .btnWrap .btnSave {
+        display: inline-block;
+        width: 100px;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        border-radius: 999px;
+        font-size: 16px;
+        background: #282828;
+        letter-spacing: -0.4px; }
+      .profileBody .cardFormWrap .btnWrap .btnCancle {
+        display: inline-block;
+        width: 100px;
+        line-height: 30px;
+        color: #282828;
+        font-size: 16px;
+        margin-left: 20px;
+        letter-spacing: -0.4px; }
   .profileBody .dateSearchWrap {
     margin-top: 20px;
     position: relative; }
@@ -420,7 +440,8 @@
                 color: #282828; }
         .profileBody .dateSearchWrap .dateBox .dateItem > label {
           display: inline-block;
-          font-size: 18px; }
+          font-size: 18px;
+          letter-spacing: -0.8px; }
         .profileBody .dateSearchWrap .dateBox .dateItem > input {
           display: inline-block;
           text-align: center;
@@ -429,7 +450,8 @@
           font-size: 18px;
           border-radius: 15px;
           border: solid 1px #282828;
-          cursor: pointer; }
+          cursor: pointer;
+          letter-spacing: -0.8px; }
       .profileBody .dateSearchWrap .dateBox .btnSearch {
         display: inline-block;
         width: 100px;
@@ -440,7 +462,8 @@
         font-size: 16px;
         background: #282828;
         position: relative;
-        top: -2px; }
+        top: -2px;
+        letter-spacing: -0.8px; }
         .profileBody .dateSearchWrap .dateBox .btnSearch.top0 {
           top: 0; }
     .profileBody .dateSearchWrap .btnPrint {
@@ -449,7 +472,8 @@
       position: absolute;
       top: 10px;
       right: 0;
-      font-size: 18px; }
+      font-size: 18px;
+      letter-spacing: -0.8px; }
       .profileBody .dateSearchWrap .btnPrint.purchase {
         top: -50px; }
   .profileBody .salesDetailTable {
@@ -461,11 +485,13 @@
       padding: 12px 10px;
       border-bottom: solid 1px #979797;
       font-weight: normal;
-      text-align: left; }
+      text-align: left;
+      letter-spacing: -0.8px; }
     .profileBody .salesDetailTable tbody > tr td {
       font-size: 18px;
       color: #282828;
-      padding: 5px 10px; }
+      padding: 5px 10px;
+      letter-spacing: -0.8px; }
       .profileBody .salesDetailTable tbody > tr td:nth-child(2) {
         color: #4505e0;
         font-weight: bold; }
@@ -493,7 +519,8 @@
       .profileBody .paging li a {
         padding: 5px 8px;
         font-size: 18px;
-        color: #afafaf; }
+        color: #afafaf;
+        letter-spacing: -0.5px; }
       .profileBody .paging li.active a {
         color: #ffb000; }
       .profileBody .paging li.pagingMove {
